@@ -1,1433 +1,624 @@
-<!doctype html>
-  
-  <html lang="en_us" prefix="og: http://ogp.me/ns#" class="no-js">
-  <head>
-    <meta charset="utf-8">
+<!DOCTYPE html><html lang="en"><head><meta name="robots" content="noindex, nofollow"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Current system status. View active incidents or upcoming maintenances. Subscribe to receive status notifications."><meta name="author" content=""><meta http-equiv="refresh" content="600"><title>System Status Page</title><!-- Bootstrap--><link rel="stylesheet" href="//static.status.io/public/statuspage/css/bootstrap.min.css"><!-- Fonts--><link href="//static.status.io/public/statuspage/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- Page Style--><link rel="stylesheet" href="//static.status.io/public/statuspage/css/statuspage-default.css?v=3"><link rel="stylesheet" href="//static.status.io/public/statuspage/css/statuspage-200.css?v=3"><noscript><style>#statusio_metrics {
+  display: none;
+}
+</style></noscript><noscript><style>#section_locations {
+  display: none;
+}
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About</title>
+</style></noscript><style>.brand img { 
+  display: block !important; 
+}
+.img { 
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+.navbar .brand {
+  font-size: 20px;
+  font-weight: 200;
+  color: #555555;
+  text-shadow: 0 1px 0 #ffffff;
+}
+.navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+}
+.navbar .nav > li {
+  float: left;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background: none;
+  color: #2C3E50;
+  background-color: #F2F3F4;
+}
 
-<meta name="description" content="From breaking news and entertainment to sports and politics, from big events to everyday interests. If it&#39;s happening anywhere, it&#39;s happening on Twitter."/>
-<link rel="canonical" href="https://about.twitter.com/en_us.html">
+.top_bar .panel-body {
+  height: 52px;
+}
 
+.event_inner_text {
+  font-size: 14px;
+}
 
+.event_inner_title {
+  font-size: 16px;
+}
+</style><!-- Custom Style--><style>body {
+  color: #363434;
+  background-color: #ffffff;
+}
+a:link {
+  color: #363434;
+  text-decoration: none;
+}
+a:visited {
+  color: #363434;
+  text-decoration: none;
+}
+a:hover {
+  color: #363434;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:active {
+  color: #363434;
+  text-decoration: none;
+}
+hr { 
+  border-top: 1px solid #27AE60;
+}
+.top_bar {
+  background-color: #27AE60;
+}
+.text {
+  color: #363434;
+}
+.section_border_0 {
+  background-color: #ffffff;
+  border: 0px solid #ffffff;
+}
+.section_border_1 {
+  background-color: #ffffff;
+  border: 1px solid #27AE60;
+}
+.status_td {
+  color: #363434;
+  background-color: #ffffff;
+}
+.external_service {
+  color: #363434;
+}
+#statuspage_name {
+  color: #363434;
+}
 
-<meta property="og:url" content="https://about.twitter.com/en_us.html"/>
-<meta property="og:type" content="article"/>
-<meta property="og:title" content="About"/>
-<meta property="og:description" content="From breaking news and entertainment to sports and politics, from big events to everyday interests. If it&#39;s happening anywhere, it&#39;s happening on Twitter."/>
-<meta property="og:image" content="https://about.twitter.com/content/dam/about-twitter/homepage/jkrowling_hero.jpg"/>
+/* overrides */
+.no_top_border {
+  border-top-width: 0px;
+}
+</style><!-- Custom CSS--><style>body {
+                margin: 0px;
+                background-color: #fff;
+                font-family: 'Lucida Grande', Helvetica, sans-serif;
+            }            
 
+            a {
+                color: #99cc33;
+            }
 
-<meta name="twitter:card" content="summary"/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <link rel="alternate" hreflang="en_us" href="https://about.twitter.com/en_us.html"/>
-      <link rel="alternate" hreflang="es" href="https://about.twitter.com/es.html"/>
-      <link rel="alternate" hreflang="ja" href="https://about.twitter.com/ja.html"/>
-      <link rel="alternate" hreflang="en_gb" href="https://about.twitter.com/en_gb.html"/>
-      <link rel="alternate" hreflang="fr" href="https://about.twitter.com/fr.html"/>
-      <link rel="alternate" hreflang="pt" href="https://about.twitter.com/pt.html"/>
-      <link rel="alternate" hreflang="ru" href="https://about.twitter.com/ru.html"/>
-      <link rel="alternate" hreflang="de" href="https://about.twitter.com/de.html"/>
-      <link rel="alternate" hreflang="tr" href="https://about.twitter.com/tr.html"/>
-      <link rel="alternate" hreflang="ar" href="https://about.twitter.com/ar.html"/>
-      <link rel="alternate" hreflang="id" href="https://about.twitter.com/id.html"/>
-      <link rel="alternate" hreflang="ko" href="https://about.twitter.com/ko.html"/>
-      <link rel="alternate" hreflang="hi" href="https://about.twitter.com/hi.html"/>
-      <link rel="alternate" hreflang="zh-tw" href="https://about.twitter.com/zh-tw.html"/>
-      <link rel="alternate" hreflang="zh-cn" href="https://about.twitter.com/zh-cn.html"/>
-
-
-<meta name="twitter:widgets:new-embed-design" content="on"/>
-<meta name="twitter:widgets:csp" content="on"/>
-
-<meta name="google-site-verification" content="zOF0H0GUEIaGyHgO7mDkOPku1RD0VeIUVIpzjd2WUgg"/>
-
-<link href="https://abs.twimg.com/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-
-    
-<script type="text/javascript" src="/etc/clientlibs/dtm/about-twitter/ac0b17d7a4556cd264c3df3fac5054e8fd5023f8/satelliteLib-6aaa55f159ee63bd9b92ec7519fbc79a19069907.js"></script>
-
-
-
-
-
-
-<link rel="stylesheet" href="/etc/designs/about-twitter/public/css/main.css" media="all" type="text/css"/>
-
-<script type="text/javascript" src="/etc/designs/about-twitter/public/js/common.js"></script>
-<script type="text/javascript" src="/etc/designs/about-twitter/public/js/critical.js"></script>
-
-<script src="/etc/designs/about-twitter/public/js/picturefill.js" async></script>
-
-  </head>
-  <body class="theme--blue page home-page en_us " data-analytics-page="about" data-analytics-element="page">
-
-      <div class="login-container signed-out" data-geo-location="AAAAEIDwOVhe0Bi2KinfijFf9PIGiaHyWbTi/lvrRuw4Sn7ir961FRO7KCQ/lp1QUzaNWb6hJDQ=" data-geo-country-code="BR">
-  
-  
-</div>
-
-<div class="nav theme-bg-color--dark" data-hidden="true" data-current-level="0">
-     <div class="nav--wrapper">
-         <header class="nav__header">
+            h1 {
+                width: 600px;
+                padding: 0px 100px 20px 100px;
+                margin: 50px auto 40px auto;
+                border-bottom: solid 1px #ccc;
+                text-align: center;
+                font: Bold 55px 'Trebuchet MS', Helvetica, sans-serif;
+                letter-spacing: -2px;
+                line-height: 50px;
+                position: relative;
+            }
             
-            <div class="nav__headeritem-left">
-               <div class="nav__headeritem-title">
-                 <span class="logo-title color--neutral-white">
-                    <span class="logo">
-                      
-                      <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"/></svg>
+                h1 a {
+                    color: #444;
+                    text-decoration: none;
+                }
+                
+                h1 img {
+                    border-width: 0px;
+                    position: absolute;
+                    right: 0px;
+                    bottom: 10px;
+                    width: 43px;
+                    height: 23px;
+                }
 
-                    </span>
-                    <span class="title type--bold-16 color--neutral-white" data-toggle-mobile-nav="true">About</span>
-                 </span>
-                 <a class="nav-icon" href="#" data-toggle-mobile-nav="true">
-                   
-                   <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
+            div#content {
+                width: 420px;
+                margin: auto;
+                position: relative;
+            }
 
-                 </a>
-                 <a class="nav-back color--neutral-white" href="#" data-nav-back="true">
-                   <span class="title type--bold-16">Back</span>
-                 </a>
-               </div>
-            </div>
-            <ul class="nav--menu" data-level="1">
-              <li class="nav--mobile-item nav--menu__list-item is-active-link" data-show-sub-level="false">
-                <a href="https://about.twitter.com/" title="About" class="color--neutral-white">
-                  <span class="nav--menu__list-item-text">About</span>
-                </a>
-              </li>
-              <li class="nav--menu__list-item  has-children " data-show-sub-level="false">
-                  
-                  <a href="https://about.twitter.com/en_us/company.html" class="color--neutral-white">
-                    <span class="nav--menu__list-item-text">Company</span>
-                    <span class="nav--menu__list-item-arrow" data-go-to-sub-level="true">
+                div#content div#description {
+                    position: absolute;
+                    right: -170px;
+                    width: 160px;
+                    text-align: right;
+                }
+
+            div#description {
+                font: Normal 17px Helvetica,sans-serif;
+                line-height: 20px;
+                color: #777;
+            }
+
+                div#description a {
+                    color: #777;
+                }
+            
+            div.post {
+                position: relative;
+                margin-bottom: 40px;
+                padding-right: 20px;
+            }
+
+                div.post div.date {
+                    position: absolute;
+                    left: -260px;
+                    text-align: right;
+                    width: 230px;                
+                    white-space: nowrap;
+                    font: Normal 34px Helvetica, sans-serif;
+                    letter-spacing: -2px;
+                    color: #ccc;
+                    text-transform: uppercase;
+                    line-height: 35px;
+                }
+                
+                    div.post div.date div.date_brick {
+                        float: right;
+                        height: 30px;
+                        width: 45px;
+                        background-color: #6498cc;
+                        color: #bbd5f1;
+                        font: Bold 12px Verdana, Sans-Serif;
+                        text-align: center;
+                        line-height: 12px;
+                        margin-left: 10px;
+                        padding-top: 5px;
+                        letter-spacing: 0px;
+                        overflow: hidden;
+                    }
+
+                div.post img.permalink {
+                    width: 14px;
+                    height: 13px;
+                    border-width: 0px;
+                    background-color: #000;
+                    display: none;
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                    z-index: 10;
+                }
+                
+                    div.post:hover img.permalink {
+                        display: inline;
+                    }
+
+                div.post h2 {
+                    font-size: 18px;
+                    font-weight: Bold;
+                    color: #6498cc;
+                    letter-spacing: -1px;
+                    margin: 0px 0px 5px 0px;
+                }
+
+                    div.post h2 a {
+                        color: #6498cc;
+                        text-decoration: none;
+                    }
+            
+                div.post div.caption {
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #444;
+                    margin-top: 10px;
+                    padding: 0px 20px 0px 20px;
+                }
+
+                    div.post div.caption a {
+                        color: #444;
+                    }
+    
+            /* Regular Post */
+            
+                div.post div.regular {
+                    font-size: 12px;
+                    color: #444;
+                    line-height: 17px;
+                }
+
+                    div.post div.regular blockquote {
+                        font-style: italic;
+                        border-left: solid 2px #444;
+                        padding-left: 10px;
+                    }
                         
-                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
+            /* Quote Post */
+            
+                div.post div.quote div.quote_text {
+                    font-family: Helvetica, sans-serif;
+                    font-weight: bold;
+                    color: #888;
+                    border-left: solid 5px #6498cc;
+                    padding-left: 10px;
+                }
+                
+                    div.post div.quote div.quote_text span.short {
+                        font-size: 36px;
+                        line-height: 40px;
+                        letter-spacing: -1px;
+                    }
+                    
+                    div.post div.quote div.quote_text span.medium {
+                        font-size: 25px;
+                        line-height: 27px;
+                        letter-spacing: -1px;
+                    }
+                    
+                    div.post div.quote div.quote_text span.long {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
 
-                      </span>
-                  </a>
-                  <ul class="nav--menu" data-level="2">
-                   <li class="nav--menu__list-item ">
-                     
-                     <a href="https://about.twitter.com/en_us/company/brand-resources.html" title="Twitter Brand Resources" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text">Twitter Brand Resources</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     
-                     <a href="https://about.twitter.com/en_us/company/careers.html" title="Careers" class="color--neutral-white" target="_blank" rel="noopener">
-                       <span class="nav--menu__list-item-text">Careers</span>
-                     </a>
-                   </li>
-                 </ul>
-               </li><li class="nav--menu__list-item  has-children " data-show-sub-level="false">
-                  
-                  <a href="https://about.twitter.com/en_us/values.html" class="color--neutral-white">
-                    <span class="nav--menu__list-item-text">Values</span>
-                    <span class="nav--menu__list-item-arrow" data-go-to-sub-level="true">
+                    div.post div.quote div.quote_text a {
+                        color: #888;
+                    }
+        
+                div.post div.quote div.source {
+                    font-size: 16px;
+                    font-weight: Bold;
+                    color: #555;
+                    margin-top: 5px;
+                }
+
+                    div.post div.quote div.source a {
+                        color: #555;
+                    }
+            
+            /* Link Post */
+            
+                div.post div.link a.link {
+                    font: Bold 20px Helvetica, sans-serif;
+                    letter-spacing: -1px;
+                    color: #c00;
+                }
+
+                    div.post div.link span.description {
+                        font-size: 13px;
+                        font-weight: normal;
+                        letter-spacing: -1px;
+                        color: #444;
+                    }
+            
+            /* Conversation Post */
                         
-                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
-
-                      </span>
-                  </a>
-                  <ul class="nav--menu" data-level="2">
-                   <li class="nav--menu__list-item ">
-                     
-                     <a href="https://about.twitter.com/en_us/values/twitter-for-good.html" title="Twitter for Good" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text">Twitter for Good</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     
-                     <a href="https://about.twitter.com/en_us/values/civic-engagement.html" title="Twitter civic engagement" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text">Twitter civic engagement</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     
-                     <a href="https://about.twitter.com/en_us/values/pac.html" title="PAC" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text">PAC</span>
-                     </a>
-                   </li>
-                 </ul>
-               </li><li class="nav--menu__list-item  has-children " data-show-sub-level="false">
-                  
-                  <a href="https://about.twitter.com/en_us/safety.html" class="color--neutral-white">
-                    <span class="nav--menu__list-item-text">Safety </span>
-                    <span class="nav--menu__list-item-arrow" data-go-to-sub-level="true">
+                div.post div.conversation ul {
+                    list-style-type: none;
+                    margin: 0px;
+                    padding: 0px 0px 0px 1px;
+                    border-left: solid 5px #bbb;
+                }
+            
+                    div.post div.conversation ul li {
+                        font-size: 12px;
+                        padding: 4px 10px 4px 8px;
+                        color: #444;
+                        margin-bottom: 1px;
+                    }
+            
+                        div.post div.conversation ul li span.label {
+                            font-weight: bold;
+                        }
                         
-                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
+                            div.post div.conversation ul li span.user_1 {
+                                color: #c00;
+                            }
+                            
+                            div.post div.conversation ul li span.user_2 {
+                                color: #00c;
+                            }
+                            
+                            div.post div.conversation ul li span.user_3 {
+                                color: #0a0;
+                            }
+                        
+                        div.post div.conversation ul li.odd {
+                            background-color: #f4f4f4;
+                        }
 
-                      </span>
-                  </a>
-                  <ul class="nav--menu" data-level="2">
-                   <li class="nav--menu__list-item ">
-                     
-                     <a href="https://about.twitter.com/en_us/safety/safety-tools.html" title="Tools" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text">Tools</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     
-                     <a href="https://about.twitter.com/en_us/safety/enforcing-our-rules.html" title="Enforcing our rules" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text">Enforcing our rules</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     
-                     <a href="https://about.twitter.com/en_us/safety/safety-partners.html" title="Safety partners" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text">Safety partners</span>
-                     </a>
-                   </li>
-                 </ul>
-               </li><li class="nav--menu__list-item   " data-show-sub-level="false">
-                  
-                  <a href="https://about.twitter.com/en_us/blog.html" class="color--neutral-white" target="_blank" rel="noopener">
-                    <span class="nav--menu__list-item-text">Blog</span>
+                        div.post div.conversation ul li.even {
+                            background-color: #e8e8e8;
+                        }
+            
+            /* Video Post */
+            
+                div.post div.video {
+                    width: 400px;
+                    margin: auto;
+                }
+
+            /* Footer */
+            
+                div#footer {
+                    margin: 40px 0px 30px 0px;
+                    text-align: center;
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: #444;
+                }
+            
+                    div#footer a {
+                        text-decoration: none;
+                        color: #444;
+                    }
+            
+                        div#footer a:hover {
+                            text-decoration: underline;
+                        }
                     
-                  </a>
-                  
-               </li>
-            </ul>
-
-            <div class="region-selector-mobile">
-               <div class="region-selector" data-choose-text="Choose a region" data-back-text="Back">
-  <div class="close-svg-container">
-    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><path d="M24.242 20L39.121 5.121a2.998 2.998 0 0 0 0-4.242 2.998 2.998 0 0 0-4.242 0l-14.88 14.879L5.122.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242L15.758 20 .879 34.879A2.998 2.998 0 0 0 3.001 40a2.99 2.99 0 0 0 2.121-.879L20 24.242l14.879 14.879a2.987 2.987 0 0 0 2.12.879 2.998 2.998 0 0 0 2.121-5.121L24.242 20z"/></svg>
-
-  </div>
-  <div class="back-svg-container">
-    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="72" viewBox="0 0 28 72"><path d="M6.035 35l14.232-14.232a2.498 2.498 0 0 0 0-3.535 2.498 2.498 0 0 0-3.535 0l-16 16a2.498 2.498 0 0 0 0 3.535l16 16c.488.488 1.128.732 1.768.732s1.28-.244 1.768-.732a2.498 2.498 0 0 0 0-3.535L6.035 35z"/></svg>
-
-  </div>
-  
-  <a href="https://about.twitter.com/" class="current-region color--neutral-white">
-    ‎English (US)‎
-    
-      <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
-
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/es.html" class="other-region color--neutral-white">
-    ‎Español‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/ja.html" class="other-region color--neutral-white">
-    ‎日本語‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/en_gb.html" class="other-region color--neutral-white">
-    ‎English (UK)‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/fr.html" class="other-region color--neutral-white">
-    ‎Français‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/pt.html" class="other-region color--neutral-white">
-    ‎Português - Brasil‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/ru.html" class="other-region color--neutral-white">
-    ‎Pу́сский‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/de.html" class="other-region color--neutral-white">
-    ‎Deutsch‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/tr.html" class="other-region color--neutral-white">
-    ‎Türkçe‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/ar.html" class="other-region color--neutral-white">
-    ‎العربيّة‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/id.html" class="other-region color--neutral-white">
-    ‎Bahasa Indonesia‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/ko.html" class="other-region color--neutral-white">
-    ‎한국어‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/hi.html" class="other-region color--neutral-white">
-    ‎हिंदी‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/zh-tw.html" class="other-region color--neutral-white">
-    ‎正體中文‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/zh-cn.html" class="other-region color--neutral-white">
-    ‎简体中文‎
-    
-    &nbsp;
-  </a>
-</div>
-
-            </div>
-            <div class="nav__headeritem-right">
-               <div class="region-selector" data-choose-text="Choose a region" data-back-text="Back">
-  <div class="close-svg-container">
-    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><path d="M24.242 20L39.121 5.121a2.998 2.998 0 0 0 0-4.242 2.998 2.998 0 0 0-4.242 0l-14.88 14.879L5.122.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242L15.758 20 .879 34.879A2.998 2.998 0 0 0 3.001 40a2.99 2.99 0 0 0 2.121-.879L20 24.242l14.879 14.879a2.987 2.987 0 0 0 2.12.879 2.998 2.998 0 0 0 2.121-5.121L24.242 20z"/></svg>
-
-  </div>
-  <div class="back-svg-container">
-    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="72" viewBox="0 0 28 72"><path d="M6.035 35l14.232-14.232a2.498 2.498 0 0 0 0-3.535 2.498 2.498 0 0 0-3.535 0l-16 16a2.498 2.498 0 0 0 0 3.535l16 16c.488.488 1.128.732 1.768.732s1.28-.244 1.768-.732a2.498 2.498 0 0 0 0-3.535L6.035 35z"/></svg>
-
-  </div>
-  
-  <a href="https://about.twitter.com/" class="current-region color--neutral-white">
-    ‎English (US)‎
-    
-      <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
-
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/es.html" class="other-region color--neutral-white">
-    ‎Español‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/ja.html" class="other-region color--neutral-white">
-    ‎日本語‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/en_gb.html" class="other-region color--neutral-white">
-    ‎English (UK)‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/fr.html" class="other-region color--neutral-white">
-    ‎Français‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/pt.html" class="other-region color--neutral-white">
-    ‎Português - Brasil‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/ru.html" class="other-region color--neutral-white">
-    ‎Pу́сский‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/de.html" class="other-region color--neutral-white">
-    ‎Deutsch‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/tr.html" class="other-region color--neutral-white">
-    ‎Türkçe‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/ar.html" class="other-region color--neutral-white">
-    ‎العربيّة‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/id.html" class="other-region color--neutral-white">
-    ‎Bahasa Indonesia‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/ko.html" class="other-region color--neutral-white">
-    ‎한국어‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/hi.html" class="other-region color--neutral-white">
-    ‎हिंदी‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/zh-tw.html" class="other-region color--neutral-white">
-    ‎正體中文‎
-    
-    &nbsp;
-  </a>
-
-  
-  
-  
-  <a href="https://about.twitter.com/zh-cn.html" class="other-region color--neutral-white">
-    ‎简体中文‎
-    
-    &nbsp;
-  </a>
-</div>
-
-               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><path d="M24.242 20L39.121 5.121a2.998 2.998 0 0 0 0-4.242 2.998 2.998 0 0 0-4.242 0l-14.88 14.879L5.122.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242L15.758 20 .879 34.879A2.998 2.998 0 0 0 3.001 40a2.99 2.99 0 0 0 2.121-.879L20 24.242l14.879 14.879a2.987 2.987 0 0 0 2.12.879 2.998 2.998 0 0 0 2.121-5.121L24.242 20z"/></svg>
-
-            </div>
-       </header>
-   </div>
-</div>
-
-
-<div class="transparent-masthead"></div>
-
-
-      
-<main role="main">
-  
-  
-
-    
-    
-    
-    <div class="abh01-livetype-masthead">
-
-<section class="livetype-masthead bg-color--dark-blue">
-  <div class="livetype-masthead__copy init">
-    <h2 class="livetype-masthead__eyebrow type--bold-16 color--neutral-white"> Twitter is </h2>
-    <h1 class="livetype-masthead__headline type--bold-36 color--neutral-white">what’s happening in the world and what people are talking about right now.</h1>
-  </div>
-  <div class="livetype-masthead__down-arrow fill-color--extra-light-blue"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path  d="M20.1,16.3c-0.3,0-0.6-0.1-0.8-0.3L6.4,6.8C5.8,6.4,5.6,5.5,6.1,4.9C6.5,4.3,7.4,4.1,8,4.6l12.1,8.7l12.1-8.7 c0.6-0.4,1.5-0.3,1.9,0.3c0.4,0.6,0.3,1.5-0.3,1.9l-12.9,9.3C20.6,16.2,20.4,16.3,20.1,16.3z"/></svg>
-</div>
-</section>
-</div>
-
-
-    
-    
-    
-    <div class="abh02-curated-tweet-billboard-w-headline">
-    
-    
-
-
-    
-    
-
-
-<div class="abh02-placeholder-img atc-icon--lazy-load is-background">
-
-  <section class="abh02-curated-tweet-container c34-wrapper c34-wrapper--blue-bar b-lazy" data-src="/content/dam/about-twitter/homepage/jkrowling_hero.jpg.img.fullhd.medium.jpg" data-src-mobile="/content/dam/about-twitter/homepage/jkrowling_hero_mobile.jpg.img.fullhd.medium.jpg">
-    <div class="section-headline-container container">
-
-<div class="c34-section-headline">
-  <p class="c34-section-headline__eyebrow type--bold-16">When it happens</p>
-  <h1 class="c34-section-headline__title type--bold-36"> it happens on Twitter.</h1>
-  <div class="c34-section-headline__bar theme-bg-color--dark"></div>
-</div>
-</div>
-    <div class="background__tint--lowTint"></div>
-    <!-- <div class="background__mobile-image b-lazy"
-         data-sly-test="/content/dam/about-twitter/homepage/jkrowling_hero_mobile.jpg"
-         data-src="/content/dam/about-twitter/homepage/jkrowling_hero_mobile.jpg.img.fullhd.medium.jpg">
-    </div> -->
-
-    <div class="abh02-curated-tweet-container__tweet tweet-spacing--high">
-      <div class="tweet">
-        
-        <div class="tweet-account type--bold-16">
-          <div class="tweet-account__name">
-            <a href="https://twitter.com/jk_rowling" target="_blank" rel="noopener">
-              <div class="tweet-account__name color--neutral-white--has-hover js-tweet-account">J.K. Rowling</div>
-              <div class="tweet-account__handle type--roman-16 color--neutral-white--has-hover js-tweet-account">‎@jk_rowling‎</div>
-            </a>
-          </div>
-          <div class="tweet-account__twitter-logo">
-            <a href="https://twitter.com/jk_rowling/status/879284927258386433" target="_blank" rel="noopener">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"/></svg>
-
-            </a>
-          </div>
-        </div>
-
-
-        <div class="tweet-copy js-textfit-parent">
-          <span class="tweet-copy__text tweet-copy__text js-textfit">
-              20 years ago today a world that I had lived in alone was suddenly open to others. It's been wonderful. Thank you.
-
-<a href="https://twitter.com/hashtag/HarryPotter20" target="_blank" rel="noopener">#HarryPotter20</a>
-          </span>
-        </div>
-
-
-        <div class="tweet-meta">
-          <div class="tweet-meta__cta">
-            <div class="tweet-meta__cta--reply">
-              <a class="fill-color--neutral-white--has-hover color--neutral-white--has-hover" href="https://twitter.com/intent/tweet?in_reply_to=879284927258386433" target="_blank" rel="noopener">
-                
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.75 19.75"><title>ReplyOutline</title><path d="M16-.76H11.9A7.72,7.72,0,0,0,4.1,7a7.41,7.41,0,0,0,7.47,7.37v3.83a0.86,0.86,0,0,0,.12.4,0.75,0.75,0,0,0,1,.23c0.26-.17,6.47-4.14,8.09-5.51a8.45,8.45,0,0,0,3-6.31h0A7.72,7.72,0,0,0,16-.76Zm3.79,13c-1.13,1-4.86,3.41-6.77,4.64V13.67a0.75,0.75,0,0,0-.75-0.75h-0.4C8.25,12.92,5.6,10.44,5.6,7A6.23,6.23,0,0,1,11.9.73H16A6.23,6.23,0,0,1,22.35,7,6.93,6.93,0,0,1,19.83,12.21Z" transform="translate(-4.1 0.77)"/></svg>
-
-              </a>
-            </div>
-            <div class="tweet-meta__cta--retweet">
-              <a class="fill-color--neutral-white--has-hover color--neutral-white--has-hover" href="https://twitter.com/intent/retweet?tweet_id=879284927258386433" target="_blank" rel="noopener">
-                
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.98 17.4"><title>ReTweetOutline</title><path class="cls-1" d="M26.8,12.79a0.75,0.75,0,0,0-1.06,0l-2.54,2.54V4.45A3.75,3.75,0,0,0,19.44.7H12.79a0.75,0.75,0,1,0,0,1.5h6.65a2.25,2.25,0,0,1,2.25,2.25V15.34l-2.54-2.54a0.75,0.75,0,0,0-1.06,1.06l3.82,3.82a0.75,0.75,0,0,0,1.06,0l3.83-3.82A0.75,0.75,0,0,0,26.8,12.79Z" transform="translate(-1.04 -0.7)"/><path class="cls-1" d="M15.26,16.6H8.61a2.25,2.25,0,0,1-2.25-2.25V3.46L8.91,6A0.75,0.75,0,0,0,10,4.94L6.14,1.12a0.75,0.75,0,0,0-1.06,0L1.26,4.94A0.75,0.75,0,0,0,2.32,6L4.86,3.46V14.35A3.75,3.75,0,0,0,8.61,18.1h6.65A0.75,0.75,0,0,0,15.26,16.6Z" transform="translate(-1.04 -0.7)"/></svg>
-&nbsp;
-                <span class="tweet-meta__tweet-count type--bold-14">445935</span>
-              </a>
-            </div>
-            <div class="tweet-meta__cta--like">
-              <a class="fill-color--neutral-white--has-hover color--neutral-white--has-hover" href="https://twitter.com/intent/like?tweet_id=879284927258386433" target="_blank" rel="noopener">
-                
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.1 18.91"><title>HeartOutline</title><path d="M14,18.64h0c-2.58,0-10-6.78-10-13.16A5.73,5.73,0,0,1,9.35-.28,5.85,5.85,0,0,1,14,2.45,5.85,5.85,0,0,1,18.65-.28,5.73,5.73,0,0,1,24,5.48c0,6.38-7.45,13.11-10,13.16h0ZM9.35,1.22a4.2,4.2,0,0,0-3.9,4.25c0,5.74,7,11.6,8.55,11.66s8.55-5.92,8.55-11.66a4.2,4.2,0,0,0-3.9-4.25c-2.53,0-3.94,2.94-4,3a0.78,0.78,0,0,1-1.39,0S11.88,1.22,9.35,1.22Z" transform="translate(-3.95 0.28)"/></svg>
-&nbsp;
-                <span class="tweet-meta__tweet-count type--bold-14">1101137</span>
-              </a>
-            </div>
-          </div>
-          <div class="tweet-meta__date type--bold-16">
-            26 June 2017
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-
-</div>
-</div>
-
-
-    
-    
-    
-    <div class="abh03-parallax-tweet-gallery">
-
-<section class="parallax-tweet-gallery parallax-tweet-gallery--theme-green c34-wrapper c34-wrapper--centered c34-wrapper--theme-green">
-  <div class="section-headline-container">
-
-<div class="c34-section-headline">
-  <p class="c34-section-headline__eyebrow type--bold-16">See what people</p>
-  <h1 class="c34-section-headline__title type--bold-36">are talking about.</h1>
-  <div class="c34-section-headline__bar theme-bg-color--dark"></div>
-</div>
-</div>
-  <p class="parallax-tweet-gallery__hashtag js-hashtag">
-    <span class="textFit-inner">#AskACurator</span>
-  </p>
-
-  <div class="parallax-tweet-gallery__gallery-container">
-    
-  
-  <div class="bl19 bg-color--neutral-extra-light-gray">
-    <div class="bl19-gallery bg-color--neutral-extra-light-gray">
-      <div class="bl19-columns container">
-        <div class="bl19-column bl19-column__left">
-          <div class="bl19-tweet" data-tweet-id="907917848722407425">
-            
-
-<div class="embedded-tweet">
-  <div class="embedded-tweet__loader fill-color--light-blue">
-    <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"/></svg>
-
-  </div>
-  <div class="embedded-tweet__container"></div>
-  <div class="embedded-tweet__deleted">
-    <div class="tweet deleted-tweet border-color--neutral-extra-light-gray border-style-dots">
-      <div class="tweet__container">
-        <header class="tweet__header">
-          <div class="tweet__logo">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"/></svg>
-
-          </div>
-        </header>
-        <div class="tweet__copy color--neutral-dark-gray type--bold-24">
-          This Tweet is unavailable.
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-          </div>
-        
-          <div class="bl19-tweet" data-tweet-id="907937279091585024">
-            
-
-<div class="embedded-tweet">
-  <div class="embedded-tweet__loader fill-color--light-blue">
-    <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"/></svg>
-
-  </div>
-  <div class="embedded-tweet__container"></div>
-  <div class="embedded-tweet__deleted">
-    <div class="tweet deleted-tweet border-color--neutral-extra-light-gray border-style-dots">
-      <div class="tweet__container">
-        <header class="tweet__header">
-          <div class="tweet__logo">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"/></svg>
-
-          </div>
-        </header>
-        <div class="tweet__copy color--neutral-dark-gray type--bold-24">
-          This Tweet is unavailable.
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-          </div>
-        
-          <div class="bl19-tweet" data-tweet-id="907952666063589376">
-            
-
-<div class="embedded-tweet">
-  <div class="embedded-tweet__loader fill-color--light-blue">
-    <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"/></svg>
-
-  </div>
-  <div class="embedded-tweet__container"></div>
-  <div class="embedded-tweet__deleted">
-    <div class="tweet deleted-tweet border-color--neutral-extra-light-gray border-style-dots">
-      <div class="tweet__container">
-        <header class="tweet__header">
-          <div class="tweet__logo">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"/></svg>
-
-          </div>
-        </header>
-        <div class="tweet__copy color--neutral-dark-gray type--bold-24">
-          This Tweet is unavailable.
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-          </div>
-        </div>
-        <div class="bl19-column bl19-column__right">
-          <div class="bl19-tweet" data-tweet-id="907959556352835585">
-            
-
-<div class="embedded-tweet">
-  <div class="embedded-tweet__loader fill-color--light-blue">
-    <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"/></svg>
-
-  </div>
-  <div class="embedded-tweet__container"></div>
-  <div class="embedded-tweet__deleted">
-    <div class="tweet deleted-tweet border-color--neutral-extra-light-gray border-style-dots">
-      <div class="tweet__container">
-        <header class="tweet__header">
-          <div class="tweet__logo">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"/></svg>
-
-          </div>
-        </header>
-        <div class="tweet__copy color--neutral-dark-gray type--bold-24">
-          This Tweet is unavailable.
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-          </div>
-        
-          <div class="bl19-tweet" data-tweet-id="907964641866854403">
-            
-
-<div class="embedded-tweet">
-  <div class="embedded-tweet__loader fill-color--light-blue">
-    <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"/></svg>
-
-  </div>
-  <div class="embedded-tweet__container"></div>
-  <div class="embedded-tweet__deleted">
-    <div class="tweet deleted-tweet border-color--neutral-extra-light-gray border-style-dots">
-      <div class="tweet__container">
-        <header class="tweet__header">
-          <div class="tweet__logo">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"/></svg>
-
-          </div>
-        </header>
-        <div class="tweet__copy color--neutral-dark-gray type--bold-24">
-          This Tweet is unavailable.
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-          </div>
-        
-          <div class="bl19-tweet" data-tweet-id="907995122058612737">
-            
-
-<div class="embedded-tweet">
-  <div class="embedded-tweet__loader fill-color--light-blue">
-    <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"/></svg>
-
-  </div>
-  <div class="embedded-tweet__container"></div>
-  <div class="embedded-tweet__deleted">
-    <div class="tweet deleted-tweet border-color--neutral-extra-light-gray border-style-dots">
-      <div class="tweet__container">
-        <header class="tweet__header">
-          <div class="tweet__logo">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"/></svg>
-
-          </div>
-        </header>
-        <div class="tweet__copy color--neutral-dark-gray type--bold-24">
-          This Tweet is unavailable.
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  </div>
-</section>
-</div>
-
-
-    
-    
-    
-    <div class="abh04-two-tweet-conversation">
-
-
-
-<section class="two-tweet-conversation c34-wrapper c34-wrapper--centered c34-wrapper--dark c34-wrapper--theme-dark-purple">
-  <div class="section-headline-container">
-
-<div class="c34-section-headline">
-  <p class="c34-section-headline__eyebrow type--bold-16">See every side</p>
-  <h1 class="c34-section-headline__title type--bold-36">of the story.</h1>
-  <div class="c34-section-headline__bar theme-bg-color--dark"></div>
-</div>
-</div>
-  <div class="conversation-container">
-    <div class="left-tweet-container">
-      <div class="abh04-placeholder-img atc-icon--lazy-load is-background">
-        <div class="lazy-bg-image b-lazy" data-src="/content/dam/about-twitter/homepage/twotweet_gucci_final01.jpg.img.fullhd.medium.jpg">
-        </div>
-      </div>
-      <div class="tweet">
-        
-        <div class="tweet-account type--bold-16">
-
-          <div class="tweet-account__name">
-            <a href="https://twitter.com/gucci1017" target="_blank" rel="noopener">
-              <div class="tweet-account__name color--neutral-white--has-hover js-tweet-account">Gucci Mane</div>
-              <div class="tweet-account__handle type--roman-16 color--neutral-white--has-hover js-tweet-account">‎@gucci1017‎</div>
-            </a>
-          </div>
-          <div class="tweet-account__twitter-logo">
-            <a href="https://twitter.com/gucci1017/status/790432798096052224" target="_blank" rel="noopener">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"/></svg>
-
-            </a>
-          </div>
-        </div>
-
-
-        <div class="tweet-copy js-textfit-parent">
-          <span class="tweet-copy__text tweet-copy__text js-textfit">
-              I read blink,outliers, and tipping point you my favorite author <a href="https://t.co/TNgvznmuOk" target="_blank" rel="noopener">twitter.com/gladwell/statu…</a>
-          </span>
-        </div>
-
-
-        <div class="tweet-meta">
-          <div class="tweet-meta__cta">
-            <div class="tweet-meta__cta--reply">
-              <a class="fill-color--neutral-extra-light-gray--has-hover color--neutral-extra-light-gray--has-hover" href="https://twitter.com/intent/tweet?in_reply_to=790432798096052224" target="_blank" rel="noopener">
-                
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.75 19.75"><title>ReplyOutline</title><path d="M16-.76H11.9A7.72,7.72,0,0,0,4.1,7a7.41,7.41,0,0,0,7.47,7.37v3.83a0.86,0.86,0,0,0,.12.4,0.75,0.75,0,0,0,1,.23c0.26-.17,6.47-4.14,8.09-5.51a8.45,8.45,0,0,0,3-6.31h0A7.72,7.72,0,0,0,16-.76Zm3.79,13c-1.13,1-4.86,3.41-6.77,4.64V13.67a0.75,0.75,0,0,0-.75-0.75h-0.4C8.25,12.92,5.6,10.44,5.6,7A6.23,6.23,0,0,1,11.9.73H16A6.23,6.23,0,0,1,22.35,7,6.93,6.93,0,0,1,19.83,12.21Z" transform="translate(-4.1 0.77)"/></svg>
-
-              </a>
-            </div>
-            <div class="tweet-meta__cta--retweet">
-              <a class="fill-color--neutral-extra-light-gray--has-hover color--neutral-extra-light-gray--has-hover" href="https://twitter.com/intent/retweet?tweet_id=790432798096052224" target="_blank" rel="noopener">
-                
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.98 17.4"><title>ReTweetOutline</title><path class="cls-1" d="M26.8,12.79a0.75,0.75,0,0,0-1.06,0l-2.54,2.54V4.45A3.75,3.75,0,0,0,19.44.7H12.79a0.75,0.75,0,1,0,0,1.5h6.65a2.25,2.25,0,0,1,2.25,2.25V15.34l-2.54-2.54a0.75,0.75,0,0,0-1.06,1.06l3.82,3.82a0.75,0.75,0,0,0,1.06,0l3.83-3.82A0.75,0.75,0,0,0,26.8,12.79Z" transform="translate(-1.04 -0.7)"/><path class="cls-1" d="M15.26,16.6H8.61a2.25,2.25,0,0,1-2.25-2.25V3.46L8.91,6A0.75,0.75,0,0,0,10,4.94L6.14,1.12a0.75,0.75,0,0,0-1.06,0L1.26,4.94A0.75,0.75,0,0,0,2.32,6L4.86,3.46V14.35A3.75,3.75,0,0,0,8.61,18.1h6.65A0.75,0.75,0,0,0,15.26,16.6Z" transform="translate(-1.04 -0.7)"/></svg>
-&nbsp;
-                <span class="tweet-meta__tweet-count type--bold-14">6705</span>
-              </a>
-            </div>
-            <div class="tweet-meta__cta--like">
-              <a class="fill-color--neutral-extra-light-gray--has-hover color--neutral-extra-light-gray--has-hover" href="https://twitter.com/intent/like?tweet_id=790432798096052224" target="_blank" rel="noopener">
-                
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.1 18.91"><title>HeartOutline</title><path d="M14,18.64h0c-2.58,0-10-6.78-10-13.16A5.73,5.73,0,0,1,9.35-.28,5.85,5.85,0,0,1,14,2.45,5.85,5.85,0,0,1,18.65-.28,5.73,5.73,0,0,1,24,5.48c0,6.38-7.45,13.11-10,13.16h0ZM9.35,1.22a4.2,4.2,0,0,0-3.9,4.25c0,5.74,7,11.6,8.55,11.66s8.55-5.92,8.55-11.66a4.2,4.2,0,0,0-3.9-4.25c-2.53,0-3.94,2.94-4,3a0.78,0.78,0,0,1-1.39,0S11.88,1.22,9.35,1.22Z" transform="translate(-3.95 0.28)"/></svg>
-&nbsp;
-                <span class="tweet-meta__tweet-count type--bold-14">12822</span>
-              </a>
-            </div>
-          </div>
-          <div class="tweet-meta__date type--bold-16">
-            24 October 2016
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="right-tweet-container">
-      <div class="abh04-placeholder-img atc-icon--lazy-load is-background">
-        <div class="lazy-bg-image b-lazy" data-src="/content/dam/about-twitter/homepage/twotweet_gladwell_final.jpg.img.fullhd.medium.jpg">
-        </div>
-      </div>
-      <div class="tweet">
-
-        
-        <div class="tweet-account type--bold-16">
-          <div class="tweet-account__name">
-            <a href="https://twitter.com/Gladwell" target="_blank" rel="noopener">
-              <div class="tweet-account__name color--neutral-white--has-hover js-tweet-account">Malcolm Gladwell</div>
-              <div class="tweet-account__handle type--roman-16 color--neutral-white--has-hover js-tweet-account">‎@Gladwell‎</div>
-            </a>
-          </div>
-          <div class="tweet-account__twitter-logo">
-            <a href="https://twitter.com/Gladwell/status/790399037518155776" target="_blank" rel="noopener">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"/></svg>
-
-            </a>
-          </div>
-        </div>
-
-
-        <div class="tweet-copy js-textfit-parent">
-          <span class="tweet-copy__text tweet-copy__text js-textfit">
-              Gucci Mane, ladies and gentlemen. This might be the greatest thing that has ever happened to me. <a href="https://t.co/XNIIfBTlZx" target="_blank" rel="noopener">twitter.com/amayakebin/sta…</a>
-          </span>
-        </div>
-
-
-        <div class="tweet-meta">
-          <div class="tweet-meta__cta">
-            <div class="tweet-meta__cta--reply">
-              <a class="fill-color--neutral-extra-light-gray--has-hover color--neutral-extra-light-gray--has-hover" href="https://twitter.com/intent/tweet?in_reply_to=790399037518155776" target="_blank" rel="noopener">
-                
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.75 19.75"><title>ReplyOutline</title><path d="M16-.76H11.9A7.72,7.72,0,0,0,4.1,7a7.41,7.41,0,0,0,7.47,7.37v3.83a0.86,0.86,0,0,0,.12.4,0.75,0.75,0,0,0,1,.23c0.26-.17,6.47-4.14,8.09-5.51a8.45,8.45,0,0,0,3-6.31h0A7.72,7.72,0,0,0,16-.76Zm3.79,13c-1.13,1-4.86,3.41-6.77,4.64V13.67a0.75,0.75,0,0,0-.75-0.75h-0.4C8.25,12.92,5.6,10.44,5.6,7A6.23,6.23,0,0,1,11.9.73H16A6.23,6.23,0,0,1,22.35,7,6.93,6.93,0,0,1,19.83,12.21Z" transform="translate(-4.1 0.77)"/></svg>
-
-              </a>
-            </div>
-            <div class="tweet-meta__cta--retweet">
-              <a class="fill-color--neutral-extra-light-gray--has-hover color--neutral-extra-light-gray--has-hover" href="https://twitter.com/intent/retweet?tweet_id=790399037518155776" target="_blank" rel="noopener">
-                
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.98 17.4"><title>ReTweetOutline</title><path class="cls-1" d="M26.8,12.79a0.75,0.75,0,0,0-1.06,0l-2.54,2.54V4.45A3.75,3.75,0,0,0,19.44.7H12.79a0.75,0.75,0,1,0,0,1.5h6.65a2.25,2.25,0,0,1,2.25,2.25V15.34l-2.54-2.54a0.75,0.75,0,0,0-1.06,1.06l3.82,3.82a0.75,0.75,0,0,0,1.06,0l3.83-3.82A0.75,0.75,0,0,0,26.8,12.79Z" transform="translate(-1.04 -0.7)"/><path class="cls-1" d="M15.26,16.6H8.61a2.25,2.25,0,0,1-2.25-2.25V3.46L8.91,6A0.75,0.75,0,0,0,10,4.94L6.14,1.12a0.75,0.75,0,0,0-1.06,0L1.26,4.94A0.75,0.75,0,0,0,2.32,6L4.86,3.46V14.35A3.75,3.75,0,0,0,8.61,18.1h6.65A0.75,0.75,0,0,0,15.26,16.6Z" transform="translate(-1.04 -0.7)"/></svg>
-&nbsp;
-                <span class="tweet-meta__tweet-count type--bold-14">5955</span>
-              </a>
-            </div>
-            <div class="tweet-meta__cta--like">
-              <a class="fill-color--neutral-extra-light-gray--has-hover color--neutral-extra-light-gray--has-hover" href="https://twitter.com/intent/like?tweet_id=790399037518155776" target="_blank" rel="noopener">
-                
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.1 18.91"><title>HeartOutline</title><path d="M14,18.64h0c-2.58,0-10-6.78-10-13.16A5.73,5.73,0,0,1,9.35-.28,5.85,5.85,0,0,1,14,2.45,5.85,5.85,0,0,1,18.65-.28,5.73,5.73,0,0,1,24,5.48c0,6.38-7.45,13.11-10,13.16h0ZM9.35,1.22a4.2,4.2,0,0,0-3.9,4.25c0,5.74,7,11.6,8.55,11.66s8.55-5.92,8.55-11.66a4.2,4.2,0,0,0-3.9-4.25c-2.53,0-3.94,2.94-4,3a0.78,0.78,0,0,1-1.39,0S11.88,1.22,9.35,1.22Z" transform="translate(-3.95 0.28)"/></svg>
-&nbsp;
-                <span class="tweet-meta__tweet-count type--bold-14">8929</span>
-              </a>
-            </div>
-          </div>
-          <div class="tweet-meta__date type--bold-16">
-            24 October 2016
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-</div>
-
-
-    
-    
-    
-    <div class="abh05-periscope-gallery">
-<section class="periscope-gallery component-theme--pink c34-wrapper c34-wrapper--theme-pink">
-  <div class="section-headline-container">
-
-<div class="c34-section-headline">
-  <p class="c34-section-headline__eyebrow type--bold-16">Show the world</p>
-  <h1 class="c34-section-headline__title type--bold-36">what’s happening.</h1>
-  <div class="c34-section-headline__bar theme-bg-color--dark"></div>
-</div>
-</div>
-
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" data-slide-status="active" id="tweet-0">
-        <div class="tweet">
-          
-          <div class="iframe-super-container">
-            <div class="iframe-container">
-              <iframe class="b-lazy" data-src="https://twitter.com/i/cards/tfw/v1/929978741517836288?cardname=3691233323%3Aperiscope_broadcast&card_nested=true" data-iframe-type="periscope" frameborder="0" scolling="no" allowtransparency="true" title="Periscope"></iframe>
-            </div>
-          </div>
-          <div class="tweet-wrapper" data-href="https://twitter.com/biendacalanio/status/929978741517836288">
-            <div class="tweet-account type--bold-14">
-
-              <div class="tweet-account__name">
-                <a href="https://twitter.com/biendacalanio" target="_blank" rel="noopener">
-                  <div class="tweet-account__name color--neutral-white--has-hover js-tweet-account">sherbien dacalanio</div>
-                </a>
-              </div>
-            </div>
-
-
-            <div class="tweet-copy js-textfit-parent">
-              <span class="tweet-copy__text tweet-copy__text js-textfit">
-                Watch on #Periscope: Life of refugees (from ground zero) staying at Bito Buadi Itowa refugee site https://t.co/gW1JYcyZeZ
-              </span>
-            </div>
-
-
-            <div class="tweet-meta">
-              <div class="tweet-meta__cta">
-                <div class="tweet-meta__cta--reply">
-                  <a class="fill-color--neutral-extra-light-gray--has-hover color--neutral-extra-light-gray--has-hover" href="https://twitter.com/intent/tweet?in_reply_to=929978741517836288" target="_blank" rel="noopener">
-                    
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.75 19.75"><title>ReplyOutline</title><path d="M16-.76H11.9A7.72,7.72,0,0,0,4.1,7a7.41,7.41,0,0,0,7.47,7.37v3.83a0.86,0.86,0,0,0,.12.4,0.75,0.75,0,0,0,1,.23c0.26-.17,6.47-4.14,8.09-5.51a8.45,8.45,0,0,0,3-6.31h0A7.72,7.72,0,0,0,16-.76Zm3.79,13c-1.13,1-4.86,3.41-6.77,4.64V13.67a0.75,0.75,0,0,0-.75-0.75h-0.4C8.25,12.92,5.6,10.44,5.6,7A6.23,6.23,0,0,1,11.9.73H16A6.23,6.23,0,0,1,22.35,7,6.93,6.93,0,0,1,19.83,12.21Z" transform="translate(-4.1 0.77)"/></svg>
-
-                  </a>
-                </div>
-                <div class="tweet-meta__cta--retweet">
-                  <a class="fill-color--neutral-extra-light-gray--has-hover color--neutral-extra-light-gray--has-hover" href="https://twitter.com/intent/retweet?tweet_id=929978741517836288" target="_blank" rel="noopener">
-                    
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.98 17.4"><title>ReTweetOutline</title><path class="cls-1" d="M26.8,12.79a0.75,0.75,0,0,0-1.06,0l-2.54,2.54V4.45A3.75,3.75,0,0,0,19.44.7H12.79a0.75,0.75,0,1,0,0,1.5h6.65a2.25,2.25,0,0,1,2.25,2.25V15.34l-2.54-2.54a0.75,0.75,0,0,0-1.06,1.06l3.82,3.82a0.75,0.75,0,0,0,1.06,0l3.83-3.82A0.75,0.75,0,0,0,26.8,12.79Z" transform="translate(-1.04 -0.7)"/><path class="cls-1" d="M15.26,16.6H8.61a2.25,2.25,0,0,1-2.25-2.25V3.46L8.91,6A0.75,0.75,0,0,0,10,4.94L6.14,1.12a0.75,0.75,0,0,0-1.06,0L1.26,4.94A0.75,0.75,0,0,0,2.32,6L4.86,3.46V14.35A3.75,3.75,0,0,0,8.61,18.1h6.65A0.75,0.75,0,0,0,15.26,16.6Z" transform="translate(-1.04 -0.7)"/></svg>
-&nbsp;
-                    <span class="tweet-meta__tweet-count type--bold-14">1</span>
-                  </a>
-                </div>
-                <div class="tweet-meta__cta--like">
-                  <a class="fill-color--neutral-extra-light-gray--has-hover color--neutral-extra-light-gray--has-hover" href="https://twitter.com/intent/like?tweet_id=929978741517836288" target="_blank" rel="noopener">
-                    
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.1 18.91"><title>HeartOutline</title><path d="M14,18.64h0c-2.58,0-10-6.78-10-13.16A5.73,5.73,0,0,1,9.35-.28,5.85,5.85,0,0,1,14,2.45,5.85,5.85,0,0,1,18.65-.28,5.73,5.73,0,0,1,24,5.48c0,6.38-7.45,13.11-10,13.16h0ZM9.35,1.22a4.2,4.2,0,0,0-3.9,4.25c0,5.74,7,11.6,8.55,11.66s8.55-5.92,8.55-11.66a4.2,4.2,0,0,0-3.9-4.25c-2.53,0-3.94,2.94-4,3a0.78,0.78,0,0,1-1.39,0S11.88,1.22,9.35,1.22Z" transform="translate(-3.95 0.28)"/></svg>
-&nbsp;
-                    <span class="tweet-meta__tweet-count type--bold-14">2</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><div class="swiper-slide" data-slide-status="inactive" id="tweet-1">
-        <div class="tweet">
-          
-          <div class="iframe-super-container">
-            <div class="iframe-container">
-              <iframe class="b-lazy" data-src="https://twitter.com/i/cards/tfw/v1/917757074062245889?cardname=3691233323%3Aperiscope_broadcast&card_nested=true" data-iframe-type="periscope" frameborder="0" scolling="no" allowtransparency="true" title="Periscope"></iframe>
-            </div>
-          </div>
-          <div class="tweet-wrapper" data-href="https://twitter.com/DaveLeeBBC/status/917757074062245889">
-            <div class="tweet-account type--bold-14">
-
-              <div class="tweet-account__name">
-                <a href="https://twitter.com/DaveLeeBBC" target="_blank" rel="noopener">
-                  <div class="tweet-account__name color--neutral-white--has-hover js-tweet-account">Dave Lee</div>
-                </a>
-              </div>
-            </div>
-
-
-            <div class="tweet-copy js-textfit-parent">
-              <span class="tweet-copy__text tweet-copy__text js-textfit">
-                On the ground in Coffey Park, Santa Rosa.  https://t.co/xQRb5UPRQw
-              </span>
-            </div>
-
-
-            <div class="tweet-meta">
-              <div class="tweet-meta__cta">
-                <div class="tweet-meta__cta--reply">
-                  <a class="fill-color--neutral-extra-light-gray--has-hover color--neutral-extra-light-gray--has-hover" href="https://twitter.com/intent/tweet?in_reply_to=917757074062245889" target="_blank" rel="noopener">
-                    
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.75 19.75"><title>ReplyOutline</title><path d="M16-.76H11.9A7.72,7.72,0,0,0,4.1,7a7.41,7.41,0,0,0,7.47,7.37v3.83a0.86,0.86,0,0,0,.12.4,0.75,0.75,0,0,0,1,.23c0.26-.17,6.47-4.14,8.09-5.51a8.45,8.45,0,0,0,3-6.31h0A7.72,7.72,0,0,0,16-.76Zm3.79,13c-1.13,1-4.86,3.41-6.77,4.64V13.67a0.75,0.75,0,0,0-.75-0.75h-0.4C8.25,12.92,5.6,10.44,5.6,7A6.23,6.23,0,0,1,11.9.73H16A6.23,6.23,0,0,1,22.35,7,6.93,6.93,0,0,1,19.83,12.21Z" transform="translate(-4.1 0.77)"/></svg>
-
-                  </a>
-                </div>
-                <div class="tweet-meta__cta--retweet">
-                  <a class="fill-color--neutral-extra-light-gray--has-hover color--neutral-extra-light-gray--has-hover" href="https://twitter.com/intent/retweet?tweet_id=917757074062245889" target="_blank" rel="noopener">
-                    
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.98 17.4"><title>ReTweetOutline</title><path class="cls-1" d="M26.8,12.79a0.75,0.75,0,0,0-1.06,0l-2.54,2.54V4.45A3.75,3.75,0,0,0,19.44.7H12.79a0.75,0.75,0,1,0,0,1.5h6.65a2.25,2.25,0,0,1,2.25,2.25V15.34l-2.54-2.54a0.75,0.75,0,0,0-1.06,1.06l3.82,3.82a0.75,0.75,0,0,0,1.06,0l3.83-3.82A0.75,0.75,0,0,0,26.8,12.79Z" transform="translate(-1.04 -0.7)"/><path class="cls-1" d="M15.26,16.6H8.61a2.25,2.25,0,0,1-2.25-2.25V3.46L8.91,6A0.75,0.75,0,0,0,10,4.94L6.14,1.12a0.75,0.75,0,0,0-1.06,0L1.26,4.94A0.75,0.75,0,0,0,2.32,6L4.86,3.46V14.35A3.75,3.75,0,0,0,8.61,18.1h6.65A0.75,0.75,0,0,0,15.26,16.6Z" transform="translate(-1.04 -0.7)"/></svg>
-&nbsp;
-                    <span class="tweet-meta__tweet-count type--bold-14">27</span>
-                  </a>
-                </div>
-                <div class="tweet-meta__cta--like">
-                  <a class="fill-color--neutral-extra-light-gray--has-hover color--neutral-extra-light-gray--has-hover" href="https://twitter.com/intent/like?tweet_id=917757074062245889" target="_blank" rel="noopener">
-                    
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.1 18.91"><title>HeartOutline</title><path d="M14,18.64h0c-2.58,0-10-6.78-10-13.16A5.73,5.73,0,0,1,9.35-.28,5.85,5.85,0,0,1,14,2.45,5.85,5.85,0,0,1,18.65-.28,5.73,5.73,0,0,1,24,5.48c0,6.38-7.45,13.11-10,13.16h0ZM9.35,1.22a4.2,4.2,0,0,0-3.9,4.25c0,5.74,7,11.6,8.55,11.66s8.55-5.92,8.55-11.66a4.2,4.2,0,0,0-3.9-4.25c-2.53,0-3.94,2.94-4,3a0.78,0.78,0,0,1-1.39,0S11.88,1.22,9.35,1.22Z" transform="translate(-3.95 0.28)"/></svg>
-&nbsp;
-                    <span class="tweet-meta__tweet-count type--bold-14">36</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><div class="swiper-slide" data-slide-status="inactive" id="tweet-2">
-        <div class="tweet">
-          
-          <div class="iframe-super-container">
-            <div class="iframe-container">
-              <iframe class="b-lazy" data-src="https://twitter.com/i/cards/tfw/v1/927243071040864256?cardname=3691233323%3Aperiscope_broadcast&card_nested=true" data-iframe-type="periscope" frameborder="0" scolling="no" allowtransparency="true" title="Periscope"></iframe>
-            </div>
-          </div>
-          <div class="tweet-wrapper" data-href="https://twitter.com/aminart/status/927243071040864256">
-            <div class="tweet-account type--bold-14">
-
-              <div class="tweet-account__name">
-                <a href="https://twitter.com/aminart" target="_blank" rel="noopener">
-                  <div class="tweet-account__name color--neutral-white--has-hover js-tweet-account">Amin</div>
-                </a>
-              </div>
-            </div>
-
-
-            <div class="tweet-copy js-textfit-parent">
-              <span class="tweet-copy__text tweet-copy__text js-textfit">
-                Leaf Cutter Ants 🐜 🐜 foraging, LIVE on @PeriscopeTV @AdamHartScience moved rest of colony into my studio #Wildlife https://t.co/uJapQb7rED
-              </span>
-            </div>
-
-
-            <div class="tweet-meta">
-              <div class="tweet-meta__cta">
-                <div class="tweet-meta__cta--reply">
-                  <a class="fill-color--neutral-extra-light-gray--has-hover color--neutral-extra-light-gray--has-hover" href="https://twitter.com/intent/tweet?in_reply_to=927243071040864256" target="_blank" rel="noopener">
-                    
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.75 19.75"><title>ReplyOutline</title><path d="M16-.76H11.9A7.72,7.72,0,0,0,4.1,7a7.41,7.41,0,0,0,7.47,7.37v3.83a0.86,0.86,0,0,0,.12.4,0.75,0.75,0,0,0,1,.23c0.26-.17,6.47-4.14,8.09-5.51a8.45,8.45,0,0,0,3-6.31h0A7.72,7.72,0,0,0,16-.76Zm3.79,13c-1.13,1-4.86,3.41-6.77,4.64V13.67a0.75,0.75,0,0,0-.75-0.75h-0.4C8.25,12.92,5.6,10.44,5.6,7A6.23,6.23,0,0,1,11.9.73H16A6.23,6.23,0,0,1,22.35,7,6.93,6.93,0,0,1,19.83,12.21Z" transform="translate(-4.1 0.77)"/></svg>
-
-                  </a>
-                </div>
-                <div class="tweet-meta__cta--retweet">
-                  <a class="fill-color--neutral-extra-light-gray--has-hover color--neutral-extra-light-gray--has-hover" href="https://twitter.com/intent/retweet?tweet_id=927243071040864256" target="_blank" rel="noopener">
-                    
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.98 17.4"><title>ReTweetOutline</title><path class="cls-1" d="M26.8,12.79a0.75,0.75,0,0,0-1.06,0l-2.54,2.54V4.45A3.75,3.75,0,0,0,19.44.7H12.79a0.75,0.75,0,1,0,0,1.5h6.65a2.25,2.25,0,0,1,2.25,2.25V15.34l-2.54-2.54a0.75,0.75,0,0,0-1.06,1.06l3.82,3.82a0.75,0.75,0,0,0,1.06,0l3.83-3.82A0.75,0.75,0,0,0,26.8,12.79Z" transform="translate(-1.04 -0.7)"/><path class="cls-1" d="M15.26,16.6H8.61a2.25,2.25,0,0,1-2.25-2.25V3.46L8.91,6A0.75,0.75,0,0,0,10,4.94L6.14,1.12a0.75,0.75,0,0,0-1.06,0L1.26,4.94A0.75,0.75,0,0,0,2.32,6L4.86,3.46V14.35A3.75,3.75,0,0,0,8.61,18.1h6.65A0.75,0.75,0,0,0,15.26,16.6Z" transform="translate(-1.04 -0.7)"/></svg>
-&nbsp;
-                    <span class="tweet-meta__tweet-count type--bold-14">4</span>
-                  </a>
-                </div>
-                <div class="tweet-meta__cta--like">
-                  <a class="fill-color--neutral-extra-light-gray--has-hover color--neutral-extra-light-gray--has-hover" href="https://twitter.com/intent/like?tweet_id=927243071040864256" target="_blank" rel="noopener">
-                    
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.1 18.91"><title>HeartOutline</title><path d="M14,18.64h0c-2.58,0-10-6.78-10-13.16A5.73,5.73,0,0,1,9.35-.28,5.85,5.85,0,0,1,14,2.45,5.85,5.85,0,0,1,18.65-.28,5.73,5.73,0,0,1,24,5.48c0,6.38-7.45,13.11-10,13.16h0ZM9.35,1.22a4.2,4.2,0,0,0-3.9,4.25c0,5.74,7,11.6,8.55,11.66s8.55-5.92,8.55-11.66a4.2,4.2,0,0,0-3.9-4.25c-2.53,0-3.94,2.94-4,3a0.78,0.78,0,0,1-1.39,0S11.88,1.22,9.35,1.22Z" transform="translate(-3.95 0.28)"/></svg>
-&nbsp;
-                    <span class="tweet-meta__tweet-count type--bold-14">2</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <div class="heart-container"></div>
-</section>
-</div>
-
-
-    
-    
-    
-    <div class="abh06-scrolling-hashtags">
-  
-<div class="abh06">
-  <div class="abh06__fgContainer purple">
-    <div class="config" data-url="https://about.twitter.com/en_us/_jcr_content/par/abh06_scrolling_hash.json"></div>
-    <div class="c34-wrapper c34-wrapper--centered">
-      
-
-<div class="c34-section-headline">
-  <p class="c34-section-headline__eyebrow type--bold-16"></p>
-  <h1 class="c34-section-headline__title type--bold-36">Spark a global conversation.</h1>
-  <div class="c34-section-headline__bar theme-bg-color--dark"></div>
-</div>
-
-    </div>
-  </div>
-  <div class="abh06__bgScroller bg-color--dark-purple">
-    <div class="abh06__bgScroller--hashtags container color--extra-dark-purple container">
-      <ul class="trending"></ul>
-
-      
-    </div>
-
-  </div>
-</div>
-</div>
-
-
-    
-    
-    
-    <div class="c19-promo">
-
-
-
-<div class="c19 container">
-  <div class="c19__logo theme-fill-color--dark">
-    <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"/></svg>
-
-  </div>
-  
-  <h1 class="c19__headline">See what’s happening. 
-    
-  </h1>
-  <div class="atc-button--dark">
-    <a class="atc-button c19__cta" href="https://twitter.com/">Explore Twitter</a>
-  </div>
-</div>
-</div>
-
-
-
-</main>
-
-      <footer class="footer theme-bg-color--dark">
-  <div class="footer__row container">
-    <div class="footer-col">
-      <a href="https://about.twitter.com" title="About" target="_blank" rel="noopener" class="footer-col__parent type--bold-14 theme-color--extra-light theme-color--extra-light--hover">
-          About
-
-          <span class="icon-container js-accordion theme-fill-color--extra-light">
-            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
-
-          </span>
-      </a>
-      <ul class="footer-col__list">
-        <li>
-          <a href="https://about.twitter.com/en_us/company.html" title="Company" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Company</a></li>
-      
-        <li>
-          <a href="https://about.twitter.com/en_us/values.html" title="Values" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Values</a></li>
-      
-        <li>
-          <a href="https://about.twitter.com/en_us/safety.html" title="Safety" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Safety</a></li>
-      
-        <li>
-          <a href="https://blog.twitter.com/official/en_us.html" title="Blog" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Blog</a></li>
-      
-        <li>
-          <a href="https://about.twitter.com/en_us/company/brand-resources.html" title="Brand Resources" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Brand Resources</a></li>
-      
-        <li>
-          <a href="https://careers.twitter.com/en.html" title="Careers" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Careers</a></li>
-      
-        <li>
-          <a href="https://investor.twitterinc.com/" title="Investors" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Investors</a></li>
-      </ul>
-    </div>
-  
-    <div class="footer-col">
-      <a href="https://business.twitter.com/" title="Business" target="_blank" rel="noopener" class="footer-col__parent type--bold-14 theme-color--extra-light theme-color--extra-light--hover">
-          Business
-
-          <span class="icon-container js-accordion theme-fill-color--extra-light">
-            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
-
-          </span>
-      </a>
-      <ul class="footer-col__list">
-        <li>
-          <a href="https://business.twitter.com/en/advertising.html" title="About Twitter Ads" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">About Twitter Ads</a></li>
-      
-        <li>
-          <a href="https://business.twitter.com/en/targeting.html" title="Targeting" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Targeting</a></li>
-      
-        <li>
-          <a href="https://business.twitter.com/en/analytics.html" title="Analytics" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Analytics</a></li>
-      
-        <li>
-          <a href="https://business.twitter.com/en/help.html" title="Ads support" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Ads support</a></li>
-      
-        <li>
-          <a href="https://blog.twitter.com/small-business" title="Business blog" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Business blog</a></li>
-      
-        <li>
-          <a href="https://ads.twitter.com/login?ref=en_US-btc-gobal-footer" title="Advertise" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Advertise</a></li>
-      </ul>
-    </div>
-  
-    <div class="footer-col">
-      <a href="https://dev.twitter.com/" title="Developers" target="_blank" rel="noopener" class="footer-col__parent type--bold-14 theme-color--extra-light theme-color--extra-light--hover">
-          Developers
-
-          <span class="icon-container js-accordion theme-fill-color--extra-light">
-            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
-
-          </span>
-      </a>
-      <ul class="footer-col__list">
-        <li>
-          <a href="https://dev.twitter.com/overview/documentation" title="Documentation" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Documentation</a></li>
-      
-        <li>
-          <a href="https://twittercommunity.com/" title="Forums" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Forums</a></li>
-      
-        <li>
-          <a href="https://dev.twitter.com/community" title="Communities" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Communities</a></li>
-      
-        <li>
-          <a href="https://blog.twitter.com/developer" title="Developer blog" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Developer blog</a></li>
-      </ul>
-    </div>
-  
-    <div class="footer-col">
-      <a href="https://support.twitter.com/" title="Help Center" target="_blank" rel="noopener" class="footer-col__parent type--bold-14 theme-color--extra-light theme-color--extra-light--hover">
-          Help Center
-
-          <span class="icon-container js-accordion theme-fill-color--extra-light">
-            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
-
-          </span>
-      </a>
-      <ul class="footer-col__list">
-        <li>
-          <a href="https://support.twitter.com/articles/215585" title="Using Twitter" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Using Twitter</a></li>
-      
-        <li>
-          <a href="https://twitter.com/login" title="My account" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">My account</a></li>
-      
-        <li>
-          <a href="https://support.twitter.com/categories/283" title="Fixing a problem" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Fixing a problem</a></li>
-      
-        <li>
-          <a href="https://support.twitter.com/categories/284" title="Policies and reporting" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Policies and reporting</a></li>
-      
-        <li>
-          <a href="https://about.twitter.com/safety" title="Safety Center" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Safety Center</a></li>
-      </ul>
-    </div>
-  
-    <div class="footer-col">
-      <a href="https://marketing.twitter.com/" title="Marketing" target="_blank" rel="noopener" class="footer-col__parent type--bold-14 theme-color--extra-light theme-color--extra-light--hover">
-          Marketing
-
-          <span class="icon-container js-accordion theme-fill-color--extra-light">
-            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
-
-          </span>
-      </a>
-      <ul class="footer-col__list">
-        <li>
-          <a href="https://marketing.twitter.com/na/en/insights.html" title="Insights" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Insights</a></li>
-      
-        <li>
-          <a href="https://marketing.twitter.com/na/en/success-stories.html" title="Success Stories" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Success Stories</a></li>
-      
-        <li>
-          <a href="https://marketing.twitter.com/na/en/solutions.html" title="Solutions" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Solutions</a></li>
-      
-        <li>
-          <a href="https://marketing.twitter.com/na/en/collections.html" title="Collections" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Collections</a></li>
-      
-        <li>
-          <a href="https://blog.twitter.com/advertising" title="Marketing Blog" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Marketing Blog</a></li>
-      
-        <li>
-          <a href="https://twitterflightschool.com" title="Flight School" target="_blank" rel="noopener" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Flight School</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer__row container">
-    <div class="footer-col">
-      <p class="footer-col__footnote type--roman-14 theme-color--extra-light">&copy; 2017 Twitter, Inc.</p>
-    </div>
-    
-      <div class="footer-col">
-        <a href="https://support.twitter.com/articles/20170520" title="Cookies" target="_blank" rel="noopener" class="footer-col__footnote type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Cookies</a>
-      </div>
-    
-      <div class="footer-col">
-        <a href="https://twitter.com/privacy" title="Privacy" target="_blank" rel="noopener" class="footer-col__footnote type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Privacy</a>
-      </div>
-    
-      <div class="footer-col">
-        <a href="https://twitter.com/tos" title="Terms and Conditions" target="_blank" rel="noopener" class="footer-col__footnote type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Terms and Conditions</a>
-      </div>
-    
-  </div>
-</footer>
-
-      
-
-
-    
-<script type="text/javascript" src="/etc/designs/common-twitter/dtm-footer.min.js"></script>
-
-
-
-
-
-
-<script type="text/javascript" src="/etc/designs/about-twitter/public/js/app.js"></script>
-<script defer type="text/javascript" src="/etc/designs/about-twitter/public/js/universal.js"></script>
-<script defer type="text/javascript" src="/etc/designs/about-twitter/public/js/content.js"></script>
-<script defer type="text/javascript" src="/etc/designs/about-twitter/public/js/about-home.js"></script>
-<script defer type="text/javascript" src="/etc/designs/about-twitter/public/js/resource.js"></script>
-
-
-  </body>
-  </html>
-
+                    div#footer div#credit {
+                        font: Normal 13px Georgia, serif;
+                        font-size: 13px;
+                        margin-top: 15px;
+                    }</style><!-- IE10 viewport hack for Surface/desktop Windows 8 bug --><script src="//static.status.io/public/statuspage/js/ie10-viewport-bug-workaround.min.js"></script><!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --><!-- WARNING: Respond.js doesn't work if you view the page via file:// --><!--if lt IE 9script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+--></head><body><!-- Scripts--><script src="//static.status.io/public/statuspage/js/jquery.min.js"></script><script src="//static.status.io/public/statuspage/js/bootstrap.min.js"></script><script src="//static.status.io/public/statuspage/js/Autolinker.min.js"></script><div class="container"><!-- Header image--><div id="statusio_header" class="header"><div id="statusio_header_image" style="margin-bottom: 25px; text-align:center;" class="row"><div class="col-md-12"><a href="http://www.twitter.com"><img id="statuspage_header_image" src="//image.status.io/ElcNuM5TbxTa.png" alt="Header Image"></a></div></div><div class="row"><div class="col-md-12 col-sm-12"></div></div></div><div id="statusio_status_bar" style="background:#0bbce3; border-bottom:0;" class="panel panel-default top_bar make_round"><div style="vertical-align: middle;" class="panel-body"><div class="row"><div class="col-md-8 col-sm-6 col-xs-12"><strong id="statusbar_text">All Systems Operational</strong></div><div class="col-md-4 col-sm-6 hidden-xs"><p id="updated_ago" class="pull-right white">Updated 6 months ago</p></div></div></div></div><div id="statusio_last_updated_bar_xs" style="background:#0bbce3; border-bottom:0;" class="panel panel-default top_bar make_round visible-xs-block"><div style="vertical-align: middle;" class="panel-body"><div class="row"><div class="col-xs-12"><p id="updated_ago" class="white">Updated 6 months ago</p></div></div></div></div><div id="statusio_components" class="page_section"><!-- single component--><div id="component_564314ae3309c22c3b00030a" style="border: 1px solid #27AE60;" class="component component_single status_td"><div class="row"><div class="col-md-8 col-sm-8 col-xs-8"><p class="component_name">Twitter<span data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter Main Website"> <i class="fa fa-info-circle"></i></span></p></div><div class="col-md-4 col-sm-4 col-xs-4"><p id="status_text-564314ae3309c22c3b00030a" style="color: #0bbce3;" class="pull-right component-status">Operational</p></div></div></div></div><!-- Metrics--><!-- Map--><!-- Footer--><div id="section_page_links" class="page_section"><div class="row"><div class="col-sm-9"><div id="bottom_menu"><strong><a href="/pages/564314ae3309c22c3b0002fa" class="pull-left margin-right-20">Status</a></strong><a href="/pages/history/564314ae3309c22c3b0002fa" class="pull-left margin-right-20">History</a></div></div><div class="col-sm-3"><div id="statusio_branding"><a href="#" class="pull-right">Powered by Status.io</a></div></div></div></div><!-- Subscriber modal--><div id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel" aria-hidden="true" class="modal fade"><div class="modal-dialog"><div class="modal-content make_round modal-text"><div class="modal-body"><div class="row"><div class="col-md-10"><ul role="tablist" class="nav nav-pills"><li id="tab_menu_email"><a href="#tab_email" role="tab" data-toggle="tab">Email</a></li><li id="tab_menu_webhook"><a href="#tab_webhook" role="tab" data-toggle="tab">Webhook</a></li><li id="tab_menu_rss"><a href="#tab_rss" role="tab" data-toggle="tab">RSS</a></li></ul></div><div class="col-md-2"><button type="button" data-dismiss="modal" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button></div></div><div class="row margin-top-40"><div class="col-md-12"><div class="tab-content"> <div id="tab_email" class="tab-pane"><div class="row"><div class="col-sm-12"><h4 id="subscribe_email_text_content" class="text-center">Subscribe to receive status updates by email</h4></div></div><br><div class="row margin-top-20"><div class="col-md-3"></div><div class="col-md-6"><input id="subscribe_email_address" type="text" placeholder="Email" name="subscribe_email_address" autofocus="autofocus" class="form-control make_round"><input type="hidden" placeholder="Email" name="email" class="form-control"></div></div><div class="row subscribe-modal-footer"><div class="row"><div class="col-md-6"><div id="result_subscribe_email" class="pull-left"></div></div><div class="col-md-6"><button type="button" data-dismiss="modal" class="btn btn-default make_round">Close</button><button id="subscribe_button_email" type="button" class="btn btn-default make_round">Subscribe</button><button id="manage_button_email" type="button" style="display:none;" class="btn btn-default make_round">Manage Subscription</button></div></div><div class="row"><div style="text-align:center;" class="col-md-12"><br><small id="manage_subscription_email">Manage Existing Subscription</small><small id="dont_manage_subscription_email" style="display:none;">Create New Subscription</small></div></div></div></div><div id="tab_webhook" class="tab-pane"><div class="row"><div class="col-sm-12"><h4 id="subscribe_webhook_text_content" class="text text-center">Subscribe to receive status updates by webhook</h4></div></div><br><div class="row margin-top-20"><div class="col-md-2"></div><div class="col-md-8"><input type="text" name="subscribe_webhook_address" id="subscribe_webhook_address" placeholder="http://example.com/hook" class="form-control make_round"><p class="help-block">Each status update will POST a JSON payload to this URL</p></div></div><br><div class="row margin-top-20"><div class="col-md-2"></div><div class="col-md-8"><input type="text" name="subscribe_webhook_address_email" id="subscribe_webhook_address_email" placeholder="Email" class="form-control make_round"><p class="help-block">Email address for managing webhook</p></div></div><div class="row subscribe-modal-footer"><div class="row"><div class="col-md-6"><div id="result_subscribe_webhook" class="pull-left"></div></div><div class="col-md-6"><button type="button" data-dismiss="modal" class="btn btn-default make_round">Close</button><button id="subscribe_button_webhook" type="button" class="btn btn-default make_round">Subscribe</button><button id="manage_button_webhook" type="button" style="display:none;" class="btn btn-default make_round">Manage Subscription</button></div></div><div class="row"><div style="text-align:center;" class="col-md-12"><br><small id="manage_subscription_webhook">Manage Existing Subscription</small><small id="dont_manage_subscription_webhook" style="display:none;">Create New Subscription</small></div></div></div></div><div id="tab_rss" class="tab-pane"><div class="row"><div class="col-sm-12"><h4 class="text-center">Subscribe to receive status updates via RSS</h4></div></div><br><div class="row margin-top-20"><div class="col-md-2"></div><div class="col-md-8 text-center"><a href="http://status.twitterstat.us/pages/564314ae3309c22c3b0002fa/rss" target="_blank" style="color:#000; font-size: 20px;">RSS Feed</a></div></div><div class="row subscribe-modal-footer"><div class="col-md-6"></div><div class="col-md-6"><button type="button" data-dismiss="modal" class="btn btn-default make_round">Close</button></div></div></div></div></div></div></div></div></div></div></div><!-- Subscriber scripts--><script>$(document).ready(function(){
+  $('#tab_email').addClass('active');
+  $('#tab_menu_email').addClass('active');
+});</script><script>$("#subscribe_button_email").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_email_address").val();
+  var email = $("#email").val();
+  $.ajax({
+    url: '/subscriber/add',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "email",
+      address: address,
+      email: email
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'Thanks for subscribing. Check your email for instructions.';
+      }
+      $("#result_subscribe_email").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_email").show();
+      setTimeout(function(){
+        $("#result_subscribe_email").fadeOut("slow", function () {
+        $("#result_subscribe_email").hide();
+            });
+      }, 5000);
+    }
+  });
+})
+</script><script>$("#subscribe_button_sms").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_sms_country_code").val() + $("#subscribe_sms_number").val();
+  $.ajax({
+    url: '/subscriber/add',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "sms",
+      address: address
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'Check your phone for the confirmation text message';
+      }          
+      $("#result_subscribe_sms").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_sms").show();
+      setTimeout(function(){
+        $("#result_subscribe_sms").fadeOut("slow", function () {
+        $("#result_subscribe_sms").hide();
+            });
+      }, 8000);
+    }
+  });
+})
+</script><script>$("#subscribe_button_webhook").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_webhook_address").val();
+  var address_email = $("#subscribe_webhook_address_email").val();
+  $.ajax({
+    url: '/subscriber/add',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "webhook",
+      address: address,
+      address_email: address_email
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'Thanks for subscribing. Check your email for instructions.';
+      }          
+      $("#result_subscribe_webhook").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_webhook").show();
+      setTimeout(function(){
+        $("#result_subscribe_webhook").fadeOut("slow", function () {
+        $("#result_subscribe_webhook").hide();
+            });
+      }, 5000);
+    }
+  });
+})
+</script><script>$('#subscribeModal').on('shown.bs.modal', function() {
+  $(this).find('input:first').focus();
+});  
+
+
+
+</script><script>$("#manage_subscription_email").click(function (event) {
+  event.preventDefault();
+  $("#manage_subscription_email").hide();
+  $("#subscribe_button_email").hide();
+  $("#manage_button_email").show();
+  $("#subscribe_email_text_content").html("Enter the email address you subscribed with");
+  $("#dont_manage_subscription_email").show();
+})
+</script><script>$("#dont_manage_subscription_email").click(function (event) {
+  event.preventDefault();
+  $("#dont_manage_subscription_email").hide();
+  $("#subscribe_button_email").show();
+  $("#manage_button_email").hide();
+  $("#subscribe_email_text_content").html("Subscribe to receive status updates by email");
+  $("#manage_subscription_email").show();
+})
+</script><script>$("#manage_button_email").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_email_address").val();
+  var email = $("#email").val();
+  $.ajax({
+    url: '/subscriber/email/request_manage_link',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "email",
+      address: address,
+      email: email
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'A link to manage your subscription has been emailed to you';
+      }
+      $("#result_subscribe_email").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_email").show();
+      setTimeout(function(){
+        $("#result_subscribe_email").fadeOut("slow", function () {
+        $("#result_subscribe_email").hide();
+            });
+      }, 5000);
+    }
+  });
+})
+
+
+
+</script><script>$("#manage_subscription_webhook").click(function (event) {
+  event.preventDefault();
+  $("#manage_subscription_webhook").hide();
+  $("#subscribe_button_webhook").hide();
+  $("#manage_button_webhook").show();
+  $("#subscribe_webhook_text_content").html("Enter the webhook URL and email address you subscribed with");
+  $("#dont_manage_subscription_webhook").show();
+})
+</script><script>$("#dont_manage_subscription_webhook").click(function (event) {
+  event.preventDefault();
+  $("#dont_manage_subscription_webhook").hide();
+  $("#subscribe_button_webhook").show();
+  $("#manage_button_webhook").hide();
+  $("#subscribe_webhook_text_content").html("Subscribe to receive status updates by webhook");
+  $("#manage_subscription_webhook").show();
+})
+</script><script>$("#manage_button_webhook").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_webhook_address").val();
+  var address_email = $("#subscribe_webhook_address_email").val();
+  $.ajax({
+    url: '/subscriber/webhook/request_manage_link',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "webhook",
+      address: address,
+      address_email: address_email
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'A link to manage your subscription has been emailed to you';
+      }
+      $("#result_subscribe_webhook").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_webhook").show();
+      setTimeout(function(){
+        $("#result_subscribe_webhook").fadeOut("slow", function () {
+        $("#result_subscribe_webhook").hide();
+            });
+      }, 5000);
+    }
+  });
+})
+
+
+
+</script><script>$("#manage_subscription_sms").click(function (event) {
+  event.preventDefault();
+  $("#manage_subscription_sms").hide();
+  $("#subscribe_button_sms").hide();
+  $("#manage_button_sms").show();
+  $("#subscribe_sms_text_content").html("Enter the number you subscribed with");
+  $("#dont_manage_subscription_sms").show();
+})
+</script><script>$("#dont_manage_subscription_sms").click(function (event) {
+  event.preventDefault();
+  $("#dont_manage_subscription_sms").hide();
+  $("#subscribe_button_sms").show();
+  $("#manage_button_sms").hide();
+  $("#subscribe_sms_text_content").html("Subscribe to receive status updates by text message");
+  $("#manage_subscription_sms").show();
+})
+</script><script>$("#manage_button_sms").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_sms_country_code").val() + $("#subscribe_sms_number").val();
+  var sms = $("#sms").val();
+  $.ajax({
+    url: '/subscriber/sms/request_manage_link',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "sms",
+      address: address
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'A link to manage your subscription has been texted to you';
+      }
+      $("#result_subscribe_sms").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_sms").show();
+      setTimeout(function(){
+        $("#result_subscribe_sms").fadeOut("slow", function () {
+        $("#result_subscribe_sms").hide();
+            });
+      }, 5000);
+    }
+  });
+})
+
+
+
+</script><script>$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
+});
+</script><!-- Clicky Analytics--><script>var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(100794436);
+(function() {
+var s = document.createElement('script');
+s.type = 'text/javascript';
+s.async = true;
+s.src = '//static.getclicky.com/js';
+( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();</script><noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100794436ns.gif"></p></noscript></body></html>
