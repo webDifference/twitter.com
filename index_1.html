@@ -1,884 +1,624 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.1//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-        <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <link rel="canonical" href="https://twitter.com">
-    <meta name="twitter-redirect-url" content="twitter://timeline"/>
-    <meta name="twitter-redirect-srcs" content="{&quot;pwreset-iphone&quot;:true,&quot;android&quot;:true,&quot;email&quot;:true}"/>
-    <link href="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/favicon.ico" rel="icon" type="image/x-icon" />
-    <title>Welcome to Twitter</title>
-      <link href="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/assets/gtl.css" inline="false" media="screen" rel="stylesheet" type="text/css" />
-    <script src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/javascripts/framebust.js" type="text/javascript"></script>
-    <meta name="google-site-verification" content="V0yIS0Ec_o3Ii9KThrCoMCkwTYMMJ_JYx_RSaGhFYvw" />
-    <meta name="deciders" content="{&quot;m2_mmw_scribe_get_url&quot;:true}" />
-  </head>
-  <body class="images nojs welcome-page welcome-guest-timeline-page">
-    <div id="container">
-      
-      
-        <div id="brand_bar">
-  <table id="top">
-    <tr>
-      <td class="left">
-        <a href="/" class="brandmark">
-              <img alt="Twitter" height="28"  src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/larry_28px.gif">
+<!DOCTYPE html><html lang="en"><head><meta name="robots" content="noindex, nofollow"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Current system status. View active incidents or upcoming maintenances. Subscribe to receive status notifications."><meta name="author" content=""><meta http-equiv="refresh" content="600"><title>System Status Page</title><!-- Bootstrap--><link rel="stylesheet" href="//static.status.io/public/statuspage/css/bootstrap.min.css"><!-- Fonts--><link href="//static.status.io/public/statuspage/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- Page Style--><link rel="stylesheet" href="//static.status.io/public/statuspage/css/statuspage-default.css?v=3"><link rel="stylesheet" href="//static.status.io/public/statuspage/css/statuspage-200.css?v=3"><noscript><style>#statusio_metrics {
+  display: none;
+}
+</style></noscript><noscript><style>#section_locations {
+  display: none;
+}
 
-          
-        </a>
-      </td>
-      <td class="right">
-            <img alt="|" class="divider" height="28" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/brandbar_divider.gif" />
-          <a class="signin" href="/session/new"><span>Log in</span></a>
-            <img alt="|" class="divider" height="28" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/brandbar_divider.gif" /> 
-          <a href="/signup"><span class="signup">Sign up</span></a>
-      </td>
-    </tr>
-  </table>
-</div>
+</style></noscript><style>.brand img { 
+  display: block !important; 
+}
+.img { 
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+.navbar .brand {
+  font-size: 20px;
+  font-weight: 200;
+  color: #555555;
+  text-shadow: 0 1px 0 #ffffff;
+}
+.navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+}
+.navbar .nav > li {
+  float: left;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background: none;
+  color: #2C3E50;
+  background-color: #F2F3F4;
+}
 
-      
-      
-      
-      <div id="main_content">
+.top_bar .panel-body {
+  height: 52px;
+}
+
+.event_inner_text {
+  font-size: 14px;
+}
+
+.event_inner_title {
+  font-size: 16px;
+}
+</style><!-- Custom Style--><style>body {
+  color: #363434;
+  background-color: #ffffff;
+}
+a:link {
+  color: #363434;
+  text-decoration: none;
+}
+a:visited {
+  color: #363434;
+  text-decoration: none;
+}
+a:hover {
+  color: #363434;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:active {
+  color: #363434;
+  text-decoration: none;
+}
+hr { 
+  border-top: 1px solid #27AE60;
+}
+.top_bar {
+  background-color: #27AE60;
+}
+.text {
+  color: #363434;
+}
+.section_border_0 {
+  background-color: #ffffff;
+  border: 0px solid #ffffff;
+}
+.section_border_1 {
+  background-color: #ffffff;
+  border: 1px solid #27AE60;
+}
+.status_td {
+  color: #363434;
+  background-color: #ffffff;
+}
+.external_service {
+  color: #363434;
+}
+#statuspage_name {
+  color: #363434;
+}
+
+/* overrides */
+.no_top_border {
+  border-top-width: 0px;
+}
+</style><!-- Custom CSS--><style>body {
+                margin: 0px;
+                background-color: #fff;
+                font-family: 'Lucida Grande', Helvetica, sans-serif;
+            }            
+
+            a {
+                color: #99cc33;
+            }
+
+            h1 {
+                width: 600px;
+                padding: 0px 100px 20px 100px;
+                margin: 50px auto 40px auto;
+                border-bottom: solid 1px #ccc;
+                text-align: center;
+                font: Bold 55px 'Trebuchet MS', Helvetica, sans-serif;
+                letter-spacing: -2px;
+                line-height: 50px;
+                position: relative;
+            }
+            
+                h1 a {
+                    color: #444;
+                    text-decoration: none;
+                }
+                
+                h1 img {
+                    border-width: 0px;
+                    position: absolute;
+                    right: 0px;
+                    bottom: 10px;
+                    width: 43px;
+                    height: 23px;
+                }
+
+            div#content {
+                width: 420px;
+                margin: auto;
+                position: relative;
+            }
+
+                div#content div#description {
+                    position: absolute;
+                    right: -170px;
+                    width: 160px;
+                    text-align: right;
+                }
+
+            div#description {
+                font: Normal 17px Helvetica,sans-serif;
+                line-height: 20px;
+                color: #777;
+            }
+
+                div#description a {
+                    color: #777;
+                }
+            
+            div.post {
+                position: relative;
+                margin-bottom: 40px;
+                padding-right: 20px;
+            }
+
+                div.post div.date {
+                    position: absolute;
+                    left: -260px;
+                    text-align: right;
+                    width: 230px;                
+                    white-space: nowrap;
+                    font: Normal 34px Helvetica, sans-serif;
+                    letter-spacing: -2px;
+                    color: #ccc;
+                    text-transform: uppercase;
+                    line-height: 35px;
+                }
+                
+                    div.post div.date div.date_brick {
+                        float: right;
+                        height: 30px;
+                        width: 45px;
+                        background-color: #6498cc;
+                        color: #bbd5f1;
+                        font: Bold 12px Verdana, Sans-Serif;
+                        text-align: center;
+                        line-height: 12px;
+                        margin-left: 10px;
+                        padding-top: 5px;
+                        letter-spacing: 0px;
+                        overflow: hidden;
+                    }
+
+                div.post img.permalink {
+                    width: 14px;
+                    height: 13px;
+                    border-width: 0px;
+                    background-color: #000;
+                    display: none;
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                    z-index: 10;
+                }
+                
+                    div.post:hover img.permalink {
+                        display: inline;
+                    }
+
+                div.post h2 {
+                    font-size: 18px;
+                    font-weight: Bold;
+                    color: #6498cc;
+                    letter-spacing: -1px;
+                    margin: 0px 0px 5px 0px;
+                }
+
+                    div.post h2 a {
+                        color: #6498cc;
+                        text-decoration: none;
+                    }
+            
+                div.post div.caption {
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #444;
+                    margin-top: 10px;
+                    padding: 0px 20px 0px 20px;
+                }
+
+                    div.post div.caption a {
+                        color: #444;
+                    }
+    
+            /* Regular Post */
+            
+                div.post div.regular {
+                    font-size: 12px;
+                    color: #444;
+                    line-height: 17px;
+                }
+
+                    div.post div.regular blockquote {
+                        font-style: italic;
+                        border-left: solid 2px #444;
+                        padding-left: 10px;
+                    }
+                        
+            /* Quote Post */
+            
+                div.post div.quote div.quote_text {
+                    font-family: Helvetica, sans-serif;
+                    font-weight: bold;
+                    color: #888;
+                    border-left: solid 5px #6498cc;
+                    padding-left: 10px;
+                }
+                
+                    div.post div.quote div.quote_text span.short {
+                        font-size: 36px;
+                        line-height: 40px;
+                        letter-spacing: -1px;
+                    }
+                    
+                    div.post div.quote div.quote_text span.medium {
+                        font-size: 25px;
+                        line-height: 27px;
+                        letter-spacing: -1px;
+                    }
+                    
+                    div.post div.quote div.quote_text span.long {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+
+                    div.post div.quote div.quote_text a {
+                        color: #888;
+                    }
         
-      <div class="signup-form">
-        <div class="header">
-          <h2>Log in</h2>
-        </div>
-        <form action="/sessions" method="post">
-    <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-  <fieldset class="inputs">
-    <label for="session[username_or_email]"> Phone, email or username </label>
-    <div class="input-wrapper">
-      <input autocapitalize="off" autocorrect="off" class="text-input"
-        name="session[username_or_email]" id="session[username_or_email]" placeholder=""
-        type="text" value="">
-    </div>
-    <label for="session[password]"> Password </label>
-    <div class="input-wrapper">
-      <input autocomplete="off" class="text-input"
-        name="session[password]" id="session[password]" placeholder=""
-        type="password" value="">
-    </div>
-    <input type="hidden" name="remember_me" value="1"/>
-    <input type="hidden" name="wfa" value="1"/>
-  </fieldset>
-  <span class="w-button-common w-button-default">
-    <input name="commit" type="submit" value=" Log in ">
-  </span>
-    <input autocomplete="off" name="ui_metrics" type="hidden">
-    <script src="/i/js_inst?c_name=ui_metrics" async></script>
-</form>
-
-      </div>
-
-      <div class="intro-steps">
-  <ol>
-    <li> Twitter lets you follow your interests. </li>
-    <li> Follow people that you want to hear from. </li>
-    <li> Your timeline is a custom stream of your follows. </li>
-    <li>
-      <strong> Press the <span class="follow-highlight">Follow</span> button to get Tweets from the users below. </strong>
-    </li>
-  </ol>
-</div>
-
-
-
-      <div class="timeline wtf-header">
-  <table class="titlebar">
-      <tbody>
-        <tr>
-          <td>Who to follow</td>
-        </tr>
-      </tbody>
-    </table>
-</div>
-<div class="user-list">
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/867054641065996290/_kkII2uR_normal.jpg" alt="Lucas Zen" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="ZenLucas"/>
-        <strong class="fullname">Lucas Zen</strong>
-
-      
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/ZenLucas" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>ZenLucas</span>
-
-
-        <p class="bio">Twitter Oficial / &#10;Instagram- lucaszen17</p>
-    </td>
-  </tr>
-</table>
-
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/743129716585009153/zeM_cxJy_normal.jpg" alt="vilson Menezes" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="vilson_xavier88"/>
-        <strong class="fullname">vilson Menezes</strong>
-
-      
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/vilson_xavier88" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>vilson_xavier88</span>
-
-
-        <p class="bio"></p>
-    </td>
-  </tr>
-</table>
-
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/1705612587/renan_normal.jpg" alt="renan oliveira" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="renanoliveira10"/>
-        <strong class="fullname">renan oliveira</strong>
-
-      
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/renanoliveira10" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>renanoliveira10</span>
-
-
-        <p class="bio">MINHA AMIZADE E COMO ARCO IRIS ,MESMO DEPOIS DE UMA GRANDE TEMPESTADE ,MINHA ALIANÇA APARECE + OQ TEM NO FIM   ???????????????????????????</p>
-    </td>
-  </tr>
-</table>
-
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/806337993904685056/q6DZPWUS_normal.jpg" alt="@segundatela_" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="segundatela_"/>
-        <strong class="fullname">@segundatela_</strong>
-
-      
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/segundatela_" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>segundatela_</span>
-
-
-        <p class="bio">Um olho no twitter e outro na vida real! olasegundatela@gmail.com</p>
-    </td>
-  </tr>
-</table>
-
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/817465703473250305/lrU7tMjX_normal.jpg" alt="Grolli" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="GrolliDouglas"/>
-        <strong class="fullname">Grolli</strong>
-
-      
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/GrolliDouglas" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>GrolliDouglas</span>
-
-
-        <p class="bio">Twitter Oficial - Grolli.</p>
-    </td>
-  </tr>
-</table>
-
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/3312922084/64224cb7541c19a96d139d27a13d6bc4_normal.jpeg" alt="Rafael Marques" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="r_marques_10"/>
-        <strong class="fullname">Rafael Marques</strong>
-
-      
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/r_marques_10" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>r_marques_10</span>
-
-
-        <p class="bio">Twitter oficial de Rafael Marques Mariano!!! Atleta profissional de futebol!!!! &#10;  Instagram oficial r_marques!!!</p>
-    </td>
-  </tr>
-</table>
-
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/653974769080078336/KyZzwuVF_normal.jpg" alt="RAFAEL CABRAL" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="RAFAELCABRAL90"/>
-        <strong class="fullname">RAFAEL CABRAL</strong>
-
-      
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/RAFAELCABRAL90" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>RAFAELCABRAL90</span>
-
-
-        <p class="bio"></p>
-    </td>
-  </tr>
-</table>
-
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/697193541467049984/OlVzoZRD_normal.jpg" alt="Thiago T" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="SantiagollijurT"/>
-        <strong class="fullname">Thiago T</strong>
-
-      
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/SantiagollijurT" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>SantiagollijurT</span>
-
-
-        <p class="bio">I do not exist.</p>
-    </td>
-  </tr>
-</table>
-
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/3037348732/ac9d63b354c125881cb5eea597cf1f02_normal.jpeg" alt="ederluis" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="ederluis11"/>
-        <strong class="fullname">ederluis</strong>
-
-      
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/ederluis11" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>ederluis11</span>
-
-
-        <p class="bio"></p>
-    </td>
-  </tr>
-</table>
-
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/677594596919156738/FYnMUvqE_normal.jpg" alt="Inter stuff" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="StuffSCI"/>
-        <strong class="fullname">Inter stuff</strong>
-
-      
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/StuffSCI" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>StuffSCI</span>
-
-
-        <p class="bio">Resultados, estatísticas, transferências, números, especulações e etc</p>
-    </td>
-  </tr>
-</table>
-
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/1578272383/asdasd_normal.png" alt="Ibson Barreto Silva" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="Ibson_B10"/>
-        <strong class="fullname">Ibson Barreto Silva</strong>
-
-      
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/Ibson_B10" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>Ibson_B10</span>
-
-
-        <p class="bio">Feliz, Jogador do Santos,  07/11/1983 ( 27 anos) , Brasileiro, São Gonçalo (RJ)</p>
-    </td>
-  </tr>
-</table>
-
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/914537134874333184/5CfLG4UR_normal.jpg" alt="MONARA MAKEUP" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="MONARAMAKEUP"/>
-        <strong class="fullname">MONARA MAKEUP</strong>
-
-      
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/MONARAMAKEUP" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>MONARAMAKEUP</span>
-
-
-        <p class="bio">Embaixadora Shambelle e Nutriminas Youtuber https://t.co/9MmcVv6pYa…</p>
-    </td>
-  </tr>
-</table>
-
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/738884605667840000/G43HxQNj_normal.jpg" alt="Agenor Detofol" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="goleiroagenor"/>
-        <strong class="fullname">Agenor Detofol</strong>
-
-      
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/goleiroagenor" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>goleiroagenor</span>
-
-
-        <p class="bio">Atleta</p>
-    </td>
-  </tr>
-</table>
-
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/820297949607436293/_RQguF2L_normal.jpg" alt="Hernán Barcos" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="Hernanbarcos"/>
-        <strong class="fullname">Hernán Barcos</strong>
-
-      
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/Hernanbarcos" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>Hernanbarcos</span>
-
-
-        <p class="bio">Jugador de futbol profesional argentino (atacante), nacido en Bell Ville, Córdoba el día 11/04/1984, actualmente en Club Liga de Quito. Ecuador</p>
-    </td>
-  </tr>
-</table>
-
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/936275645709078528/-OcaSrIE_normal.jpg" alt="🇾🇪" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="GuiSilva_X_"/>
-        <strong class="fullname">🇾🇪</strong>
-
-      
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/GuiSilva_X_" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>GuiSilva_X_</span>
-
-
-        <p class="bio">Fé em Deus e nas crianças!!! TORCIDA TRICOLOR INDEPENDENTE ! 1972 _X_ 🔴⚫️⚪️</p>
-    </td>
-  </tr>
-</table>
-
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/1870059648/image_normal.jpg" alt="Leandro Amaro" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="amaro_36"/>
-        <strong class="fullname">Leandro Amaro</strong>
-
-      
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/amaro_36" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>amaro_36</span>
-
-
-        <p class="bio">Jogador Profissional da Sociedade Esportiva Palmeiras. Agente e contatos Plus Sports. Guerreiro sempre.</p>
-    </td>
-  </tr>
-</table>
-
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/597140122564431872/tv3MTFBv_normal.jpg" alt="INTERNACIONAL" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="RSVermelho"/>
-        <strong class="fullname">INTERNACIONAL</strong>
-
-      
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/RSVermelho" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>RSVermelho</span>
-
-
-        <p class="bio">Colorado e campeão de tudo.</p>
-    </td>
-  </tr>
-</table>
-
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/913440602385240064/-LlvyXH3_normal.jpg" alt="Julio Cesar" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="_juliocesar06"/>
-        <strong class="fullname">Julio Cesar</strong>
-
-        <img src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/verified.gif" alt="Verified Account">
-  
-
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/_juliocesar06" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>_juliocesar06</span>
-
-
-        <p class="bio">Jogador de futebol Club de Regatas Vasco da Gama.</p>
-    </td>
-  </tr>
-</table>
-
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/857002702685057024/aa4HzrNp_normal.jpg" alt="Horóscopo Diário" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="sitehorosdiario"/>
-        <strong class="fullname">Horóscopo Diário</strong>
-
-      
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/sitehorosdiario" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>sitehorosdiario</span>
-
-
-        <p class="bio">http://t.co/b9JVYcXv4o</p>
-    </td>
-  </tr>
-</table>
-
-    <table class="user-item">
-
-  <tr>
-      <td rowspan="2" class="avatar">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/1637033534/thomas_normal.jpg" alt="Thomás Jaguaribe" />
-      </td>
-    <td class="info fifty screenname">
-      <a name="Thomsj93"/>
-        <strong class="fullname">Thomás Jaguaribe</strong>
-
-      
-    </td>
-
-    <td class="follow-button-container right fifty" rowspan="2">
-          <form action="/i/guest/follow/Thomsj93" method="post">
-      <span class="m2-auth-token">
-    <input name="authenticity_token" type="hidden" value="94d099216f1bddae5fc7c2c3887ad7f1"/>
-  </span>
-    
-      <span class="w-button-common w-button-follow">
-        <input alt="Follow" src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/images/sprites/followplus.gif" type="image" />
-      </span>
-  </form>
-
-    </td>
-
-  </tr>
-
-  <tr>
-    <td class="info">
-        <span class="username"><span>@</span>Thomsj93</span>
-
-
-        <p class="bio">Sou &#9;Thomás Jaguaribe Bedinelli (Juiz de Fora - MG, 24 de Fevereiro de 1993) é uma jovem promessa que chegou ao Flamengo em 2008, após ter passado pela escolinh</p>
-    </td>
-  </tr>
-</table>
-
-</div>
-
-
-    <div class="signup-link">
-      <a href="/signup" class="w-button-common w-button-bright">
-         Sign up for Twitter 
-      </a>
-    </div>
-
-
-      </div>
-      <div id="footer">
-</div>
-
-    </div>
-      <script id="scribe-configuration" type="application/json">{"page":"guest_timeline"}</script>
-      <script src="https://ma.twimg.com/twitter-mobile/96e6f6ff1a9d3e3acf6b4ee4ce320dd1474e81c1/assets/base.js" type="text/javascript"></script>
-      <img src="/i/anonymize?data=%5B%7B%22integration%22%3A%22ga%22%2C%22ref%22%3A%22http%3A%5C%2F%5C%2Fm.twitter.com%5C%2F%22%2C%22mobileMetricsToken%22%3A%22151238979381920139%22%7D%5D" height="0" width="0" style="opacity: 0">
-
-  </body>
-</html>
+                div.post div.quote div.source {
+                    font-size: 16px;
+                    font-weight: Bold;
+                    color: #555;
+                    margin-top: 5px;
+                }
+
+                    div.post div.quote div.source a {
+                        color: #555;
+                    }
+            
+            /* Link Post */
+            
+                div.post div.link a.link {
+                    font: Bold 20px Helvetica, sans-serif;
+                    letter-spacing: -1px;
+                    color: #c00;
+                }
+
+                    div.post div.link span.description {
+                        font-size: 13px;
+                        font-weight: normal;
+                        letter-spacing: -1px;
+                        color: #444;
+                    }
+            
+            /* Conversation Post */
+                        
+                div.post div.conversation ul {
+                    list-style-type: none;
+                    margin: 0px;
+                    padding: 0px 0px 0px 1px;
+                    border-left: solid 5px #bbb;
+                }
+            
+                    div.post div.conversation ul li {
+                        font-size: 12px;
+                        padding: 4px 10px 4px 8px;
+                        color: #444;
+                        margin-bottom: 1px;
+                    }
+            
+                        div.post div.conversation ul li span.label {
+                            font-weight: bold;
+                        }
+                        
+                            div.post div.conversation ul li span.user_1 {
+                                color: #c00;
+                            }
+                            
+                            div.post div.conversation ul li span.user_2 {
+                                color: #00c;
+                            }
+                            
+                            div.post div.conversation ul li span.user_3 {
+                                color: #0a0;
+                            }
+                        
+                        div.post div.conversation ul li.odd {
+                            background-color: #f4f4f4;
+                        }
+
+                        div.post div.conversation ul li.even {
+                            background-color: #e8e8e8;
+                        }
+            
+            /* Video Post */
+            
+                div.post div.video {
+                    width: 400px;
+                    margin: auto;
+                }
+
+            /* Footer */
+            
+                div#footer {
+                    margin: 40px 0px 30px 0px;
+                    text-align: center;
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: #444;
+                }
+            
+                    div#footer a {
+                        text-decoration: none;
+                        color: #444;
+                    }
+            
+                        div#footer a:hover {
+                            text-decoration: underline;
+                        }
+                    
+                    div#footer div#credit {
+                        font: Normal 13px Georgia, serif;
+                        font-size: 13px;
+                        margin-top: 15px;
+                    }</style><!-- IE10 viewport hack for Surface/desktop Windows 8 bug --><script src="//static.status.io/public/statuspage/js/ie10-viewport-bug-workaround.min.js"></script><!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --><!-- WARNING: Respond.js doesn't work if you view the page via file:// --><!--if lt IE 9script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+--></head><body><!-- Scripts--><script src="//static.status.io/public/statuspage/js/jquery.min.js"></script><script src="//static.status.io/public/statuspage/js/bootstrap.min.js"></script><script src="//static.status.io/public/statuspage/js/Autolinker.min.js"></script><div class="container"><!-- Header image--><div id="statusio_header" class="header"><div id="statusio_header_image" style="margin-bottom: 25px; text-align:center;" class="row"><div class="col-md-12"><a href="http://www.twitter.com"><img id="statuspage_header_image" src="//image.status.io/ElcNuM5TbxTa.png" alt="Header Image"></a></div></div><div class="row"><div class="col-md-12 col-sm-12"></div></div></div><div id="statusio_status_bar" style="background:#0bbce3; border-bottom:0;" class="panel panel-default top_bar make_round"><div style="vertical-align: middle;" class="panel-body"><div class="row"><div class="col-md-8 col-sm-6 col-xs-12"><strong id="statusbar_text">All Systems Operational</strong></div><div class="col-md-4 col-sm-6 hidden-xs"><p id="updated_ago" class="pull-right white">Updated 7 months ago</p></div></div></div></div><div id="statusio_last_updated_bar_xs" style="background:#0bbce3; border-bottom:0;" class="panel panel-default top_bar make_round visible-xs-block"><div style="vertical-align: middle;" class="panel-body"><div class="row"><div class="col-xs-12"><p id="updated_ago" class="white">Updated 7 months ago</p></div></div></div></div><div id="statusio_components" class="page_section"><!-- single component--><div id="component_564314ae3309c22c3b00030a" style="border: 1px solid #27AE60;" class="component component_single status_td"><div class="row"><div class="col-md-8 col-sm-8 col-xs-8"><p class="component_name">Twitter<span data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter Main Website"> <i class="fa fa-info-circle"></i></span></p></div><div class="col-md-4 col-sm-4 col-xs-4"><p id="status_text-564314ae3309c22c3b00030a" style="color: #0bbce3;" class="pull-right component-status">Operational</p></div></div></div></div><!-- Metrics--><!-- Map--><!-- Footer--><div id="section_page_links" class="page_section"><div class="row"><div class="col-sm-9"><div id="bottom_menu"><strong><a href="/pages/564314ae3309c22c3b0002fa" class="pull-left margin-right-20">Status</a></strong><a href="/pages/history/564314ae3309c22c3b0002fa" class="pull-left margin-right-20">History</a></div></div><div class="col-sm-3"><div id="statusio_branding"><a href="#" class="pull-right">Powered by Status.io</a></div></div></div></div><!-- Subscriber modal--><div id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel" aria-hidden="true" class="modal fade"><div class="modal-dialog"><div class="modal-content make_round modal-text"><div class="modal-body"><div class="row"><div class="col-md-10"><ul role="tablist" class="nav nav-pills"><li id="tab_menu_email"><a href="#tab_email" role="tab" data-toggle="tab">Email</a></li><li id="tab_menu_webhook"><a href="#tab_webhook" role="tab" data-toggle="tab">Webhook</a></li><li id="tab_menu_rss"><a href="#tab_rss" role="tab" data-toggle="tab">RSS</a></li></ul></div><div class="col-md-2"><button type="button" data-dismiss="modal" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button></div></div><div class="row margin-top-40"><div class="col-md-12"><div class="tab-content"> <div id="tab_email" class="tab-pane"><div class="row"><div class="col-sm-12"><h4 id="subscribe_email_text_content" class="text-center">Subscribe to receive status updates by email</h4></div></div><br><div class="row margin-top-20"><div class="col-md-3"></div><div class="col-md-6"><input id="subscribe_email_address" type="text" placeholder="Email" name="subscribe_email_address" autofocus="autofocus" class="form-control make_round"><input type="hidden" placeholder="Email" name="email" class="form-control"></div></div><div class="row subscribe-modal-footer"><div class="row"><div class="col-md-6"><div id="result_subscribe_email" class="pull-left"></div></div><div class="col-md-6"><button type="button" data-dismiss="modal" class="btn btn-default make_round">Close</button><button id="subscribe_button_email" type="button" class="btn btn-default make_round">Subscribe</button><button id="manage_button_email" type="button" style="display:none;" class="btn btn-default make_round">Manage Subscription</button></div></div><div class="row"><div style="text-align:center;" class="col-md-12"><br><small id="manage_subscription_email">Manage Existing Subscription</small><small id="dont_manage_subscription_email" style="display:none;">Create New Subscription</small></div></div></div></div><div id="tab_webhook" class="tab-pane"><div class="row"><div class="col-sm-12"><h4 id="subscribe_webhook_text_content" class="text text-center">Subscribe to receive status updates by webhook</h4></div></div><br><div class="row margin-top-20"><div class="col-md-2"></div><div class="col-md-8"><input type="text" name="subscribe_webhook_address" id="subscribe_webhook_address" placeholder="http://example.com/hook" class="form-control make_round"><p class="help-block">Each status update will POST a JSON payload to this URL</p></div></div><br><div class="row margin-top-20"><div class="col-md-2"></div><div class="col-md-8"><input type="text" name="subscribe_webhook_address_email" id="subscribe_webhook_address_email" placeholder="Email" class="form-control make_round"><p class="help-block">Email address for managing webhook</p></div></div><div class="row subscribe-modal-footer"><div class="row"><div class="col-md-6"><div id="result_subscribe_webhook" class="pull-left"></div></div><div class="col-md-6"><button type="button" data-dismiss="modal" class="btn btn-default make_round">Close</button><button id="subscribe_button_webhook" type="button" class="btn btn-default make_round">Subscribe</button><button id="manage_button_webhook" type="button" style="display:none;" class="btn btn-default make_round">Manage Subscription</button></div></div><div class="row"><div style="text-align:center;" class="col-md-12"><br><small id="manage_subscription_webhook">Manage Existing Subscription</small><small id="dont_manage_subscription_webhook" style="display:none;">Create New Subscription</small></div></div></div></div><div id="tab_rss" class="tab-pane"><div class="row"><div class="col-sm-12"><h4 class="text-center">Subscribe to receive status updates via RSS</h4></div></div><br><div class="row margin-top-20"><div class="col-md-2"></div><div class="col-md-8 text-center"><a href="http://status.twitterstat.us/pages/564314ae3309c22c3b0002fa/rss" target="_blank" style="color:#000; font-size: 20px;">RSS Feed</a></div></div><div class="row subscribe-modal-footer"><div class="col-md-6"></div><div class="col-md-6"><button type="button" data-dismiss="modal" class="btn btn-default make_round">Close</button></div></div></div></div></div></div></div></div></div></div></div><!-- Subscriber scripts--><script>$(document).ready(function(){
+  $('#tab_email').addClass('active');
+  $('#tab_menu_email').addClass('active');
+});</script><script>$("#subscribe_button_email").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_email_address").val();
+  var email = $("#email").val();
+  $.ajax({
+    url: '/subscriber/add',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "email",
+      address: address,
+      email: email
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'Thanks for subscribing. Check your email for instructions.';
+      }
+      $("#result_subscribe_email").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_email").show();
+      setTimeout(function(){
+        $("#result_subscribe_email").fadeOut("slow", function () {
+        $("#result_subscribe_email").hide();
+            });
+      }, 5000);
+    }
+  });
+})
+</script><script>$("#subscribe_button_sms").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_sms_country_code").val() + $("#subscribe_sms_number").val();
+  $.ajax({
+    url: '/subscriber/add',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "sms",
+      address: address
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'Check your phone for the confirmation text message';
+      }          
+      $("#result_subscribe_sms").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_sms").show();
+      setTimeout(function(){
+        $("#result_subscribe_sms").fadeOut("slow", function () {
+        $("#result_subscribe_sms").hide();
+            });
+      }, 8000);
+    }
+  });
+})
+</script><script>$("#subscribe_button_webhook").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_webhook_address").val();
+  var address_email = $("#subscribe_webhook_address_email").val();
+  $.ajax({
+    url: '/subscriber/add',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "webhook",
+      address: address,
+      address_email: address_email
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'Thanks for subscribing. Check your email for instructions.';
+      }          
+      $("#result_subscribe_webhook").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_webhook").show();
+      setTimeout(function(){
+        $("#result_subscribe_webhook").fadeOut("slow", function () {
+        $("#result_subscribe_webhook").hide();
+            });
+      }, 5000);
+    }
+  });
+})
+</script><script>$('#subscribeModal').on('shown.bs.modal', function() {
+  $(this).find('input:first').focus();
+});  
+
+
+
+</script><script>$("#manage_subscription_email").click(function (event) {
+  event.preventDefault();
+  $("#manage_subscription_email").hide();
+  $("#subscribe_button_email").hide();
+  $("#manage_button_email").show();
+  $("#subscribe_email_text_content").html("Enter the email address you subscribed with");
+  $("#dont_manage_subscription_email").show();
+})
+</script><script>$("#dont_manage_subscription_email").click(function (event) {
+  event.preventDefault();
+  $("#dont_manage_subscription_email").hide();
+  $("#subscribe_button_email").show();
+  $("#manage_button_email").hide();
+  $("#subscribe_email_text_content").html("Subscribe to receive status updates by email");
+  $("#manage_subscription_email").show();
+})
+</script><script>$("#manage_button_email").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_email_address").val();
+  var email = $("#email").val();
+  $.ajax({
+    url: '/subscriber/email/request_manage_link',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "email",
+      address: address,
+      email: email
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'A link to manage your subscription has been emailed to you';
+      }
+      $("#result_subscribe_email").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_email").show();
+      setTimeout(function(){
+        $("#result_subscribe_email").fadeOut("slow", function () {
+        $("#result_subscribe_email").hide();
+            });
+      }, 5000);
+    }
+  });
+})
+
+
+
+</script><script>$("#manage_subscription_webhook").click(function (event) {
+  event.preventDefault();
+  $("#manage_subscription_webhook").hide();
+  $("#subscribe_button_webhook").hide();
+  $("#manage_button_webhook").show();
+  $("#subscribe_webhook_text_content").html("Enter the webhook URL and email address you subscribed with");
+  $("#dont_manage_subscription_webhook").show();
+})
+</script><script>$("#dont_manage_subscription_webhook").click(function (event) {
+  event.preventDefault();
+  $("#dont_manage_subscription_webhook").hide();
+  $("#subscribe_button_webhook").show();
+  $("#manage_button_webhook").hide();
+  $("#subscribe_webhook_text_content").html("Subscribe to receive status updates by webhook");
+  $("#manage_subscription_webhook").show();
+})
+</script><script>$("#manage_button_webhook").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_webhook_address").val();
+  var address_email = $("#subscribe_webhook_address_email").val();
+  $.ajax({
+    url: '/subscriber/webhook/request_manage_link',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "webhook",
+      address: address,
+      address_email: address_email
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'A link to manage your subscription has been emailed to you';
+      }
+      $("#result_subscribe_webhook").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_webhook").show();
+      setTimeout(function(){
+        $("#result_subscribe_webhook").fadeOut("slow", function () {
+        $("#result_subscribe_webhook").hide();
+            });
+      }, 5000);
+    }
+  });
+})
+
+
+
+</script><script>$("#manage_subscription_sms").click(function (event) {
+  event.preventDefault();
+  $("#manage_subscription_sms").hide();
+  $("#subscribe_button_sms").hide();
+  $("#manage_button_sms").show();
+  $("#subscribe_sms_text_content").html("Enter the number you subscribed with");
+  $("#dont_manage_subscription_sms").show();
+})
+</script><script>$("#dont_manage_subscription_sms").click(function (event) {
+  event.preventDefault();
+  $("#dont_manage_subscription_sms").hide();
+  $("#subscribe_button_sms").show();
+  $("#manage_button_sms").hide();
+  $("#subscribe_sms_text_content").html("Subscribe to receive status updates by text message");
+  $("#manage_subscription_sms").show();
+})
+</script><script>$("#manage_button_sms").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_sms_country_code").val() + $("#subscribe_sms_number").val();
+  var sms = $("#sms").val();
+  $.ajax({
+    url: '/subscriber/sms/request_manage_link',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "sms",
+      address: address
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'A link to manage your subscription has been texted to you';
+      }
+      $("#result_subscribe_sms").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_sms").show();
+      setTimeout(function(){
+        $("#result_subscribe_sms").fadeOut("slow", function () {
+        $("#result_subscribe_sms").hide();
+            });
+      }, 5000);
+    }
+  });
+})
+
+
+
+</script><script>$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
+});
+</script><!-- Clicky Analytics--><script>var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(100794436);
+(function() {
+var s = document.createElement('script');
+s.type = 'text/javascript';
+s.async = true;
+s.src = '//static.getclicky.com/js';
+( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();</script><noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100794436ns.gif"></p></noscript></body></html>
