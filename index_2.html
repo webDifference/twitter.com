@@ -1,362 +1,624 @@
-<!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="ie6" lang="en" dir='ltr'> <![endif]-->
-<!--[if IE 8 ]><html class="ie8" lang="en" dir='ltr'> <![endif]-->
-<!--[if (gt IE 8)|!(IE)]><!--><html lang="en" dir='ltr'><!--<![endif]-->
-  <head>
-    <!--[if lt IE 8]>
-    <meta HTTP-EQUIV="REFRESH" content="0; url='/badbrowser'">
-    <![endif]-->
+<!DOCTYPE html><html lang="en"><head><meta name="robots" content="noindex, nofollow"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Current system status. View active incidents or upcoming maintenances. Subscribe to receive status notifications."><meta name="author" content=""><meta http-equiv="refresh" content="600"><title>System Status Page</title><!-- Bootstrap--><link rel="stylesheet" href="//static.status.io/public/statuspage/css/bootstrap.min.css"><!-- Fonts--><link href="//static.status.io/public/statuspage/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- Page Style--><link rel="stylesheet" href="//static.status.io/public/statuspage/css/statuspage-default.css?v=3"><link rel="stylesheet" href="//static.status.io/public/statuspage/css/statuspage-200.css?v=3"><noscript><style>#statusio_metrics {
+  display: none;
+}
+</style></noscript><noscript><style>#section_locations {
+  display: none;
+}
 
-    <meta charset="UTF-8">
+</style></noscript><style>.brand img { 
+  display: block !important; 
+}
+.img { 
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+.navbar .brand {
+  font-size: 20px;
+  font-weight: 200;
+  color: #555555;
+  text-shadow: 0 1px 0 #ffffff;
+}
+.navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+}
+.navbar .nav > li {
+  float: left;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background: none;
+  color: #2C3E50;
+  background-color: #F2F3F4;
+}
 
-    <title>Twitter Help Center</title>
+.top_bar .panel-body {
+  height: 52px;
+}
 
-    <meta content="Twitter is without a doubt the best way to share and discover what is happening right now." name="description"/>
-    <meta name="twitter:widgets:csp" content="on">
-        <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://support.twitter.com?lang=en" />
-  <meta name="twitter:site" content="@Support" />
-  <meta name="twitter:title" content="Twitter Support" />
-  <meta name="twitter:description" content="Get instant answers for the most common questions and learn how to use 140 characters like a pro." />
-  <meta name="twitter:image" content="https://hca.twimg.com/images/banner_800x320.png" />
+.event_inner_text {
+  font-size: 14px;
+}
 
+.event_inner_title {
+  font-size: 16px;
+}
+</style><!-- Custom Style--><style>body {
+  color: #363434;
+  background-color: #ffffff;
+}
+a:link {
+  color: #363434;
+  text-decoration: none;
+}
+a:visited {
+  color: #363434;
+  text-decoration: none;
+}
+a:hover {
+  color: #363434;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:active {
+  color: #363434;
+  text-decoration: none;
+}
+hr { 
+  border-top: 1px solid #27AE60;
+}
+.top_bar {
+  background-color: #27AE60;
+}
+.text {
+  color: #363434;
+}
+.section_border_0 {
+  background-color: #ffffff;
+  border: 0px solid #ffffff;
+}
+.section_border_1 {
+  background-color: #ffffff;
+  border: 1px solid #27AE60;
+}
+.status_td {
+  color: #363434;
+  background-color: #ffffff;
+}
+.external_service {
+  color: #363434;
+}
+#statuspage_name {
+  color: #363434;
+}
 
+/* overrides */
+.no_top_border {
+  border-top-width: 0px;
+}
+</style><!-- Custom CSS--><style>body {
+                margin: 0px;
+                background-color: #fff;
+                font-family: 'Lucida Grande', Helvetica, sans-serif;
+            }            
+
+            a {
+                color: #99cc33;
+            }
+
+            h1 {
+                width: 600px;
+                padding: 0px 100px 20px 100px;
+                margin: 50px auto 40px auto;
+                border-bottom: solid 1px #ccc;
+                text-align: center;
+                font: Bold 55px 'Trebuchet MS', Helvetica, sans-serif;
+                letter-spacing: -2px;
+                line-height: 50px;
+                position: relative;
+            }
+            
+                h1 a {
+                    color: #444;
+                    text-decoration: none;
+                }
+                
+                h1 img {
+                    border-width: 0px;
+                    position: absolute;
+                    right: 0px;
+                    bottom: 10px;
+                    width: 43px;
+                    height: 23px;
+                }
+
+            div#content {
+                width: 420px;
+                margin: auto;
+                position: relative;
+            }
+
+                div#content div#description {
+                    position: absolute;
+                    right: -170px;
+                    width: 160px;
+                    text-align: right;
+                }
+
+            div#description {
+                font: Normal 17px Helvetica,sans-serif;
+                line-height: 20px;
+                color: #777;
+            }
+
+                div#description a {
+                    color: #777;
+                }
+            
+            div.post {
+                position: relative;
+                margin-bottom: 40px;
+                padding-right: 20px;
+            }
+
+                div.post div.date {
+                    position: absolute;
+                    left: -260px;
+                    text-align: right;
+                    width: 230px;                
+                    white-space: nowrap;
+                    font: Normal 34px Helvetica, sans-serif;
+                    letter-spacing: -2px;
+                    color: #ccc;
+                    text-transform: uppercase;
+                    line-height: 35px;
+                }
+                
+                    div.post div.date div.date_brick {
+                        float: right;
+                        height: 30px;
+                        width: 45px;
+                        background-color: #6498cc;
+                        color: #bbd5f1;
+                        font: Bold 12px Verdana, Sans-Serif;
+                        text-align: center;
+                        line-height: 12px;
+                        margin-left: 10px;
+                        padding-top: 5px;
+                        letter-spacing: 0px;
+                        overflow: hidden;
+                    }
+
+                div.post img.permalink {
+                    width: 14px;
+                    height: 13px;
+                    border-width: 0px;
+                    background-color: #000;
+                    display: none;
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                    z-index: 10;
+                }
+                
+                    div.post:hover img.permalink {
+                        display: inline;
+                    }
+
+                div.post h2 {
+                    font-size: 18px;
+                    font-weight: Bold;
+                    color: #6498cc;
+                    letter-spacing: -1px;
+                    margin: 0px 0px 5px 0px;
+                }
+
+                    div.post h2 a {
+                        color: #6498cc;
+                        text-decoration: none;
+                    }
+            
+                div.post div.caption {
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #444;
+                    margin-top: 10px;
+                    padding: 0px 20px 0px 20px;
+                }
+
+                    div.post div.caption a {
+                        color: #444;
+                    }
     
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <meta name="google-site-verification" content="bQbQaJB9LRrAJbYhyvT7fjCDHmu2qHqeCLSiqZ-ZIz4" />
+            /* Regular Post */
+            
+                div.post div.regular {
+                    font-size: 12px;
+                    color: #444;
+                    line-height: 17px;
+                }
 
-    <link rel="canonical" href="https://help.twitter.com/"/>
-      <link rel="shortcut icon" type="image/x-icon" href="https://hca.twimg.com/assets/favicon-d8eb620bfbb5dc6769f6bf18a8c3b3231af2739e80d573cf3bb7f33805c5293e.ico" />
-    <link rel="apple-touch-icon" type="image/png" href="https://hca.twimg.com/assets/apple-touch-icon-57x57-5bc051346b4b9f17d7053222642948b36c28ae14c8be3b526b020b88151afb9a.png" sizes="57x57" />
-    <link rel="apple-touch-icon" type="image/png" href="https://hca.twimg.com/assets/apple-touch-icon-60x60-1a16ced2e02b5d8c7341a2f0b6e32d4a473df71d0cc7f3b1f1ea56939d101f2f.png" sizes="60x60" />
-    <link rel="apple-touch-icon" type="image/png" href="https://hca.twimg.com/assets/apple-touch-icon-72x72-d3c87a68e63a717a22c45cd1767f5fd716481e4116f8022bbace07f6e30b2a30.png" sizes="72x72" />
-    <link rel="apple-touch-icon" type="image/png" href="https://hca.twimg.com/assets/apple-touch-icon-76x76-3d8babf9b6853837984aefa33fb415a62b77efba5d01a48d7cb9a27a0138b13b.png" sizes="76x76" />
-    <link rel="apple-touch-icon" type="image/png" href="https://hca.twimg.com/assets/apple-touch-icon-114x114-39d16d7a1866f2fe4ae7e36fa043d480dc3b25c35d742147b75ec4d10ebadab9.png" sizes="114x114" />
-    <link rel="apple-touch-icon" type="image/png" href="https://hca.twimg.com/assets/apple-touch-icon-120x120-a2013dc98b3febfcde5a4e2a3ffe663ed0a2de82404421373e36c3070cd49d08.png" sizes="120x120" />
-    <link rel="apple-touch-icon" type="image/png" href="https://hca.twimg.com/assets/apple-touch-icon-144x144-8ee4351a435e6cd78c74f5b722af461a679fdd202fcaa329f5064084c7d49d0c.png" sizes="144x144" />
-    <link rel="apple-touch-icon" type="image/png" href="https://hca.twimg.com/assets/apple-touch-icon-152x152-5b9fa7a1cc30c2818d9f077f2012293290f74b19254a255e53903c5bdf6163dc.png" sizes="152x152" />
-    <link rel="apple-touch-icon" type="image/png" href="https://hca.twimg.com/assets/apple-touch-icon-180x180-8a010ef468f1259b17f526fa71bab7ee6f7e012d8c1a2d29c775fbbcfe117f44.png" sizes="180x180" />
+                    div.post div.regular blockquote {
+                        font-style: italic;
+                        border-left: solid 2px #444;
+                        padding-left: 10px;
+                    }
+                        
+            /* Quote Post */
+            
+                div.post div.quote div.quote_text {
+                    font-family: Helvetica, sans-serif;
+                    font-weight: bold;
+                    color: #888;
+                    border-left: solid 5px #6498cc;
+                    padding-left: 10px;
+                }
+                
+                    div.post div.quote div.quote_text span.short {
+                        font-size: 36px;
+                        line-height: 40px;
+                        letter-spacing: -1px;
+                    }
+                    
+                    div.post div.quote div.quote_text span.medium {
+                        font-size: 25px;
+                        line-height: 27px;
+                        letter-spacing: -1px;
+                    }
+                    
+                    div.post div.quote div.quote_text span.long {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
 
-  <link rel="icon" type="image/png" href="https://hca.twimg.com/assets/favicon-32x32-b69d19f2bf55306a268776b4c97e345ab698b7ff4d95b705468aab116b28fd28.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="https://hca.twimg.com/assets/android-chrome-192x192-dfad7232d1e159ad8de2eccd6d33c13cd58a34ebbba8f077e9f0ec5e7204c1aa.png" sizes="192x192" />
-  <link rel="icon" type="image/png" href="https://hca.twimg.com/assets/favicon-96x96-19d6dfcdba9d958edf1e7f27486f9e6e4946c82440692ac5a7f7e9a10b084617.png" sizes="96x96" />
-  <link rel="icon" type="image/png" href="https://hca.twimg.com/assets/favicon-16x16-56a20d69de9e224a002699ec4a19698252320efcff2ce31524c5b6a4ba21bdc2.png" sizes="16x16" />
-  <link rel="manifest" type="application/json" href="https://hca.twimg.com/assets/manifest-1a7f29306eca1697a51df13a8de402b6bd7e916a2cc8bdf960bdc24343dcab19.json" />
+                    div.post div.quote div.quote_text a {
+                        color: #888;
+                    }
+        
+                div.post div.quote div.source {
+                    font-size: 16px;
+                    font-weight: Bold;
+                    color: #555;
+                    margin-top: 5px;
+                }
 
-  <meta name="apple-mobile-web-app-title" content="Soporte de Twitter">
-  <meta name="application-name" content="Soporte de Twitter">
-  <meta name="msapplication-TileColor" content="#55acee">
-  <meta name="msapplication-TileImage" content="https://hca.twimg.com/assets/mstile-144x144-8ee4351a435e6cd78c74f5b722af461a679fdd202fcaa329f5064084c7d49d0c.png">
-  <meta name="msapplication-config" content="https://hca.twimg.com/assets/browserconfig-f2253bcaac9d2fbb668e4819e692eb0cb3ae8ec72cc687b15ea93cc6bd3ead4b.xml">
-  <meta name="theme-color" content="#ffffff">
+                    div.post div.quote div.source a {
+                        color: #555;
+                    }
+            
+            /* Link Post */
+            
+                div.post div.link a.link {
+                    font: Bold 20px Helvetica, sans-serif;
+                    letter-spacing: -1px;
+                    color: #c00;
+                }
 
+                    div.post div.link span.description {
+                        font-size: 13px;
+                        font-weight: normal;
+                        letter-spacing: -1px;
+                        color: #444;
+                    }
+            
+            /* Conversation Post */
+                        
+                div.post div.conversation ul {
+                    list-style-type: none;
+                    margin: 0px;
+                    padding: 0px 0px 0px 1px;
+                    border-left: solid 5px #bbb;
+                }
+            
+                    div.post div.conversation ul li {
+                        font-size: 12px;
+                        padding: 4px 10px 4px 8px;
+                        color: #444;
+                        margin-bottom: 1px;
+                    }
+            
+                        div.post div.conversation ul li span.label {
+                            font-weight: bold;
+                        }
+                        
+                            div.post div.conversation ul li span.user_1 {
+                                color: #c00;
+                            }
+                            
+                            div.post div.conversation ul li span.user_2 {
+                                color: #00c;
+                            }
+                            
+                            div.post div.conversation ul li span.user_3 {
+                                color: #0a0;
+                            }
+                        
+                        div.post div.conversation ul li.odd {
+                            background-color: #f4f4f4;
+                        }
 
+                        div.post div.conversation ul li.even {
+                            background-color: #e8e8e8;
+                        }
+            
+            /* Video Post */
+            
+                div.post div.video {
+                    width: 400px;
+                    margin: auto;
+                }
 
-    <link rel="stylesheet" media="all" href="https://abs.twimg.com/font/gotham-narrow-v3.css" />
-    <!--[if IE 8 ]>
-      <link href="https://support.twitter.com/assets/application-9fc5aba00a9a2429444ab582ecc51d3c2b715e9d9d429bc01c5fbf0a24acd192.css" media="all" rel="stylesheet">
-      <link href="https://support.twitter.com/assets/ie8-d7144f4525f38c8748a0fbefa0ee0c59fbb99b131b2ca7aa7489ebf6d4c7dda0.css" media="all" rel="stylesheet">
-      <script src="https://hca.twimg.com/assets/lib/html5shiv.min-e87bcce4761b410d32df511bc602a89913a89bf460d121a7736175817d57552a.js"></script>
-      <script src="https://hca.twimg.com/assets/lib/respond.min-e04f428122bb643cb933c18b81e3c1ebadab8ef60857cc071424996c76e166b5.js"></script>
-    <![endif]-->
-    <!--[if (gt IE 8)|!(IE)]><!--><link rel="stylesheet" media="all" href="https://hca.twimg.com/assets/application-9fc5aba00a9a2429444ab582ecc51d3c2b715e9d9d429bc01c5fbf0a24acd192.css" /><!--<![endif]-->
-
-    <script src="https://hca.twimg.com/assets/lib/require-8a50251dabe47d10e8bd339bcabbf713dfa35ed790bbc445f40a3e1ace31fa8b.js" id="requirejs" data-main="https://hca.twimg.com/assets/application-721aa56ce2b92f1490ae9483cbf6e06d373c7ee63e4cef8bb9db7ca2b7a8cf86.js" data-page="https://hca.twimg.com/assets/pages/common-c0574ec20c0cc22050c70bd404175c1c56f0e18701709e23bbf5fa89252010b2.js" data-base="/assets"></script>
-    <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="tou6iqQ1GVZAupuFK09TfUc3oiR6PCDmVXLRGgM5bdBS3IXi+TVhWerEcZA8HSndTfYaARZ4YqXJwWxC2iPdsQ==" />
-
-    <meta property="og:title" content="" />
-    <meta property="og:site_name" content="Twitter Help Center" />
-    <meta property="og:description" content="Twitter is without a doubt the best way to share and discover what is happening right now." />
-    <meta property="og:image" content="https://hca.twimg.com/images/facebook-banner.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-  </head>
-  <body
-    class="home"
-    data-rack-env="production"
-    data-user-id=""
-    data-screenname="" ontouchstart>
-    <header role="banner">
-  
-  <div class="container">
-    <nav class="header-nav row visible-xs">
-      <h2 id="site-nav-heading" class="offscreen">Site Login Navigation</h2>
-
-      <div class="mobile-nav">
-        <div class="mobile-menu text-left visible-xs">
-  <button type="button" class="btn btn-link" id="btn-mobile-nav" aria-expanded="false">
-    <span class="sr-only">Toggle navigation</span>
-    <img src="https://hca.twimg.com/images/icon-hamburger2x.png" alt="Icon hamburger2x" width="20" height="17" />
-  </button>
-</div>
-
-      </div>
-    </nav>
-    <ul class="profile-menu hidden-xs">
-      <li>
-        <div class="locale-switcher dropdown"><a class="locale-current dropdown-toggle" data-toggle="dropdown" href="#">English<i class="fa fa-chevron-down"></i></a><ul class="dropdown-menu pull-right locale-options" role="menu"><li class="en" role="menuitem"><a class="language-link active" lang="en" href="">English</a></li><li class="fr" role="menuitem"><a class="language-link active" lang="fr" href="">Français</a></li><li class="it" role="menuitem"><a class="language-link active" lang="it" href="">Italiano</a></li><li class="de" role="menuitem"><a class="language-link active" lang="de" href="">Deutsch</a></li><li class="es" role="menuitem"><a class="language-link active" lang="es" href="">Español</a></li><li class="ja" role="menuitem"><a class="language-link active" lang="ja" href="">日本語</a></li><li class="pt" role="menuitem"><a class="language-link active" lang="pt" href="">Português</a></li><li class="ko" role="menuitem"><a class="language-link active" lang="ko" href="">한국어</a></li><li class="ru" role="menuitem"><a class="language-link active" lang="ru" href="">Русский</a></li><li class="nl" role="menuitem"><a class="language-link active" lang="nl" href="">Nederlands</a></li><li class="id" role="menuitem"><a class="language-link active" lang="id" href="">Bahasa Indonesia</a></li><li class="hi" role="menuitem"><a class="language-link active" lang="hi" href="">हिन्दी</a></li><li class="msa" role="menuitem"><a class="language-link active" lang="msa" href="">Bahasa Melayu</a></li><li class="fil" role="menuitem"><a class="language-link active" lang="fil" href="">Filipino</a></li><li class="zh-cn" role="menuitem"><a class="language-link active" lang="zh-cn" href="">简体中文</a></li><li class="zh-tw" role="menuitem"><a class="language-link active" lang="zh-tw" href="">正體中文</a></li><li class="tr" role="menuitem"><a class="language-link active" lang="tr" href="">Türkçe</a></li><li class="no" role="menuitem"><a class="language-link active" lang="no" href="">Norsk</a></li><li class="da" role="menuitem"><a class="language-link active" lang="da" href="">Dansk</a></li><li class="fi" role="menuitem"><a class="language-link active" lang="fi" href="">Suomi</a></li><li class="sv" role="menuitem"><a class="language-link active" lang="sv" href="">Svenska</a></li><li class="pl" role="menuitem"><a class="language-link active" lang="pl" href="">Polski</a></li><li class="hu" role="menuitem"><a class="language-link active" lang="hu" href="">Magyar</a></li><li class="ar" role="menuitem"><a class="language-link active" lang="ar" href="">العربية</a></li><li class="fa" role="menuitem"><a class="language-link active" lang="fa" href="">فارسی</a></li><li class="th" role="menuitem"><a class="language-link active" lang="th" href="">ภาษาไทย</a></li><li class="he" role="menuitem"><a class="language-link active" lang="he" href="">עברית</a></li><li class="bn" role="menuitem"><a class="language-link active" lang="bn" href="">বাংলা</a></li><li class="cs" role="menuitem"><a class="language-link active" lang="cs" href="">Čeština</a></li><li class="ro" role="menuitem"><a class="language-link active" lang="ro" href="">Limba română</a></li><li class="uk" role="menuitem"><a class="language-link active" lang="uk" href="">Український</a></li><li class="vi" role="menuitem"><a class="language-link active" lang="vi" href="">Tiếng Việt</a></li></ul></div>
-      </li>
-        <li>
-          <a class="btn btn-heading-home" href="https://twitter.com/login?redirect_after_login=https%3A%2F%2Fsupport.twitter.com%2F">Log in</a>
-        </li>
-        <li>
-          <a class="btn btn-heading-home" href="https://twitter.com/signup">Sign up</a>
-        </li>
-      </li>
-    </ul>
-
-    <h1><i class="twitter-logo"></i> Help Center</h1>
-    <form id="home-search" accept-charset="UTF-8" page="1" action="/search" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
-      <div class="search-bar">
-        <button type="submit" class="btn-search">
-          <i class="fa fa-search"></i>
-        </button>
-        <input type="search" name="query" id="search-input" maxlength="255" class="form-control input-lg" placeholder="Search" />
-      </div>
-</form>    <ul class="search-terms list-unstyled list-inline hidden-xs">
-      <li>
-        <a href="/articles/100990">How Do I Sign Up?</a>
-      </li>
-      <li>
-        <a href="/articles/14606">What Is A Direct Message?</a>
-      </li>
-      <li>
-        <a href="/articles/49309">What Is A Hashtag?</a>
-      </li>
-      <li>
-        <a href="/articles/101002">How Can I Find My Friends</a>
-      </li>
-      <li>
-        <a href="/articles/14663">I Forgot My Password</a>
-      </li>
-      <li>
-        <a href="/articles/20172128">Can I Tweet Videos?</a>
-      </li>
-    </ul>
-  </div>
-</header>
-<div id="mobile-category-nav" class="init-hide">
-  <header>
-    <button class="btn btn-link"><img src="https://hca.twimg.com/images/icon-close2x.png" alt="Icon close2x" /></button>
-    <a href="/">Help Center</a>
-  </header>
-  <ul>
-      <li class="category-nav-item">
-        <a href="/categories/281" style="background-image: url('https://hca.twimg.com/assets/menu-icon-category-281-b06186db12c87919a7052847312b1e226005c602d907cff4ac70e824fae78ae4.png')">
-          <span>Using Twitter</span>
-        </a>
-      </li>
-      <li class="category-nav-item">
-        <a href="/categories/282" style="background-image: url('https://hca.twimg.com/assets/menu-icon-category-282-2ecf2a30d9bd15a1eb969a6c8f81ad81c4e419d571d189e1047594a07b8a5aa9.png')">
-          <span>My account</span>
-        </a>
-      </li>
-      <li class="category-nav-item">
-        <a href="/categories/283" style="background-image: url('https://hca.twimg.com/assets/menu-icon-category-283-4f43c0d888d4382a75fc2369cbf88351533e6150ea3a2fdce2b9de7803641c3d.png')">
-          <span>Fix a problem</span>
-        </a>
-      </li>
-      <li class="category-nav-item">
-        <a href="/categories/284" style="background-image: url('https://hca.twimg.com/assets/menu-icon-category-284-fb09f75d72eee932bb42264478ea768405c545d65ff3f153265fcc00100c6e84.png')">
-          <span>Policies and reporting</span>
-        </a>
-      </li>
-  </ul>
-</div>
-
-<main role="main">
-  <section class="container">
-    <div class="row">
-      <div class="page-title col-md-12">
-        <h2>Twitter Support</h2>
-
-        <p class="subheading">Get instant answers for the most common questions and learn how to use Twitter like a pro.</p>
-      </div>
-    </div>
-    <div class="row">
-      <ul class="home-categories list-unstyled">
-          <li class="col-md-3 col-sm-6 col-xs-12">
-            <a href="/categories/281" class="home-category inside inside-full-height">
-              <!--[if IE 8 ]><h3 style="background-image: url('https://hca.twimg.com/assets/ie8-home-icon-category-281-453e8970a8106804d80f53631b56d494cc1f71f43b2b5aa83186555d33f5a6db.png')">Using Twitter</h3><![endif]-->
-              <!--[if (gt IE 8)|!(IE)]><!-->
-              <h3 style="background-image: url('https://hca.twimg.com/assets/home-icon-category-281-83048446858f1f97b02c2ad2f4f887ddb6680bfda08e89b27cb8d61bc2bb2adb.png')">Using Twitter</h3><!--<![endif]-->
-              <p>Learn the basics to help you make the most of Twitter</p>
-
-              <div class="btn btn-block btn-primary">More</div>
-            </a>
-          </li>
-          <li class="col-md-3 col-sm-6 col-xs-12">
-            <a href="/categories/282" class="home-category inside inside-full-height">
-              <!--[if IE 8 ]><h3 style="background-image: url('https://hca.twimg.com/assets/ie8-home-icon-category-282-eef7e0785f37df5c45c7b9295710b970e918d1f78dcf542146f72805e55c1ca7.png')">My account</h3><![endif]-->
-              <!--[if (gt IE 8)|!(IE)]><!-->
-              <h3 style="background-image: url('https://hca.twimg.com/assets/home-icon-category-282-c1ba9be9c02f66d100412e068855ee3f4a64669d256973afd5d7b61d05a0c385.png')">My account</h3><!--<![endif]-->
-              <p>Manage your profile and account settings</p>
-
-              <div class="btn btn-block btn-primary">More</div>
-            </a>
-          </li>
-          <li class="col-md-3 col-sm-6 col-xs-12">
-            <a href="/categories/283" class="home-category inside inside-full-height">
-              <!--[if IE 8 ]><h3 style="background-image: url('https://hca.twimg.com/assets/ie8-home-icon-category-283-c6f3ce37649193697e19635bc0db88a24e51981d5909c391b78d29f0465f7e6b.png')">Fix a problem</h3><![endif]-->
-              <!--[if (gt IE 8)|!(IE)]><!-->
-              <h3 style="background-image: url('https://hca.twimg.com/assets/home-icon-category-283-d395b01a98d38eed6a179f53dbed0f7922d946412486fc595a3de3522279cab1.png')">Fix a problem</h3><!--<![endif]-->
-              <p>Find solutions to the most common problems</p>
-
-              <div class="btn btn-block btn-primary">More</div>
-            </a>
-          </li>
-          <li class="col-md-3 col-sm-6 col-xs-12">
-            <a href="/categories/284" class="home-category inside inside-full-height">
-              <!--[if IE 8 ]><h3 style="background-image: url('https://hca.twimg.com/assets/ie8-home-icon-category-284-47eca5a33cc8da4dac6356f99edbd78443770776c0f6118052b9ef7b7992857d.png')">Policies and reporting</h3><![endif]-->
-              <!--[if (gt IE 8)|!(IE)]><!-->
-              <h3 style="background-image: url('https://hca.twimg.com/assets/home-icon-category-284-dc9aa822b9c2c21c4a3e9732b367e14e7acd611e13967148c11c4fea75549895.png')">Policies and reporting</h3><!--<![endif]-->
-              <p>Understand the Twitter Rules and report violations</p>
-
-              <div class="btn btn-block btn-primary">More</div>
-            </a>
-          </li>
-      </ul>
-    </div>
-  </section>
-  <section class="new-features hide-ie8">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 new-features">
-          <div class="row">
-            <div class="col-md-6 col-md-push-6 col-sm-6 col-sm-push-6">
-              <section>
-                <h2 class="section-heading">New Features</h2>
-
-                <p class="section-subheading">Make Twitter your own</p>
-              </section>
-              <figure>
-                <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Learn how mute, block and report can help you take control of your experience on Twitter.&#10;<a href="https://t.co/nE1Qc45Xro">https://t.co/nE1Qc45Xro</a></p>&mdash; Twitter Support (@TwitterSupport) <a href="https://twitter.com/Support/status/578219356900851713">March 18, 2015</a></blockquote>
-              </figure>
-              <section>
-                <p class="subheading">Learn how mute, block, and report can improve your experience</p>
-
-                <a href="/articles/20170134" class="btn btn-primary text-uppercase">Learn More</a>
-              </section>
-            </div>
-            <div class="col-md-6 hidden-xs">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="container">
-    <div class="row">
-      <section class="col-md-6 col-xs-12 col-sm-6 quick-answers">
-        <h2 class="section-heading">Quick Answers</h2>
-
-        <p class="section-subheading">Trending Topics</p>
-        <ul class="faqs list-unstyled">
-          <li><a href="/articles/127871">How do I make changes to my profile?</a></li>
-          <li><a href="/articles/14016">What are protected Tweets?</a></li>
-          <li><a href="/articles/15790">Why was my account suspended?</a></li>
-          <li><a href="/articles/101002">How do I find my friends on Twitter?</a></li>
-          <li><a href="/articles/20156423">Can I Tweet multiple photos?</a></li>
-          <li><a href="/articles/14606">How do I use Direct Messages?</a></li>
-          <li><a href="/articles/14023">What are replies and mentions?</a></li>
-          <li><a href="https://business.twitter.com/">How can I advertise my business on Twitter?</a></li>
-          <li><a href="/forms">How do I contact support?</a></li>
-        </ul>
-      </section>
-      <aside class="col-md-6 col-sm-6 hidden-xs hide-ie8">
-        <h2 class="section-heading">For Tips &amp; Insights</h2>
-
-        <p class="section-subheading">
-          Follow @TwitterSupport
-        </p>
-          <div id="tweet-sidebar">
-    <a href="https://twitter.com/twitter" class="twitter-timeline" data-lang="en" height="300"
-       data-widget-id="315213265556881409">
-      <span class="translation_missing" title="translation missing: en.home.tweet_sidebar.tweets_by">Tweets By</span>    </a>
-  </div>
-
-      </aside>
-    </div>
-  </section>
-</main>
-<div class="row page-footer">
-
-  <div class="page-footer-wrapper">
-    <aside role="complementary">
-      <h2>New to Twitter?</h2>
-
-      <p class="subheading">Sign up now and get your own personalized timeline!</p>
-      <a class="btn btn-blue" href="https://twitter.com/signup">Create Account</a>
-    </aside>
-  </div>
-</div>
+            /* Footer */
+            
+                div#footer {
+                    margin: 40px 0px 30px 0px;
+                    text-align: center;
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: #444;
+                }
+            
+                    div#footer a {
+                        text-decoration: none;
+                        color: #444;
+                    }
+            
+                        div#footer a:hover {
+                            text-decoration: underline;
+                        }
+                    
+                    div#footer div#credit {
+                        font: Normal 13px Georgia, serif;
+                        font-size: 13px;
+                        margin-top: 15px;
+                    }</style><!-- IE10 viewport hack for Surface/desktop Windows 8 bug --><script src="//static.status.io/public/statuspage/js/ie10-viewport-bug-workaround.min.js"></script><!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --><!-- WARNING: Respond.js doesn't work if you view the page via file:// --><!--if lt IE 9script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+--></head><body><!-- Scripts--><script src="//static.status.io/public/statuspage/js/jquery.min.js"></script><script src="//static.status.io/public/statuspage/js/bootstrap.min.js"></script><script src="//static.status.io/public/statuspage/js/Autolinker.min.js"></script><div class="container"><!-- Header image--><div id="statusio_header" class="header"><div id="statusio_header_image" style="margin-bottom: 25px; text-align:center;" class="row"><div class="col-md-12"><a href="http://www.twitter.com"><img id="statuspage_header_image" src="//image.status.io/ElcNuM5TbxTa.png" alt="Header Image"></a></div></div><div class="row"><div class="col-md-12 col-sm-12"></div></div></div><div id="statusio_status_bar" style="background:#0bbce3; border-bottom:0;" class="panel panel-default top_bar make_round"><div style="vertical-align: middle;" class="panel-body"><div class="row"><div class="col-md-8 col-sm-6 col-xs-12"><strong id="statusbar_text">All Systems Operational</strong></div><div class="col-md-4 col-sm-6 hidden-xs"><p id="updated_ago" class="pull-right white">Updated 7 months ago</p></div></div></div></div><div id="statusio_last_updated_bar_xs" style="background:#0bbce3; border-bottom:0;" class="panel panel-default top_bar make_round visible-xs-block"><div style="vertical-align: middle;" class="panel-body"><div class="row"><div class="col-xs-12"><p id="updated_ago" class="white">Updated 7 months ago</p></div></div></div></div><div id="statusio_components" class="page_section"><!-- single component--><div id="component_564314ae3309c22c3b00030a" style="border: 1px solid #27AE60;" class="component component_single status_td"><div class="row"><div class="col-md-8 col-sm-8 col-xs-8"><p class="component_name">Twitter<span data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter Main Website"> <i class="fa fa-info-circle"></i></span></p></div><div class="col-md-4 col-sm-4 col-xs-4"><p id="status_text-564314ae3309c22c3b00030a" style="color: #0bbce3;" class="pull-right component-status">Operational</p></div></div></div></div><!-- Metrics--><!-- Map--><!-- Footer--><div id="section_page_links" class="page_section"><div class="row"><div class="col-sm-9"><div id="bottom_menu"><strong><a href="/pages/564314ae3309c22c3b0002fa" class="pull-left margin-right-20">Status</a></strong><a href="/pages/history/564314ae3309c22c3b0002fa" class="pull-left margin-right-20">History</a></div></div><div class="col-sm-3"><div id="statusio_branding"><a href="#" class="pull-right">Powered by Status.io</a></div></div></div></div><!-- Subscriber modal--><div id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel" aria-hidden="true" class="modal fade"><div class="modal-dialog"><div class="modal-content make_round modal-text"><div class="modal-body"><div class="row"><div class="col-md-10"><ul role="tablist" class="nav nav-pills"><li id="tab_menu_email"><a href="#tab_email" role="tab" data-toggle="tab">Email</a></li><li id="tab_menu_webhook"><a href="#tab_webhook" role="tab" data-toggle="tab">Webhook</a></li><li id="tab_menu_rss"><a href="#tab_rss" role="tab" data-toggle="tab">RSS</a></li></ul></div><div class="col-md-2"><button type="button" data-dismiss="modal" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button></div></div><div class="row margin-top-40"><div class="col-md-12"><div class="tab-content"> <div id="tab_email" class="tab-pane"><div class="row"><div class="col-sm-12"><h4 id="subscribe_email_text_content" class="text-center">Subscribe to receive status updates by email</h4></div></div><br><div class="row margin-top-20"><div class="col-md-3"></div><div class="col-md-6"><input id="subscribe_email_address" type="text" placeholder="Email" name="subscribe_email_address" autofocus="autofocus" class="form-control make_round"><input type="hidden" placeholder="Email" name="email" class="form-control"></div></div><div class="row subscribe-modal-footer"><div class="row"><div class="col-md-6"><div id="result_subscribe_email" class="pull-left"></div></div><div class="col-md-6"><button type="button" data-dismiss="modal" class="btn btn-default make_round">Close</button><button id="subscribe_button_email" type="button" class="btn btn-default make_round">Subscribe</button><button id="manage_button_email" type="button" style="display:none;" class="btn btn-default make_round">Manage Subscription</button></div></div><div class="row"><div style="text-align:center;" class="col-md-12"><br><small id="manage_subscription_email">Manage Existing Subscription</small><small id="dont_manage_subscription_email" style="display:none;">Create New Subscription</small></div></div></div></div><div id="tab_webhook" class="tab-pane"><div class="row"><div class="col-sm-12"><h4 id="subscribe_webhook_text_content" class="text text-center">Subscribe to receive status updates by webhook</h4></div></div><br><div class="row margin-top-20"><div class="col-md-2"></div><div class="col-md-8"><input type="text" name="subscribe_webhook_address" id="subscribe_webhook_address" placeholder="http://example.com/hook" class="form-control make_round"><p class="help-block">Each status update will POST a JSON payload to this URL</p></div></div><br><div class="row margin-top-20"><div class="col-md-2"></div><div class="col-md-8"><input type="text" name="subscribe_webhook_address_email" id="subscribe_webhook_address_email" placeholder="Email" class="form-control make_round"><p class="help-block">Email address for managing webhook</p></div></div><div class="row subscribe-modal-footer"><div class="row"><div class="col-md-6"><div id="result_subscribe_webhook" class="pull-left"></div></div><div class="col-md-6"><button type="button" data-dismiss="modal" class="btn btn-default make_round">Close</button><button id="subscribe_button_webhook" type="button" class="btn btn-default make_round">Subscribe</button><button id="manage_button_webhook" type="button" style="display:none;" class="btn btn-default make_round">Manage Subscription</button></div></div><div class="row"><div style="text-align:center;" class="col-md-12"><br><small id="manage_subscription_webhook">Manage Existing Subscription</small><small id="dont_manage_subscription_webhook" style="display:none;">Create New Subscription</small></div></div></div></div><div id="tab_rss" class="tab-pane"><div class="row"><div class="col-sm-12"><h4 class="text-center">Subscribe to receive status updates via RSS</h4></div></div><br><div class="row margin-top-20"><div class="col-md-2"></div><div class="col-md-8 text-center"><a href="http://status.twitterstat.us/pages/564314ae3309c22c3b0002fa/rss" target="_blank" style="color:#000; font-size: 20px;">RSS Feed</a></div></div><div class="row subscribe-modal-footer"><div class="col-md-6"></div><div class="col-md-6"><button type="button" data-dismiss="modal" class="btn btn-default make_round">Close</button></div></div></div></div></div></div></div></div></div></div></div><!-- Subscriber scripts--><script>$(document).ready(function(){
+  $('#tab_email').addClass('active');
+  $('#tab_menu_email').addClass('active');
+});</script><script>$("#subscribe_button_email").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_email_address").val();
+  var email = $("#email").val();
+  $.ajax({
+    url: '/subscriber/add',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "email",
+      address: address,
+      email: email
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'Thanks for subscribing. Check your email for instructions.';
+      }
+      $("#result_subscribe_email").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_email").show();
+      setTimeout(function(){
+        $("#result_subscribe_email").fadeOut("slow", function () {
+        $("#result_subscribe_email").hide();
+            });
+      }, 5000);
+    }
+  });
+})
+</script><script>$("#subscribe_button_sms").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_sms_country_code").val() + $("#subscribe_sms_number").val();
+  $.ajax({
+    url: '/subscriber/add',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "sms",
+      address: address
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'Check your phone for the confirmation text message';
+      }          
+      $("#result_subscribe_sms").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_sms").show();
+      setTimeout(function(){
+        $("#result_subscribe_sms").fadeOut("slow", function () {
+        $("#result_subscribe_sms").hide();
+            });
+      }, 8000);
+    }
+  });
+})
+</script><script>$("#subscribe_button_webhook").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_webhook_address").val();
+  var address_email = $("#subscribe_webhook_address_email").val();
+  $.ajax({
+    url: '/subscriber/add',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "webhook",
+      address: address,
+      address_email: address_email
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'Thanks for subscribing. Check your email for instructions.';
+      }          
+      $("#result_subscribe_webhook").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_webhook").show();
+      setTimeout(function(){
+        $("#result_subscribe_webhook").fadeOut("slow", function () {
+        $("#result_subscribe_webhook").hide();
+            });
+      }, 5000);
+    }
+  });
+})
+</script><script>$('#subscribeModal').on('shown.bs.modal', function() {
+  $(this).find('input:first').focus();
+});  
 
 
-    <footer role="contentinfo">
-  <div class="visible-xs">
-    <div class="locale-switcher dropup"><a class="locale-current dropdown-toggle" data-toggle="dropdown" href="#">English<i class="fa fa-chevron-up"></i></a><ul class="dropdown-menu locale-options" role="menu"><div class="row"><div class="col-xs-6"><ul class="multi-column-dropdown"><li class="en" role="menuitem"><a class="language-link active" lang="en" href="">English</a></li><li class="fr" role="menuitem"><a class="language-link active" lang="fr" href="">Français</a></li><li class="it" role="menuitem"><a class="language-link active" lang="it" href="">Italiano</a></li><li class="de" role="menuitem"><a class="language-link active" lang="de" href="">Deutsch</a></li><li class="es" role="menuitem"><a class="language-link active" lang="es" href="">Español</a></li><li class="ja" role="menuitem"><a class="language-link active" lang="ja" href="">日本語</a></li><li class="pt" role="menuitem"><a class="language-link active" lang="pt" href="">Português</a></li><li class="ko" role="menuitem"><a class="language-link active" lang="ko" href="">한국어</a></li><li class="ru" role="menuitem"><a class="language-link active" lang="ru" href="">Русский</a></li><li class="nl" role="menuitem"><a class="language-link active" lang="nl" href="">Nederlands</a></li><li class="id" role="menuitem"><a class="language-link active" lang="id" href="">Bahasa Indonesia</a></li><li class="hi" role="menuitem"><a class="language-link active" lang="hi" href="">हिन्दी</a></li><li class="msa" role="menuitem"><a class="language-link active" lang="msa" href="">Bahasa Melayu</a></li><li class="fil" role="menuitem"><a class="language-link active" lang="fil" href="">Filipino</a></li><li class="zh-cn" role="menuitem"><a class="language-link active" lang="zh-cn" href="">简体中文</a></li><li class="zh-tw" role="menuitem"><a class="language-link active" lang="zh-tw" href="">正體中文</a></li><li class="tr" role="menuitem"><a class="language-link active" lang="tr" href="">Türkçe</a></li><li class="no" role="menuitem"><a class="language-link active" lang="no" href="">Norsk</a></li></ul></div><div class="col-xs-6"><ul class="multi-column-dropdown"><li class="da" role="menuitem"><a class="language-link active" lang="da" href="">Dansk</a></li><li class="fi" role="menuitem"><a class="language-link active" lang="fi" href="">Suomi</a></li><li class="sv" role="menuitem"><a class="language-link active" lang="sv" href="">Svenska</a></li><li class="pl" role="menuitem"><a class="language-link active" lang="pl" href="">Polski</a></li><li class="hu" role="menuitem"><a class="language-link active" lang="hu" href="">Magyar</a></li><li class="ar" role="menuitem"><a class="language-link active" lang="ar" href="">العربية</a></li><li class="fa" role="menuitem"><a class="language-link active" lang="fa" href="">فارسی</a></li><li class="th" role="menuitem"><a class="language-link active" lang="th" href="">ภาษาไทย</a></li><li class="he" role="menuitem"><a class="language-link active" lang="he" href="">עברית</a></li><li class="bn" role="menuitem"><a class="language-link active" lang="bn" href="">বাংলা</a></li><li class="cs" role="menuitem"><a class="language-link active" lang="cs" href="">Čeština</a></li><li class="ro" role="menuitem"><a class="language-link active" lang="ro" href="">Limba română</a></li><li class="uk" role="menuitem"><a class="language-link active" lang="uk" href="">Український</a></li><li class="vi" role="menuitem"><a class="language-link active" lang="vi" href="">Tiếng Việt</a></li></ul></div></div></ul></div>
-  </div>
-  <nav aria-labelledby="footer-nav-heading" class="container">
-    <h2 id="footer-nav-heading" class="offscreen">Twitter Properties Links</h2>
-    <ul class="list-unstyled list-inline">
-      <li>
-        <a href="https://about.twitter.com">About</a>
-      </li>
-      <li>
-        <a href="https://about.twitter.com/company">Company</a>
-      </li>
-      <li>
-        <a href="https://blog.twitter.com">Blog</a>
-      </li>
-      <li>
-        <a href="/">Help</a>
-      </li>
-      <li>
-        <a href="http://status.twitter.com">Status</a>
-      </li>
-      <li>
-        <a href="https://about.twitter.com/careers">Jobs</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/tos">Terms</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/privacy">Privacy</a>
-      </li>
-      <li>
-        <a href="https://support.twitter.com/articles/20170514">Cookies</a>
-      </li>
-      <li>
-        <a href="https://support.twitter.com/articles/20170451">Ads Info</a>
-      </li>
-      <li>
-        <a href="https://about.twitter.com/company/brand-assets">Brand</a>
-      </li>
-      <li>
-        <a href="https://ads.twitter.com/start?ref=gl-tw-tw-twitter-advertise">Advertise</a>
-      </li>
-      <li>
-        <a href="https://business.twitter.com">Businesses</a>
-      </li>
-      <li>
-        <a href="https://media.twitter.com">Media</a>
-      </li>
-      <li>
-        <a href="https://dev.twitter.com">Developers</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="footer-copyright">
-    © 2017 Twitter, Inc.
-  </div>
-</footer>
 
-    <script src="https://hca.twimg.com/assets/shared/widget-228945d47d31f987446ffceb9b5fa1bb6d217d323b3c2dcf694b8c70c7e50ea9.js"></script>
-    <span class="hide" id="google_analytics_1" data-value="en"></span>
-<span class="hide" id="google_analytics_3" data-value="false"></span>
+</script><script>$("#manage_subscription_email").click(function (event) {
+  event.preventDefault();
+  $("#manage_subscription_email").hide();
+  $("#subscribe_button_email").hide();
+  $("#manage_button_email").show();
+  $("#subscribe_email_text_content").html("Enter the email address you subscribed with");
+  $("#dont_manage_subscription_email").show();
+})
+</script><script>$("#dont_manage_subscription_email").click(function (event) {
+  event.preventDefault();
+  $("#dont_manage_subscription_email").hide();
+  $("#subscribe_button_email").show();
+  $("#manage_button_email").hide();
+  $("#subscribe_email_text_content").html("Subscribe to receive status updates by email");
+  $("#manage_subscription_email").show();
+})
+</script><script>$("#manage_button_email").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_email_address").val();
+  var email = $("#email").val();
+  $.ajax({
+    url: '/subscriber/email/request_manage_link',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "email",
+      address: address,
+      email: email
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'A link to manage your subscription has been emailed to you';
+      }
+      $("#result_subscribe_email").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_email").show();
+      setTimeout(function(){
+        $("#result_subscribe_email").fadeOut("slow", function () {
+        $("#result_subscribe_email").hide();
+            });
+      }, 5000);
+    }
+  });
+})
 
-<script src="https://hca.twimg.com/assets/shared/google_analytics-47dcde443c3d335114de5783b908314c50a616b44bec290a7786780102a47fbe.js"></script>
 
-  </body>
-</html>
+
+</script><script>$("#manage_subscription_webhook").click(function (event) {
+  event.preventDefault();
+  $("#manage_subscription_webhook").hide();
+  $("#subscribe_button_webhook").hide();
+  $("#manage_button_webhook").show();
+  $("#subscribe_webhook_text_content").html("Enter the webhook URL and email address you subscribed with");
+  $("#dont_manage_subscription_webhook").show();
+})
+</script><script>$("#dont_manage_subscription_webhook").click(function (event) {
+  event.preventDefault();
+  $("#dont_manage_subscription_webhook").hide();
+  $("#subscribe_button_webhook").show();
+  $("#manage_button_webhook").hide();
+  $("#subscribe_webhook_text_content").html("Subscribe to receive status updates by webhook");
+  $("#manage_subscription_webhook").show();
+})
+</script><script>$("#manage_button_webhook").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_webhook_address").val();
+  var address_email = $("#subscribe_webhook_address_email").val();
+  $.ajax({
+    url: '/subscriber/webhook/request_manage_link',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "webhook",
+      address: address,
+      address_email: address_email
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'A link to manage your subscription has been emailed to you';
+      }
+      $("#result_subscribe_webhook").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_webhook").show();
+      setTimeout(function(){
+        $("#result_subscribe_webhook").fadeOut("slow", function () {
+        $("#result_subscribe_webhook").hide();
+            });
+      }, 5000);
+    }
+  });
+})
+
+
+
+</script><script>$("#manage_subscription_sms").click(function (event) {
+  event.preventDefault();
+  $("#manage_subscription_sms").hide();
+  $("#subscribe_button_sms").hide();
+  $("#manage_button_sms").show();
+  $("#subscribe_sms_text_content").html("Enter the number you subscribed with");
+  $("#dont_manage_subscription_sms").show();
+})
+</script><script>$("#dont_manage_subscription_sms").click(function (event) {
+  event.preventDefault();
+  $("#dont_manage_subscription_sms").hide();
+  $("#subscribe_button_sms").show();
+  $("#manage_button_sms").hide();
+  $("#subscribe_sms_text_content").html("Subscribe to receive status updates by text message");
+  $("#manage_subscription_sms").show();
+})
+</script><script>$("#manage_button_sms").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_sms_country_code").val() + $("#subscribe_sms_number").val();
+  var sms = $("#sms").val();
+  $.ajax({
+    url: '/subscriber/sms/request_manage_link',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "sms",
+      address: address
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'A link to manage your subscription has been texted to you';
+      }
+      $("#result_subscribe_sms").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_sms").show();
+      setTimeout(function(){
+        $("#result_subscribe_sms").fadeOut("slow", function () {
+        $("#result_subscribe_sms").hide();
+            });
+      }, 5000);
+    }
+  });
+})
+
+
+
+</script><script>$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
+});
+</script><!-- Clicky Analytics--><script>var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(100794436);
+(function() {
+var s = document.createElement('script');
+s.type = 'text/javascript';
+s.async = true;
+s.src = '//static.getclicky.com/js';
+( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();</script><noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100794436ns.gif"></p></noscript></body></html>
