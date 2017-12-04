@@ -1,2338 +1,624 @@
-<cq:includeClientLib categories="cq.jquery"/>
-<!doctype html>
-  <html lang="en" prefix="og: http://ogp.me/ns#">
-  <head>
-    <meta charset="utf-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Twitter Developer Platform — Twitter
-      Developers</title>
-<meta name="description"/>
-<link rel="canonical" href="https://developer.twitter.com/content/developer-twitter/en.html">
-
-
-
-<meta property="og:url" content="https://developer.twitter.com/content/developer-twitter/en.html"/>
-<meta property="og:type" content="article"/>
-<meta property="og:title" content="Twitter Developer Platform"/>
-
-
-
-
-<meta name="twitter:card" content="summary"/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <link rel="alternate" hreflang="en" href="https://developer.twitter.com/content/developer-twitter/en.html"/>
-      <link rel="alternate" hreflang="ja" href="https://developer.twitter.com/content/developer-twitter/ja.html"/>
-      <link rel="alternate" hreflang="pt" href="https://developer.twitter.com/content/developer-twitter/pt.html"/>
-      <link rel="alternate" hreflang="fr" href="https://developer.twitter.com/content/developer-twitter/fr.html"/>
-
-
-<meta name="twitter:widgets:new-embed-design" content="on"/>
-<meta name="twitter:widgets:csp" content="on"/>
-
-<link href="https://abs.twimg.com/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-
-
-<script type="application/json" id="analytics-settings">{&quot;google&quot;:{&quot;accounts&quot;:[],&quot;options&quot;:{&quot;displayAdvertisingFeatures&quot;:false}},&quot;scribe&quot;:{&quot;scribeSectionWithImpression&quot;:false},&quot;trackingPixel&quot;:{},&quot;bing&quot;:{}}</script>
-
-    
-<script type="text/javascript" src="/etc/clientlibs/dtm/developer-twitter/ac0b17d7a4556cd264c3df3fac5054e8fd5023f8/satelliteLib-bcb222e3dbd22c730c028ee768fd0b3bea0a8ea0.js"></script>
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/etc/designs/developer-twitter/public/css/critical.css" media="all"/>
-<link rel="stylesheet" href="/etc/designs/developer-twitter/public/css/app.css" media="all"/>
-<link rel="stylesheet" href="/etc/designs/developer-twitter/public/css/universal.css" media="all"/>
-<link rel="stylesheet" href="/etc/designs/developer-twitter/public/css/structure.css" media="all"/>
-<link rel="stylesheet" href="/etc/designs/developer-twitter/public/css/content.css" media="all"/>
-<link rel="stylesheet" href="/etc/designs/developer-twitter/public/css/docs.css" media="all"/>
-
-<script type="text/javascript" src="/etc/designs/developer-twitter/public/js/common.js"></script>
-<script type="text/javascript" src="/etc/designs/developer-twitter/public/js/critical.js"></script>
-<script type="text/javascript" src="/etc/designs/developer-twitter/onload.js"></script>
-
-
-  </head>
-  <body class="theme--purple page home-page " data-analytics-page="developer" data-analytics-element="page">
-      <div id="component-wrapper">
-        
-<div class="nav theme-bg-color--dark" data-hidden="true" data-current-level="0">
-     <div class="nav--wrapper">
-         <header class="nav__header">
-            
-            <div class="nav__headeritem-left">
-               <div class="nav__headeritem-title">
-                 <span class="logo-title color--neutral-white">
-                    <span class="logo">
-                      
-                      <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"/></svg>
-
-                    </span>
-                    <span class="title color--neutral-white">Developer</span>
-                 </span>
-                 <a class="nav-icon" href="#">
-                   
-                   <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
-
-                 </a>
-                 <a class="nav-back color--neutral-white" href="#" data-nav-back="true">
-                   <span class="title color--neutral-white">Back</span>
-                 </a>
-               </div>
-            </div>
-            <ul class="nav--menu nav--menu--root" data-level="1" data-currentPage="/content/developer-twitter">
-              <li class="nav--mobile-item nav--menu__list-item color--neutral-white active-link" data-show-sub-level="false">
-                <a href="https://developer.twitter.com/en.html" title="Developer" class="color--neutral-white">
-                  <span class="nav--menu__list-item-text color--neutral-white">Developer</span>
-                </a>
-              </li>
-              <li class="nav--menu__list-item " data-show-sub-level="false">
-                  <a href="#" class="color--neutral-white " data-navtitle="Use cases">
-                    <span class="nav--menu__list-item-text color--neutral-white">Use cases</span>
-                    <span class="nav--menu__list-item-arrow">
-                        
-                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
-
-                      </span>
-                  </a>
-                  <ul class="nav--menu" data-level="2">
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/use-cases/advertise" title="Advertise" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Advertise</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/use-cases/publish-and-curate" title="Publish and curate" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Publish and curate</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/use-cases/analyze" title="Analyze" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Analyze</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/use-cases/engage" title="Engage" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Engage</span>
-                     </a>
-                   </li>
-                 </ul>
-               </li><li class="nav--menu__list-item " data-show-sub-level="false">
-                  <a href="#" class="color--neutral-white " data-navtitle="Products">
-                    <span class="nav--menu__list-item-text color--neutral-white">Products</span>
-                    <span class="nav--menu__list-item-arrow">
-                        
-                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
-
-                      </span>
-                  </a>
-                  <ul class="nav--menu" data-level="2">
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/products/accounts-and-users" title="Accounts and users" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Accounts and users</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/products/tweets" title="Tweets" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Tweets</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/products/direct-messages" title="Direct Messages" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Direct Messages</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/products/metrics" title="Metrics" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Metrics</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/products/ad-campaigns" title="Ad campaigns" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Ad campaigns</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/products/publisher-tools" title="Publisher tools and SDKs" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Publisher tools and SDKs</span>
-                     </a>
-                   </li>
-                 </ul>
-               </li><li class="nav--menu__list-item " data-show-sub-level="false">
-                  <a href="#" class="color--neutral-white " data-navtitle="Docs">
-                    <span class="nav--menu__list-item-text color--neutral-white">Docs</span>
-                    <span class="nav--menu__list-item-arrow">
-                        
-                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
-
-                      </span>
-                  </a>
-                  <ul class="nav--menu" data-level="2">
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/docs/documentation" title="Documentation" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Documentation</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/docs/api-reference-index" title="API reference index" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">API reference index</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/docs/tutorials" title="Tutorials" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Tutorials</span>
-                     </a>
-                   </li>
-                 </ul>
-               </li><li class="nav--menu__list-item " data-show-sub-level="false">
-                  <a href="#" class="color--neutral-white " data-navtitle="More">
-                    <span class="nav--menu__list-item-text color--neutral-white">More</span>
-                    <span class="nav--menu__list-item-arrow">
-                        
-                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
-
-                      </span>
-                  </a>
-                  <ul class="nav--menu" data-level="2">
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/case-studies" title="Case studies" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Case studies</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/enterprise" title="Enterprise data" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Enterprise data</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/developer-terms" title="Developer terms" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Developer terms</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/pricing" title="Pricing" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Pricing</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/billing-faq" title="Billing FAQ" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Billing FAQ</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/community" title="Community" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Community</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/forum" title="Forum" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Forum</span>
-                     </a>
-                   </li>
-                 
-                   <li class="nav--menu__list-item ">
-                     <a href="https://developer.twitter.com/en/blog" title="Blog" class="color--neutral-white">
-                       <span class="nav--menu__list-item-text color--neutral-black">Blog</span>
-                     </a>
-                   </li>
-                 </ul>
-               </li>
-            </ul>
-
-            <div class="nav__headeritem-right">
-              <div class="freemium-nav" data-hidden="true" data-current-level="0">
-      <ul class="nav--menu nav--menu--root" data-level="1">
-        <!-- Handlebars template will be written here -->
-      </ul>
-</div>
-
-              <!--<sly data-sly-resource="region-selector"/>-->
-              <div class="search">
-                <a href="#" class="search-icon js-nav-search">
-                  
-                  <svg xmlns="http://www.w3.org/2000/svg" width="56" height="72" viewBox="0 0 56 72"><path d="M51.644 53.096l-7.409-7.409a4.606 4.606 0 0 0-3.915-1.295l-2.328-2.328a19.306 19.306 0 0 0 3.894-11.628 19.295 19.295 0 0 0-5.69-13.757 19.3 19.3 0 0 0-13.739-5.688 19.347 19.347 0 0 0-13.772 5.708c-7.58 7.583-7.581 19.917-.004 27.495a19.31 19.31 0 0 0 13.743 5.693 19.28 19.28 0 0 0 11.639-3.893l2.327 2.327c-.193 1.389.227 2.847 1.295 3.915l7.409 7.409A4.627 4.627 0 0 0 48.37 61c1.185 0 2.37-.452 3.274-1.357a4.627 4.627 0 0 0 0-6.547zM34.939 30.439c0 6.904-5.596 12.5-12.5 12.5s-12.5-5.596-12.5-12.5 5.596-12.5 12.5-12.5 12.5 5.596 12.5 12.5z"/><path d="M51.644 53.096l-7.409-7.409a4.606 4.606 0 0 0-3.915-1.295l-2.328-2.328a19.306 19.306 0 0 0 3.894-11.628 19.295 19.295 0 0 0-5.69-13.757 19.3 19.3 0 0 0-13.739-5.688 19.347 19.347 0 0 0-13.772 5.708c-7.58 7.583-7.581 19.917-.004 27.495a19.31 19.31 0 0 0 13.743 5.693 19.28 19.28 0 0 0 11.639-3.893l2.327 2.327c-.193 1.389.227 2.847 1.295 3.915l7.409 7.409A4.627 4.627 0 0 0 48.37 61c1.185 0 2.37-.452 3.274-1.357a4.627 4.627 0 0 0 0-6.547zM34.939 30.439c0 6.904-5.596 12.5-12.5 12.5s-12.5-5.596-12.5-12.5 5.596-12.5 12.5-12.5 12.5 5.596 12.5 12.5z"/></svg>
-
-                </a>
-              </div>
-              <div class="login-container signed-out" data-geo-location="AAAAEIBJqNrJCO5cFvVP/mWBo/HEqyUNt5x+WgFHXCI2BYneGLcacUU+vqHl5lQOA7OP9GaHiz4=" data-geo-country-code="BR">
-
-  <div class="avatar">
-    
-  </div>
-  
-
-  <div class="sign-in">
-    <div class="btn-container">
-      <a href="https://twitter.com/login">
-        <button type="button">Sign In</button>
-      </a>
-    </div>
-  </div>
-</div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><path d="M24.242 20L39.121 5.121a2.998 2.998 0 0 0 0-4.242 2.998 2.998 0 0 0-4.242 0l-14.88 14.879L5.122.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242L15.758 20 .879 34.879A2.998 2.998 0 0 0 3.001 40a2.99 2.99 0 0 0 2.121-.879L20 24.242l14.879 14.879a2.987 2.987 0 0 0 2.12.879 2.998 2.998 0 0 0 2.121-5.121L24.242 20z"/></svg>
-
-            </div>
-       </header>
-   </div>
-</div>
-<div class="nav__search-modal theme-bg-color--dark">
-  <div class="search-bar search-bar--js theme-color--extra-light theme-fill-color--extra-light theme-border-color--extra-light" data-search-path="/en/search-results.html">
-  <input placeholder="Type your search here" type="search" autocomplete="off" class="search-bar__input" name="q"/><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><path d="M48.644 42.096l-7.409-7.409a4.606 4.606 0 0 0-3.915-1.295l-2.328-2.328a19.306 19.306 0 0 0 3.894-11.628 19.295 19.295 0 0 0-5.69-13.757A19.3 19.3 0 0 0 19.457-.009 19.347 19.347 0 0 0 5.685 5.699c-7.58 7.583-7.581 19.917-.004 27.495a19.31 19.31 0 0 0 13.743 5.693 19.28 19.28 0 0 0 11.639-3.893l2.327 2.327c-.193 1.389.227 2.847 1.295 3.915l7.409 7.409A4.627 4.627 0 0 0 45.37 50c1.185 0 2.37-.452 3.274-1.357a4.627 4.627 0 0 0 0-6.547zM31.939 19.439c0 6.904-5.596 12.5-12.5 12.5s-12.5-5.596-12.5-12.5 5.596-12.5 12.5-12.5 12.5 5.596 12.5 12.5z"/><path d="M48.644 42.096l-7.409-7.409a4.606 4.606 0 0 0-3.915-1.295l-2.328-2.328a19.306 19.306 0 0 0 3.894-11.628 19.295 19.295 0 0 0-5.69-13.757A19.3 19.3 0 0 0 19.457-.009 19.347 19.347 0 0 0 5.685 5.699c-7.58 7.583-7.581 19.917-.004 27.495a19.31 19.31 0 0 0 13.743 5.693 19.28 19.28 0 0 0 11.639-3.893l2.327 2.327c-.193 1.389.227 2.847 1.295 3.915l7.409 7.409A4.627 4.627 0 0 0 45.37 50c1.185 0 2.37-.452 3.274-1.357a4.627 4.627 0 0 0 0-6.547zM31.939 19.439c0 6.904-5.596 12.5-12.5 12.5s-12.5-5.596-12.5-12.5 5.596-12.5 12.5-12.5 12.5 5.596 12.5 12.5z"/></svg>
-
-</div>
-
-</div>
-
-
-<div class="transparent-masthead"></div>
-
-
-        
-
-
-    
-    
-    
-    <div class="dtc01-livetype-masthead">
-
-<section class="livetype-masthead theme-bg-color--dark">
-  <div class="livetype-masthead__copy init container">
-    <h2 class="livetype-masthead__eyebrow type--bold-16 color--neutral-white">Developers</h2>
-    <h1 class="tlt">
-      <div class="texts">
-        <h1 class="livetype-masthead__headline livetype-masthead__headline--end type--bold-36
-        color--neutral-white">Understand</h1>
-        <h1 class="livetype-masthead__headline livetype-masthead__headline--mid type--bold-36
-        color--neutral-white">Build on</h1>
-        <h1 class="livetype-masthead__headline livetype-masthead__headline--start type--bold-36
-        color--neutral-white">Tap into</h1>
-      </div>
-    </h1>
-
-    <h1 class="livetype-masthead__headline livetype-masthead__headline--static type--bold-36 color--neutral-white">what&#39;s happening.</h1>
-    <h3 class="livetype-masthead__subheadline type--bold-24 color--neutral-white">Publish and analyze Tweets, optimize ads, and create unique customer experiences.</h3>
-  </div>
-  <div class="livetype-masthead__down-arrow fill-color--extra-light-purple"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
-</div>
-</section>
-</div>
-
-
-    
-    
-    
-    <div class="c12-cta-banner">
-
-<div class="c12 c12__container theme-bg-color--extra-dark">
-  <p class="c12__copy type--roman-16 color--neutral-white">We’re excited to announce more powerful search functionality within new premium APIs.</p>
-  <div class="c12__button">
-    <a href="https://t.co/m2WTxZfOav" target="_blank" class="c12__link type--bold-16 color--neutral-white">Learn more
-       <span class="c12__button--chevron fill-color--neutral-white"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="72" viewBox="0 0 28 72"><path d="M21.965 35L7.732 20.768a2.498 2.498 0 0 1 0-3.535 2.498 2.498 0 0 1 3.535 0l16 16a2.498 2.498 0 0 1 0 3.535l-16 16c-.487.488-1.127.732-1.767.732s-1.28-.244-1.768-.732a2.498 2.498 0 0 1 0-3.535L21.965 35z"/></svg>
-</span></a>
-  </div>
-</div>
-</div>
-
-
-    
-    
-    
-    <div class="s01-section">
-
-
-
-
-
-
-
-
-
-<div class="s01-section__container bg-color--neutral-white">
-  <div class="container  ">
-    <div class="column column-2">
-      <div class="s01-section__left">
-        <h2>Use cases</h2>
-        
-        <div>
-
-</div>
-      </div>
-    </div>
-    <div class="column column-10 ">
-
-    
-    
-    
-    <div class="s02-columns">
-  <div class="s02-columns js-column-container">
-
-    
-
-    
-
-    
-
-    <div class="container container--mini container--mobile ">
-      <div class="column column-3">
-
-    
-    
-    
-    <div class="c09-content-module">
-
-
-
-
-
-
-
-
-<div class="c09 c09-content-module__container">
-  
-  <h2 class="c09-content-module__title">Advertise</h2>
-  <span class="c09-content-module__title__underline theme-bg-color--dark"></span>
-  <p class="c09-content-module__description">Programmatically create and manage Twitter ad campaigns.</p>
-  <div class="c09-content-module__links">
-    
-      <div class="c09-content-module__links-link">
-        <a href="#advertisehome" class="c09-content-module__link--modal " title="Learn more" data-trigger="open-modal">
-          Learn more <svg xmlns="http://www.w3.org/2000/svg" width="28" height="72" viewBox="0 0 28 72"><path d="M21.965 35L7.732 20.768a2.498 2.498 0 0 1 0-3.535 2.498 2.498 0 0 1 3.535 0l16 16a2.498 2.498 0 0 1 0 3.535l-16 16c-.487.488-1.127.732-1.767.732s-1.28-.244-1.768-.732a2.498 2.498 0 0 1 0-3.535L21.965 35z"/></svg>
-
-        </a>
-      </div>
-    
-  </div>
-</div></div>
-
-
-</div>
-      <div class="column column-3">
-
-    
-    
-    
-    <div class="c09-content-module">
-
-
-
-
-
-
-
-
-<div class="c09 c09-content-module__container">
-  
-  <h2 class="c09-content-module__title">Publish and curate</h2>
-  <span class="c09-content-module__title__underline theme-bg-color--dark"></span>
-  <p class="c09-content-module__description">Tell great stories with Twitter content.</p>
-  <div class="c09-content-module__links">
-    
-      <div class="c09-content-module__links-link">
-        <a href="#publishhome" class="c09-content-module__link--modal " title="Learn more" data-trigger="open-modal">
-          Learn more <svg xmlns="http://www.w3.org/2000/svg" width="28" height="72" viewBox="0 0 28 72"><path d="M21.965 35L7.732 20.768a2.498 2.498 0 0 1 0-3.535 2.498 2.498 0 0 1 3.535 0l16 16a2.498 2.498 0 0 1 0 3.535l-16 16c-.487.488-1.127.732-1.767.732s-1.28-.244-1.768-.732a2.498 2.498 0 0 1 0-3.535L21.965 35z"/></svg>
-
-        </a>
-      </div>
-    
-  </div>
-</div></div>
-
-
-</div>
-      <div class="column column-3">
-
-    
-    
-    
-    <div class="c09-content-module">
-
-
-
-
-
-
-
-
-<div class="c09 c09-content-module__container">
-  
-  <h2 class="c09-content-module__title">Analyze</h2>
-  <span class="c09-content-module__title__underline theme-bg-color--dark"></span>
-  <p class="c09-content-module__description">Evaluate Twitter data to inform business decisions.</p>
-  <div class="c09-content-module__links">
-    
-      <div class="c09-content-module__links-link">
-        <a href="#analyzehome" class="c09-content-module__link--modal " title="Learn more" data-trigger="open-modal">
-          Learn more <svg xmlns="http://www.w3.org/2000/svg" width="28" height="72" viewBox="0 0 28 72"><path d="M21.965 35L7.732 20.768a2.498 2.498 0 0 1 0-3.535 2.498 2.498 0 0 1 3.535 0l16 16a2.498 2.498 0 0 1 0 3.535l-16 16c-.487.488-1.127.732-1.767.732s-1.28-.244-1.768-.732a2.498 2.498 0 0 1 0-3.535L21.965 35z"/></svg>
-
-        </a>
-      </div>
-    
-  </div>
-</div></div>
-
-
-</div>
-      <div class="column column-3 last">
-
-    
-    
-    
-    <div class="c09-content-module">
-
-
-
-
-
-
-
-
-<div class="c09 c09-content-module__container">
-  
-  <h2 class="c09-content-module__title">Engage</h2>
-  <span class="c09-content-module__title__underline theme-bg-color--dark"></span>
-  <p class="c09-content-module__description">Create connections with conversational experiences.</p>
-  <div class="c09-content-module__links">
-    
-      <div class="c09-content-module__links-link">
-        <a href="#engagehome" class="c09-content-module__link--modal " title="Learn more" data-trigger="open-modal">
-          Learn more <svg xmlns="http://www.w3.org/2000/svg" width="28" height="72" viewBox="0 0 28 72"><path d="M21.965 35L7.732 20.768a2.498 2.498 0 0 1 0-3.535 2.498 2.498 0 0 1 3.535 0l16 16a2.498 2.498 0 0 1 0 3.535l-16 16c-.487.488-1.127.732-1.767.732s-1.28-.244-1.768-.732a2.498 2.498 0 0 1 0-3.535L21.965 35z"/></svg>
-
-        </a>
-      </div>
-    
-  </div>
-</div></div>
-
-
-</div>
-    </div>
-    <div style="clear:both"></div>
-</div>
-</div>
-
-
-    
-    
-    
-    <div class="c20-modal">
-
-
-
-<div data-modal-id="advertisehome" data-template="modal" data-template-preview="Advertise" class="hidden">
-  <div class="c20 c20-modal__modal__template">
-    <div class="c20-modal__head">
-      <div class="c20-modal__head__column c20-modal__head__column--left">
-        
-        
-        
-        <div class="c20-modal__image-container">
-          <img class="c20-modal__image" src="/content/dam/developer-twitter/icons/Advertise@2x.png.img.fullhd.medium.png" alt="Advertise">
-        </div>
-      </div>
-      <div class="c20-modal__head__column c20-modal__head__column--right">
-        <h1 class="c20-modal__headline type--bold-48 color--neutral-black">Advertise</h1>
-        <p class="c20-modal__snippet type--roman-24 color--neutral-light-gray">Programmatically create and manage Twitter ad campaigns.</p>
-      </div>
-    </div>
-    <div class="c20-modal__detail" data-modal-parsys-container="true">
-      
-
-    
-    
-    
-    <div class="c01-rich-text-editor">
-<p>The Ads API program enables businesses to create and manage ads campaigns programmatically on Twitter. To help achieve your business goals, the Ads API provides the following suite of tools: Objective-based campaigns, Analytics, and Targeting.</p>
-
-<p><b>Example use cases: Create campaigns,  analyze performance, and target audiences.</b></p>
-
-
-
-</div>
-
-
-    
-    
-    
-    <div class="c04-link-button">
-
-<a class="c04-link-button--link " href="https://developer.twitter.com/en/use-cases/advertise" target="_self">
-    Learn more <svg xmlns="http://www.w3.org/2000/svg" width="28" height="72" viewBox="0 0 28 72"><path d="M21.965 35L7.732 20.768a2.498 2.498 0 0 1 0-3.535 2.498 2.498 0 0 1 3.535 0l16 16a2.498 2.498 0 0 1 0 3.535l-16 16c-.487.488-1.127.732-1.767.732s-1.28-.244-1.768-.732a2.498 2.498 0 0 1 0-3.535L21.965 35z"/></svg>
-
-</a>
-</div>
-
-
-
-    </div>
-  </div>
-</div></div>
-
-
-    
-    
-    
-    <div class="c20-modal">
-
-
-
-<div data-modal-id="publishhome" data-template="modal" data-template-preview="Publish and curate" class="hidden">
-  <div class="c20 c20-modal__modal__template">
-    <div class="c20-modal__head">
-      <div class="c20-modal__head__column c20-modal__head__column--left">
-        
-        
-        
-        <div class="c20-modal__image-container">
-          <img class="c20-modal__image" src="/content/dam/developer-twitter/icons/Publish%20and%20curate@2x.png.img.fullhd.medium.png" alt="Publish and curate">
-        </div>
-      </div>
-      <div class="c20-modal__head__column c20-modal__head__column--right">
-        <h1 class="c20-modal__headline type--bold-48 color--neutral-black">Publish and curate</h1>
-        <p class="c20-modal__snippet type--roman-24 color--neutral-light-gray">Tell great stories with Tweets.</p>
-      </div>
-    </div>
-    <div class="c20-modal__detail" data-modal-parsys-container="true">
-      
-
-    
-    
-    
-    <div class="c01-rich-text-editor">
-<p>Use our publisher platform tools to engage your audience with great stories from Twitter, and build on our tools to grow your business. We have a suite of tools and SDKs to bring Twitter content and features to your website, iOS and Android apps.</p>
-
-<p>Use TweetDeck to discover and curate content, and Twitter for Websites and Twitter Kit to easily distribute and display those Tweets in your apps. In your mobile apps, Twitter Kit makes it easy to work with the Twitter API and even integrate MoPub to grow your business around Twitter content.</p>
-
-<p><b>Example use cases: Display Tweets, discover and curate Tweets, and share your content on Twitter.</b></p>
-
-
-
-</div>
-
-
-    
-    
-    
-    <div class="c04-link-button">
-
-<a class="c04-link-button--link " href="https://developer.twitter.com/en/use-cases/publish-and-curate" target="_self">
-    Learn more <svg xmlns="http://www.w3.org/2000/svg" width="28" height="72" viewBox="0 0 28 72"><path d="M21.965 35L7.732 20.768a2.498 2.498 0 0 1 0-3.535 2.498 2.498 0 0 1 3.535 0l16 16a2.498 2.498 0 0 1 0 3.535l-16 16c-.487.488-1.127.732-1.767.732s-1.28-.244-1.768-.732a2.498 2.498 0 0 1 0-3.535L21.965 35z"/></svg>
-
-</a>
-</div>
-
-
-
-    </div>
-  </div>
-</div></div>
-
-
-    
-    
-    
-    <div class="c20-modal">
-
-
-
-<div data-modal-id="analyzehome" data-template="modal" data-template-preview="Analyze" class="hidden">
-  <div class="c20 c20-modal__modal__template">
-    <div class="c20-modal__head">
-      <div class="c20-modal__head__column c20-modal__head__column--left">
-        
-        
-        
-        <div class="c20-modal__image-container">
-          <img class="c20-modal__image" src="/content/dam/developer-twitter/icons/Analyze@2x.png.img.fullhd.medium.png" alt="Analyze">
-        </div>
-      </div>
-      <div class="c20-modal__head__column c20-modal__head__column--right">
-        <h1 class="c20-modal__headline type--bold-48 color--neutral-black">Analyze</h1>
-        <p class="c20-modal__snippet type--roman-24 color--neutral-light-gray">Evaluate Twitter data to inform business decisions.</p>
-      </div>
-    </div>
-    <div class="c20-modal__detail" data-modal-parsys-container="true">
-      
-
-    
-    
-    
-    <div class="c01-rich-text-editor">
-<p>Twitter data is the most comprehensive source of live, public conversation worldwide. Our REST, streaming, and Enterprise APIs enable programmatic analysis of Tweets back to the first Tweet in 2006. Whether you are building a solution for brands, one for your own team, or conducting research—our endpoints enable rich insight into audiences, market movements, emerging trends, key topics, breaking news, and much more.</p>
-
-<p><b>Example use cases: Trend detection, audience insights, and research.</b></p>
-
-
-
-</div>
-
-
-    
-    
-    
-    <div class="c04-link-button">
-
-<a class="c04-link-button--link " href="https://developer.twitter.com/en/use-cases/analyze" target="_self">
-    Learn more <svg xmlns="http://www.w3.org/2000/svg" width="28" height="72" viewBox="0 0 28 72"><path d="M21.965 35L7.732 20.768a2.498 2.498 0 0 1 0-3.535 2.498 2.498 0 0 1 3.535 0l16 16a2.498 2.498 0 0 1 0 3.535l-16 16c-.487.488-1.127.732-1.767.732s-1.28-.244-1.768-.732a2.498 2.498 0 0 1 0-3.535L21.965 35z"/></svg>
-
-</a>
-</div>
-
-
-
-    </div>
-  </div>
-</div></div>
-
-
-    
-    
-    
-    <div class="c20-modal">
-
-
-
-<div data-modal-id="engagehome" data-template="modal" data-template-preview="Engage" class="hidden">
-  <div class="c20 c20-modal__modal__template">
-    <div class="c20-modal__head">
-      <div class="c20-modal__head__column c20-modal__head__column--left">
-        
-        
-        
-        <div class="c20-modal__image-container">
-          <img class="c20-modal__image" src="/content/dam/developer-twitter/icons/Engage@2x.png.img.fullhd.medium.png" alt="Engage">
-        </div>
-      </div>
-      <div class="c20-modal__head__column c20-modal__head__column--right">
-        <h1 class="c20-modal__headline type--bold-48 color--neutral-black">Engage</h1>
-        <p class="c20-modal__snippet type--roman-24 color--neutral-light-gray">Create connections with conversational experiences. </p>
-      </div>
-    </div>
-    <div class="c20-modal__detail" data-modal-parsys-container="true">
-      
-
-    
-    
-    
-    <div class="c01-rich-text-editor">
-<p>Twitter is the best place in the world for businesses and people to connect. Since the early days of Twitter people have used the public, live, and conversational nature of the platform to engage with businesses. Using our API platform that spans across Tweets and Direct Messages, you can create applications that enable businesses to create human- and bot-powered conversation experiences to deliver customer service, marketing, brand engagement experiences, and more.</p>
-
-<p><b>Example use cases: Chatbots and automation, customer service, and engagement.</b></p>
-
-
-
-</div>
-
-
-    
-    
-    
-    <div class="c04-link-button">
-
-<a class="c04-link-button--link " href="https://developer.twitter.com/en/use-cases/engage" target="_self">
-    Learn more <svg xmlns="http://www.w3.org/2000/svg" width="28" height="72" viewBox="0 0 28 72"><path d="M21.965 35L7.732 20.768a2.498 2.498 0 0 1 0-3.535 2.498 2.498 0 0 1 3.535 0l16 16a2.498 2.498 0 0 1 0 3.535l-16 16c-.487.488-1.127.732-1.767.732s-1.28-.244-1.768-.732a2.498 2.498 0 0 1 0-3.535L21.965 35z"/></svg>
-
-</a>
-</div>
-
-
-
-    </div>
-  </div>
-</div></div>
-
-
-</div>
-  </div>
-</div>
-
-
-
-</div>
-
-
-    
-    
-    
-    <div class="s01-section">
-
-
-
-
-
-
-
-
-
-<div class="s01-section__container bg-color--neutral-white">
-  <div class="container with-border-top ">
-    <div class="column column-2">
-      <div class="s01-section__left">
-        <h2>Top endpoints</h2>
-        
-        <div>
-
-</div>
-      </div>
-    </div>
-    <div class="column column-10 ">
-
-    
-    
-    
-    <div class="c01-rich-text-editor">
-
-<p>Below are a few examples of our Twitter API endpoints, requests, and responses. These examples use <a href="https://github.com/twitter/twurl">twurl</a>—a command-line application that can be used to make authenticated requests to the Twitter platform. <i>twurl is like curl</i>, except that it abstracts away OAuth details once you configure it with your keys.</p>
-
-
-
-</div>
-
-
-    
-    
-    
-    <div class="s03-tab-section">
-
-<div class="s03">
-  
-  
-    <div class="s03__tabs-list container">
-      <div class="s03__tabs-dropdown s03__tabs-dropdown--closed">
-        <div class="title-container">
-          <div class="title type--bold-16 theme-color--dark">
-            <span></span>
-            <div class="arrow-down">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="72" viewBox="0 0 40 72"><path d="M20 40.758L8.121 28.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14A2.99 2.99 0 0 0 37 31a2.998 2.998 0 0 0-5.121-2.121L20 40.758z"/></svg>
-
-            </div>
-          </div>
-        </div>
-        <div class="s03__tabs-dropdown--container">
-          <ul>
-            <li data-val="#search-api" class="type--bold-16 theme-color--dark">Search API</li>
-          
-            <li data-val="#ads-api" class="type--bold-16 theme-color--dark">Ads API</li>
-          
-            <li data-val="#engagement-api" class="type--bold-16 theme-color--dark">Engagement API</li>
-          
-            <li data-val="#direct-message-api" class="type--bold-16 theme-color--dark">Direct Message API</li>
-          
-            <li data-val="#account-activity-api" class="type--bold-16 theme-color--dark">Account Activity API</li>
-          
-            <li data-val="#embed-a-tweet" class="type--bold-16 theme-color--dark">Embed a Tweet</li>
-          </ul>
-        </div>
-      </div>
-      <div class="s03__tabs">
-        <ul>
-          <li>
-            <a href="#search-api" class="s03__tabs-tab s03__tabs-tab--active type--roman-16 theme-color--dark">Search API</a>
-          </li>
-        
-          <li>
-            <a href="#ads-api" class="s03__tabs-tab type--roman-16 theme-color--dark">Ads API</a>
-          </li>
-        
-          <li>
-            <a href="#engagement-api" class="s03__tabs-tab type--roman-16 theme-color--dark">Engagement API</a>
-          </li>
-        
-          <li>
-            <a href="#direct-message-api" class="s03__tabs-tab type--roman-16 theme-color--dark">Direct Message API</a>
-          </li>
-        
-          <li>
-            <a href="#account-activity-api" class="s03__tabs-tab type--roman-16 theme-color--dark">Account Activity API</a>
-          </li>
-        
-          <li>
-            <a href="#embed-a-tweet" class="s03__tabs-tab type--roman-16 theme-color--dark">Embed a Tweet</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    
-      <div id="search-api" class="s03__tab-content s03__tab-content--active">
-        
-
-    
-    
-    
-    <div class="c01-rich-text-editor">
-<p>Search Tweets published in the last 7 days.</p>
-
-
-
-</div>
-
-
-    
-    
-    
-    <div class="d03-numbered-code-snippet">
-
-
-
-<div class="d03-numbered-code-snippet__container ">
-  <nav class="d03-numbered-code-snippet__nav">
-    
-      <span class="d03-numbered-code-snippet__nav__item d03-numbered-code-snippet__nav__item--active" data-lang="d03-numbered-code-snippet__tab--bash">bash</span>
-    
-  </nav>
-  
-    <div id="d03-numbered-code-snippet__tab--bash" class="d03-numbered-code-snippet__tab d03-numbered-code-snippet__tab--active">
-      <pre class="line-numbers"><code class="language-bash"># Request Tweets from last 7 days
-# Search query: from:Nasa OR #nasa
-
-twurl &#34;/1.1/search/tweets.json?q=from%3ANasa%20OR%20%23nasa&#34;
-
-# Response, an array of Tweet JSON:
-
-{
-  &#34;statuses&#34;: [
-    {
-      &#34;created_at&#34;: &#34;Wed Apr 12 04:53:25 +0000 2017&#34;,
-      &#34;id&#34;: 852021818290352129,
-      &#34;id_str&#34;: &#34;852021818290352129&#34;,
-      &#34;text&#34;: &#34;Watch NASA&#39;s first 4K broadcast from space on April 26th - Engadget https:\/\/t.co\/EfwAYeJpjF&#34;,
-      &#34;truncated&#34;: false,
-      &#34;entities&#34;: {
-        &#34;hashtags&#34;: [
-          
-        ],
-        &#34;symbols&#34;: [
-          
-        ],
-        &#34;user_mentions&#34;: [
-          
-        ],
-        &#34;urls&#34;: [
-          {
-            &#34;url&#34;: &#34;https:\/\/t.co\/EfwAYeJpjF&#34;,
-            &#34;expanded_url&#34;: &#34;http:\/\/ift.tt\/2orifBN&#34;,
-            &#34;display_url&#34;: &#34;ift.tt\/2orifBN&#34;,
-            &#34;indices&#34;: [
-              68,
-              91
-            ]
-          }
-        ]
-      },
-      &#34;metadata&#34;: {
-        &#34;iso_language_code&#34;: &#34;en&#34;,
-        &#34;result_type&#34;: &#34;recent&#34;
-      },
-      &#34;source&#34;: &#34;&lt;a href=\&#34;https:\/\/ifttt.com\&#34; rel=\&#34;nofollow\&#34;&gt;IFTTT&lt;\/a&gt;&#34;,
-      &#34;in_reply_to_status_id&#34;: null,
-      &#34;in_reply_to_status_id_str&#34;: null,
-      &#34;in_reply_to_user_id&#34;: null,
-      &#34;in_reply_to_user_id_str&#34;: null,
-      &#34;in_reply_to_screen_name&#34;: null,
-      &#34;user&#34;: {
-        &#34;id&#34;: 622857704,
-        &#34;id_str&#34;: &#34;622857704&#34;,
-        &#34;name&#34;: &#34;Crucial-Tech&#34;,
-        &#34;screen_name&#34;: &#34;crucial_tech&#34;,
-        &#34;location&#34;: &#34;Worldwide&#34;,
-        &#34;description&#34;: &#34;Technology News | Stories | Solutions | Workarounds | Gadgets&#34;,
-        &#34;url&#34;: null,
-        &#34;entities&#34;: {
-          &#34;description&#34;: {
-            &#34;urls&#34;: [
-              
-            ]
-          }
-        },
-        &#34;protected&#34;: false,
-        &#34;followers_count&#34;: 1917,
-        &#34;friends_count&#34;: 841,
-        &#34;listed_count&#34;: 513,
-        &#34;created_at&#34;: &#34;Sat Jun 30 14:28:07 +0000 2012&#34;,
-        &#34;favourites_count&#34;: 33,
-        &#34;utc_offset&#34;: -14400,
-        &#34;time_zone&#34;: &#34;Eastern Time (US &amp; Canada)&#34;,
-        &#34;geo_enabled&#34;: true,
-        &#34;verified&#34;: false,
-        &#34;statuses_count&#34;: 559097,
-        &#34;lang&#34;: &#34;en&#34;,
-        &#34;contributors_enabled&#34;: false,
-        &#34;is_translator&#34;: false,
-        &#34;is_translation_enabled&#34;: false,
-        &#34;profile_background_color&#34;: &#34;131516&#34;,
-        &#34;profile_background_image_url&#34;: &#34;http:\/\/pbs.twimg.com\/profile_background_images\/530442443057942528\/jgQgrriz.jpeg&#34;,
-        &#34;profile_background_image_url_https&#34;: &#34;https:\/\/pbs.twimg.com\/profile_background_images\/530442443057942528\/jgQgrriz.jpeg&#34;,
-        &#34;profile_background_tile&#34;: true,
-        &#34;profile_image_url&#34;: &#34;http:\/\/pbs.twimg.com\/profile_images\/810537113288482816\/AL7srBp3_normal.jpg&#34;,
-        &#34;profile_image_url_https&#34;: &#34;https:\/\/pbs.twimg.com\/profile_images\/810537113288482816\/AL7srBp3_normal.jpg&#34;,
-        &#34;profile_banner_url&#34;: &#34;https:\/\/pbs.twimg.com\/profile_banners\/622857704\/1415224702&#34;,
-        &#34;profile_link_color&#34;: &#34;3B94D9&#34;,
-        &#34;profile_sidebar_border_color&#34;: &#34;000000&#34;,
-        &#34;profile_sidebar_fill_color&#34;: &#34;000000&#34;,
-        &#34;profile_text_color&#34;: &#34;000000&#34;,
-        &#34;profile_use_background_image&#34;: true,
-        &#34;has_extended_profile&#34;: false,
-        &#34;default_profile&#34;: false,
-        &#34;default_profile_image&#34;: false,
-        &#34;following&#34;: false,
-        &#34;follow_request_sent&#34;: false,
-        &#34;notifications&#34;: false,
-        &#34;translator_type&#34;: &#34;none&#34;
-      },
-      &#34;geo&#34;: null,
-      &#34;coordinates&#34;: null,
-      &#34;place&#34;: null,
-      &#34;contributors&#34;: null,
-      &#34;is_quote_status&#34;: false,
-      &#34;retweet_count&#34;: 0,
-      &#34;favorite_count&#34;: 0,
-      &#34;favorited&#34;: false,
-      &#34;retweeted&#34;: false,
-      &#34;possibly_sensitive&#34;: false,
-      &#34;lang&#34;: &#34;en&#34;
-    },
-    {
-      &#34;created_at&#34;: &#34;Wed Apr 12 04:53:08 +0000 2017&#34;,
-      &#34;id&#34;: 8.5202174412671e+17,
-      &#34;id_str&#34;: &#34;852021744126705664&#34;,
-      &#34;text&#34;: &#34;RT @TechCrunch: NASA and Amazon will stream from space in 4K for the first time on April 26 https:\/\/t.co\/KWMfvRg1Hs&#34;,
-      &#34;truncated&#34;: false,
-      &#34;entities&#34;: {
-        &#34;hashtags&#34;: [
-          
-        ],
-        &#34;symbols&#34;: [
-          
-        ],
-        &#34;user_mentions&#34;: [
-          {
-            &#34;screen_name&#34;: &#34;TechCrunch&#34;,
-            &#34;name&#34;: &#34;TechCrunch&#34;,
-            &#34;id&#34;: 816653,
-            &#34;id_str&#34;: &#34;816653&#34;,
-            &#34;indices&#34;: [
-              3,
-              14
-            ]
-          }
-        ],
-        &#34;urls&#34;: [
-          {
-            &#34;url&#34;: &#34;https:\/\/t.co\/KWMfvRg1Hs&#34;,
-            &#34;expanded_url&#34;: &#34;http:\/\/tcrn.ch\/2nB1aGU&#34;,
-            &#34;display_url&#34;: &#34;tcrn.ch\/2nB1aGU&#34;,
-            &#34;indices&#34;: [
-              92,
-              115
-            ]
-          }
-        ]
-      },
-      &#34;metadata&#34;: {
-        &#34;iso_language_code&#34;: &#34;en&#34;,
-        &#34;result_type&#34;: &#34;recent&#34;
-      },
-      &#34;source&#34;: &#34;&lt;a href=\&#34;http:\/\/twitter.com\/download\/iphone\&#34; rel=\&#34;nofollow\&#34;&gt;Twitter for iPhone&lt;\/a&gt;&#34;,
-      &#34;in_reply_to_status_id&#34;: null,
-      &#34;in_reply_to_status_id_str&#34;: null,
-      &#34;in_reply_to_user_id&#34;: null,
-      &#34;in_reply_to_user_id_str&#34;: null,
-      &#34;in_reply_to_screen_name&#34;: null,
-      &#34;user&#34;: {
-        &#34;id&#34;: 18961853,
-        &#34;id_str&#34;: &#34;18961853&#34;,
-        &#34;name&#34;: &#34;Hongik Kim&#34;,
-        &#34;screen_name&#34;: &#34;nottora2&#34;,
-        &#34;location&#34;: &#34;Seoul, Korea&#34;,
-        &#34;description&#34;: &#34;&#34;,
-        &#34;url&#34;: &#34;http:\/\/t.co\/WpOh7jvYit&#34;,
-        &#34;entities&#34;: {
-          &#34;url&#34;: {
-            &#34;urls&#34;: [
-              {
-                &#34;url&#34;: &#34;http:\/\/t.co\/WpOh7jvYit&#34;,
-                &#34;expanded_url&#34;: &#34;http:\/\/sttora2.net&#34;,
-                &#34;display_url&#34;: &#34;sttora2.net&#34;,
-                &#34;indices&#34;: [
-                  0,
-                  22
-                ]
-              }
-            ]
-          },
-          &#34;description&#34;: {
-            &#34;urls&#34;: [
-              
-            ]
-          }
-        },
-        &#34;protected&#34;: false,
-        &#34;followers_count&#34;: 713,
-        &#34;friends_count&#34;: 232,
-        &#34;listed_count&#34;: 255,
-        &#34;created_at&#34;: &#34;Wed Jan 14 01:17:32 +0000 2009&#34;,
-        &#34;favourites_count&#34;: 14,
-        &#34;utc_offset&#34;: -36000,
-        &#34;time_zone&#34;: &#34;Hawaii&#34;,
-        &#34;geo_enabled&#34;: true,
-        &#34;verified&#34;: false,
-        &#34;statuses_count&#34;: 45276,
-        &#34;lang&#34;: &#34;en&#34;,
-        &#34;contributors_enabled&#34;: false,
-        &#34;is_translator&#34;: false,
-        &#34;is_translation_enabled&#34;: false,
-        &#34;profile_background_color&#34;: &#34;1A1B1F&#34;,
-        &#34;profile_background_image_url&#34;: &#34;http:\/\/abs.twimg.com\/images\/themes\/theme9\/bg.gif&#34;,
-        &#34;profile_background_image_url_https&#34;: &#34;https:\/\/abs.twimg.com\/images\/themes\/theme9\/bg.gif&#34;,
-        &#34;profile_background_tile&#34;: false,
-        &#34;profile_image_url&#34;: &#34;http:\/\/pbs.twimg.com\/profile_images\/420186574\/0001_normal.jpg&#34;,
-        &#34;profile_image_url_https&#34;: &#34;https:\/\/pbs.twimg.com\/profile_images\/420186574\/0001_normal.jpg&#34;,
-        &#34;profile_link_color&#34;: &#34;2FC2EF&#34;,
-        &#34;profile_sidebar_border_color&#34;: &#34;181A1E&#34;,
-        &#34;profile_sidebar_fill_color&#34;: &#34;252429&#34;,
-        &#34;profile_text_color&#34;: &#34;666666&#34;,
-        &#34;profile_use_background_image&#34;: true,
-        &#34;has_extended_profile&#34;: false,
-        &#34;default_profile&#34;: false,
-        &#34;default_profile_image&#34;: false,
-        &#34;following&#34;: false,
-        &#34;follow_request_sent&#34;: false,
-        &#34;notifications&#34;: false,
-        &#34;translator_type&#34;: &#34;none&#34;
-      },
-      &#34;geo&#34;: null,
-      &#34;coordinates&#34;: null,
-      &#34;place&#34;: null,
-      &#34;contributors&#34;: null,
-      &#34;retweeted_status&#34;: {
-        &#34;created_at&#34;: &#34;Wed Apr 12 01:48:02 +0000 2017&#34;,
-        &#34;id&#34;: 8.5197516353722e+17,
-        &#34;id_str&#34;: &#34;851975163537219585&#34;,
-        &#34;text&#34;: &#34;NASA and Amazon will stream from space in 4K for the first time on April 26 https:\/\/t.co\/KWMfvRg1Hs&#34;,
-        &#34;truncated&#34;: false,
-        &#34;entities&#34;: {
-          &#34;hashtags&#34;: [
-            
-          ],
-          &#34;symbols&#34;: [
-            
-          ],
-          &#34;user_mentions&#34;: [
-            
-          ],
-          &#34;urls&#34;: [
-            {
-              &#34;url&#34;: &#34;https:\/\/t.co\/KWMfvRg1Hs&#34;,
-              &#34;expanded_url&#34;: &#34;http:\/\/tcrn.ch\/2nB1aGU&#34;,
-              &#34;display_url&#34;: &#34;tcrn.ch\/2nB1aGU&#34;,
-              &#34;indices&#34;: [
-                76,
-                99
-              ]
+<!DOCTYPE html><html lang="en"><head><meta name="robots" content="noindex, nofollow"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Current system status. View active incidents or upcoming maintenances. Subscribe to receive status notifications."><meta name="author" content=""><meta http-equiv="refresh" content="600"><title>System Status Page</title><!-- Bootstrap--><link rel="stylesheet" href="//static.status.io/public/statuspage/css/bootstrap.min.css"><!-- Fonts--><link href="//static.status.io/public/statuspage/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- Page Style--><link rel="stylesheet" href="//static.status.io/public/statuspage/css/statuspage-default.css?v=3"><link rel="stylesheet" href="//static.status.io/public/statuspage/css/statuspage-200.css?v=3"><noscript><style>#statusio_metrics {
+  display: none;
+}
+</style></noscript><noscript><style>#section_locations {
+  display: none;
+}
+
+</style></noscript><style>.brand img { 
+  display: block !important; 
+}
+.img { 
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+.navbar .brand {
+  font-size: 20px;
+  font-weight: 200;
+  color: #555555;
+  text-shadow: 0 1px 0 #ffffff;
+}
+.navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+}
+.navbar .nav > li {
+  float: left;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background: none;
+  color: #2C3E50;
+  background-color: #F2F3F4;
+}
+
+.top_bar .panel-body {
+  height: 52px;
+}
+
+.event_inner_text {
+  font-size: 14px;
+}
+
+.event_inner_title {
+  font-size: 16px;
+}
+</style><!-- Custom Style--><style>body {
+  color: #363434;
+  background-color: #ffffff;
+}
+a:link {
+  color: #363434;
+  text-decoration: none;
+}
+a:visited {
+  color: #363434;
+  text-decoration: none;
+}
+a:hover {
+  color: #363434;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:active {
+  color: #363434;
+  text-decoration: none;
+}
+hr { 
+  border-top: 1px solid #27AE60;
+}
+.top_bar {
+  background-color: #27AE60;
+}
+.text {
+  color: #363434;
+}
+.section_border_0 {
+  background-color: #ffffff;
+  border: 0px solid #ffffff;
+}
+.section_border_1 {
+  background-color: #ffffff;
+  border: 1px solid #27AE60;
+}
+.status_td {
+  color: #363434;
+  background-color: #ffffff;
+}
+.external_service {
+  color: #363434;
+}
+#statuspage_name {
+  color: #363434;
+}
+
+/* overrides */
+.no_top_border {
+  border-top-width: 0px;
+}
+</style><!-- Custom CSS--><style>body {
+                margin: 0px;
+                background-color: #fff;
+                font-family: 'Lucida Grande', Helvetica, sans-serif;
+            }            
+
+            a {
+                color: #99cc33;
             }
-          ]
-        },
-        &#34;metadata&#34;: {
-          &#34;iso_language_code&#34;: &#34;en&#34;,
-          &#34;result_type&#34;: &#34;recent&#34;
-        },
-        &#34;source&#34;: &#34;&lt;a href=\&#34;http:\/\/www.socialflow.com\&#34; rel=\&#34;nofollow\&#34;&gt;SocialFlow&lt;\/a&gt;&#34;,
-        &#34;in_reply_to_status_id&#34;: null,
-        &#34;in_reply_to_status_id_str&#34;: null,
-        &#34;in_reply_to_user_id&#34;: null,
-        &#34;in_reply_to_user_id_str&#34;: null,
-        &#34;in_reply_to_screen_name&#34;: null,
-        &#34;user&#34;: {
-          &#34;id&#34;: 816653,
-          &#34;id_str&#34;: &#34;816653&#34;,
-          &#34;name&#34;: &#34;TechCrunch&#34;,
-          &#34;screen_name&#34;: &#34;TechCrunch&#34;,
-          &#34;location&#34;: &#34;San Francisco, CA&#34;,
-          &#34;description&#34;: &#34;Breaking technology news, analysis, and opinions from TechCrunch. The number one guide for all things tech. Got a tip? Let us know tips@techcrunch.com&#34;,
-          &#34;url&#34;: &#34;https:\/\/t.co\/b5Oyx12qGG&#34;,
-          &#34;entities&#34;: {
-            &#34;url&#34;: {
-              &#34;urls&#34;: [
-                {
-                  &#34;url&#34;: &#34;https:\/\/t.co\/b5Oyx12qGG&#34;,
-                  &#34;expanded_url&#34;: null,
-                  &#34;indices&#34;: [
-                    0,
-                    23
-                  ]
+
+            h1 {
+                width: 600px;
+                padding: 0px 100px 20px 100px;
+                margin: 50px auto 40px auto;
+                border-bottom: solid 1px #ccc;
+                text-align: center;
+                font: Bold 55px 'Trebuchet MS', Helvetica, sans-serif;
+                letter-spacing: -2px;
+                line-height: 50px;
+                position: relative;
+            }
+            
+                h1 a {
+                    color: #444;
+                    text-decoration: none;
                 }
-              ]
-            },
-            &#34;description&#34;: {
-              &#34;urls&#34;: [
                 
-              ]
-            }
-          },
-          &#34;protected&#34;: false,
-          &#34;followers_count&#34;: 8841742,
-          &#34;friends_count&#34;: 900,
-          &#34;listed_count&#34;: 108869,
-          &#34;created_at&#34;: &#34;Wed Mar 07 01:27:09 +0000 2007&#34;,
-          &#34;favourites_count&#34;: 1911,
-          &#34;utc_offset&#34;: -25200,
-          &#34;time_zone&#34;: &#34;Pacific Time (US &amp; Canada)&#34;,
-          &#34;geo_enabled&#34;: true,
-          &#34;verified&#34;: true,
-          &#34;statuses_count&#34;: 153722,
-          &#34;lang&#34;: &#34;en&#34;,
-          &#34;contributors_enabled&#34;: false,
-          &#34;is_translator&#34;: false,
-          &#34;is_translation_enabled&#34;: true,
-          &#34;profile_background_color&#34;: &#34;149500&#34;,
-          &#34;profile_background_image_url&#34;: &#34;http:\/\/pbs.twimg.com\/profile_background_images\/621096023751004161\/BAKy7hCT.png&#34;,
-          &#34;profile_background_image_url_https&#34;: &#34;https:\/\/pbs.twimg.com\/profile_background_images\/621096023751004161\/BAKy7hCT.png&#34;,
-          &#34;profile_background_tile&#34;: false,
-          &#34;profile_image_url&#34;: &#34;http:\/\/pbs.twimg.com\/profile_images\/615392662233808896\/EtxjSSKk_normal.jpg&#34;,
-          &#34;profile_image_url_https&#34;: &#34;https:\/\/pbs.twimg.com\/profile_images\/615392662233808896\/EtxjSSKk_normal.jpg&#34;,
-          &#34;profile_banner_url&#34;: &#34;https:\/\/pbs.twimg.com\/profile_banners\/816653\/1490894597&#34;,
-          &#34;profile_link_color&#34;: &#34;097000&#34;,
-          &#34;profile_sidebar_border_color&#34;: &#34;FFFFFF&#34;,
-          &#34;profile_sidebar_fill_color&#34;: &#34;DDFFCC&#34;,
-          &#34;profile_text_color&#34;: &#34;222222&#34;,
-          &#34;profile_use_background_image&#34;: true,
-          &#34;has_extended_profile&#34;: false,
-          &#34;default_profile&#34;: false,
-          &#34;default_profile_image&#34;: false,
-          &#34;following&#34;: false,
-          &#34;follow_request_sent&#34;: false,
-          &#34;notifications&#34;: false,
-          &#34;translator_type&#34;: &#34;none&#34;
-        },
-        &#34;geo&#34;: null,
-        &#34;coordinates&#34;: null,
-        &#34;place&#34;: null,
-        &#34;contributors&#34;: null,
-        &#34;is_quote_status&#34;: false,
-        &#34;retweet_count&#34;: 132,
-        &#34;favorite_count&#34;: 156,
-        &#34;favorited&#34;: false,
-        &#34;retweeted&#34;: false,
-        &#34;possibly_sensitive&#34;: false,
-        &#34;lang&#34;: &#34;en&#34;
-      },
-      &#34;is_quote_status&#34;: false,
-      &#34;retweet_count&#34;: 132,
-      &#34;favorite_count&#34;: 0,
-      &#34;favorited&#34;: false,
-      &#34;retweeted&#34;: false,
-      &#34;possibly_sensitive&#34;: false,
-      &#34;lang&#34;: &#34;en&#34;
-    },
-    {
-      &#34;created_at&#34;: &#34;Wed Apr 12 04:52:50 +0000 2017&#34;,
-      &#34;id&#34;: 8.5202166885153e+17,
-      &#34;id_str&#34;: &#34;852021668851531776&#34;,
-      &#34;text&#34;: &#34;RT @snowdenka: cool down\nturnin&#39; up\nforever\nreal\nthe life\ni love to love you\nuntitled (based from bret&#39;s story)\n\neto yung alam natin na nas\u2026&#34;,
-      &#34;truncated&#34;: false,
-      &#34;entities&#34;: {
-        &#34;hashtags&#34;: [
-          
-        ],
-        &#34;symbols&#34;: [
-          
-        ],
-        &#34;user_mentions&#34;: [
-          {
-            &#34;screen_name&#34;: &#34;snowdenka&#34;,
-            &#34;name&#34;: &#34;\u2744 Macy \u270b\ud83d\udca4\u2728&#34;,
-            &#34;id&#34;: 2330241865,
-            &#34;id_str&#34;: &#34;2330241865&#34;,
-            &#34;indices&#34;: [
-              3,
-              13
-            ]
-          }
-        ],
-        &#34;urls&#34;: [
-          
-        ]
-      },
-      &#34;metadata&#34;: {
-        &#34;iso_language_code&#34;: &#34;en&#34;,
-        &#34;result_type&#34;: &#34;recent&#34;
-      },
-      &#34;source&#34;: &#34;&lt;a href=\&#34;http:\/\/twitter.com\/download\/android\&#34; rel=\&#34;nofollow\&#34;&gt;Twitter for Android&lt;\/a&gt;&#34;,
-      &#34;in_reply_to_status_id&#34;: null,
-      &#34;in_reply_to_status_id_str&#34;: null,
-      &#34;in_reply_to_user_id&#34;: null,
-      &#34;in_reply_to_user_id_str&#34;: null,
-      &#34;in_reply_to_screen_name&#34;: null,
-      &#34;user&#34;: {
-        &#34;id&#34;: 2433542798,
-        &#34;id_str&#34;: &#34;2433542798&#34;,
-        &#34;name&#34;: &#34;\u256e(\u2500\u25bd\u2500)\u256d&#34;,
-        &#34;screen_name&#34;: &#34;hallowjayn&#34;,
-        &#34;location&#34;: &#34;shyschai&#34;,
-        &#34;description&#34;: &#34;I can tweet whatever I want. It&#39;s my twitter.&#34;,
-        &#34;url&#34;: null,
-        &#34;entities&#34;: {
-          &#34;description&#34;: {
-            &#34;urls&#34;: [
-              
-            ]
-          }
-        },
-        &#34;protected&#34;: false,
-        &#34;followers_count&#34;: 697,
-        &#34;friends_count&#34;: 217,
-        &#34;listed_count&#34;: 7,
-        &#34;created_at&#34;: &#34;Tue Apr 08 12:29:46 +0000 2014&#34;,
-        &#34;favourites_count&#34;: 6775,
-        &#34;utc_offset&#34;: -25200,
-        &#34;time_zone&#34;: &#34;Pacific Time (US &amp; Canada)&#34;,
-        &#34;geo_enabled&#34;: true,
-        &#34;verified&#34;: false,
-        &#34;statuses_count&#34;: 37632,
-        &#34;lang&#34;: &#34;en&#34;,
-        &#34;contributors_enabled&#34;: false,
-        &#34;is_translator&#34;: false,
-        &#34;is_translation_enabled&#34;: false,
-        &#34;profile_background_color&#34;: &#34;89C9FA&#34;,
-        &#34;profile_background_image_url&#34;: &#34;http:\/\/pbs.twimg.com\/profile_background_images\/618681903441252352\/rjLy48Ga.jpg&#34;,
-        &#34;profile_background_image_url_https&#34;: &#34;https:\/\/pbs.twimg.com\/profile_background_images\/618681903441252352\/rjLy48Ga.jpg&#34;,
-        &#34;profile_background_tile&#34;: true,
-        &#34;profile_image_url&#34;: &#34;http:\/\/pbs.twimg.com\/profile_images\/851045496906854400\/z1iIPlRm_normal.jpg&#34;,
-        &#34;profile_image_url_https&#34;: &#34;https:\/\/pbs.twimg.com\/profile_images\/851045496906854400\/z1iIPlRm_normal.jpg&#34;,
-        &#34;profile_banner_url&#34;: &#34;https:\/\/pbs.twimg.com\/profile_banners\/2433542798\/1491546365&#34;,
-        &#34;profile_link_color&#34;: &#34;9266CC&#34;,
-        &#34;profile_sidebar_border_color&#34;: &#34;5ED4DC&#34;,
-        &#34;profile_sidebar_fill_color&#34;: &#34;95E8EC&#34;,
-        &#34;profile_text_color&#34;: &#34;3C3940&#34;,
-        &#34;profile_use_background_image&#34;: true,
-        &#34;has_extended_profile&#34;: true,
-        &#34;default_profile&#34;: false,
-        &#34;default_profile_image&#34;: false,
-        &#34;following&#34;: false,
-        &#34;follow_request_sent&#34;: false,
-        &#34;notifications&#34;: false,
-        &#34;translator_type&#34;: &#34;none&#34;
-      },
-      &#34;geo&#34;: null,
-      &#34;coordinates&#34;: null,
-      &#34;place&#34;: null,
-      &#34;contributors&#34;: null,
-      &#34;retweeted_status&#34;: {
-        &#34;created_at&#34;: &#34;Tue Apr 11 15:16:25 +0000 2017&#34;,
-        &#34;id&#34;: 8.5181621006066e+17,
-        &#34;id_str&#34;: &#34;851816210060660737&#34;,
-        &#34;text&#34;: &#34;cool down\nturnin&#39; up\nforever\nreal\nthe life\ni love to love you\nuntitled (based from bret&#39;s story)\n\neto yung alam natin na nasa palm dreams.&#34;,
-        &#34;truncated&#34;: false,
-        &#34;entities&#34;: {
-          &#34;hashtags&#34;: [
-            
-          ],
-          &#34;symbols&#34;: [
-            
-          ],
-          &#34;user_mentions&#34;: [
-            
-          ],
-          &#34;urls&#34;: [
-            
-          ]
-        },
-        &#34;metadata&#34;: {
-          &#34;iso_language_code&#34;: &#34;en&#34;,
-          &#34;result_type&#34;: &#34;recent&#34;
-        },
-        &#34;source&#34;: &#34;&lt;a href=\&#34;http:\/\/twitter.com\/download\/android\&#34; rel=\&#34;nofollow\&#34;&gt;Twitter for Android&lt;\/a&gt;&#34;,
-        &#34;in_reply_to_status_id&#34;: null,
-        &#34;in_reply_to_status_id_str&#34;: null,
-        &#34;in_reply_to_user_id&#34;: null,
-        &#34;in_reply_to_user_id_str&#34;: null,
-        &#34;in_reply_to_screen_name&#34;: null,
-        &#34;user&#34;: {
-          &#34;id&#34;: 2330241865,
-          &#34;id_str&#34;: &#34;2330241865&#34;,
-          &#34;name&#34;: &#34;\u2744 Macy \u270b\ud83d\udca4\u2728&#34;,
-          &#34;screen_name&#34;: &#34;snowdenka&#34;,
-          &#34;location&#34;: &#34;&#34;,
-          &#34;description&#34;: &#34;JaDine, Harry Potter, JPop, Anime | fangirling. fanworks. random thoughts. kalokohan. whinings about life | IG: jadinex \u2022 YT: JaDinex \u2022 WP: kooridenka&#34;,
-          &#34;url&#34;: &#34;https:\/\/t.co\/UqnYe2vdrc&#34;,
-          &#34;entities&#34;: {
-            &#34;url&#34;: {
-              &#34;urls&#34;: [
-                {
-                  &#34;url&#34;: &#34;https:\/\/t.co\/UqnYe2vdrc&#34;,
-                  &#34;expanded_url&#34;: &#34;http:\/\/jadinex.livejournal.com&#34;,
-                  &#34;display_url&#34;: &#34;jadinex.livejournal.com&#34;,
-                  &#34;indices&#34;: [
-                    0,
-                    23
-                  ]
+                h1 img {
+                    border-width: 0px;
+                    position: absolute;
+                    right: 0px;
+                    bottom: 10px;
+                    width: 43px;
+                    height: 23px;
                 }
-              ]
-            },
-            &#34;description&#34;: {
-              &#34;urls&#34;: [
-                
-              ]
+
+            div#content {
+                width: 420px;
+                margin: auto;
+                position: relative;
             }
-          },
-          &#34;protected&#34;: false,
-          &#34;followers_count&#34;: 2962,
-          &#34;friends_count&#34;: 244,
-          &#34;listed_count&#34;: 34,
-          &#34;created_at&#34;: &#34;Thu Feb 06 12:41:08 +0000 2014&#34;,
-          &#34;favourites_count&#34;: 39812,
-          &#34;utc_offset&#34;: -25200,
-          &#34;time_zone&#34;: &#34;Pacific Time (US &amp; Canada)&#34;,
-          &#34;geo_enabled&#34;: false,
-          &#34;verified&#34;: false,
-          &#34;statuses_count&#34;: 102431,
-          &#34;lang&#34;: &#34;en&#34;,
-          &#34;contributors_enabled&#34;: false,
-          &#34;is_translator&#34;: false,
-          &#34;is_translation_enabled&#34;: false,
-          &#34;profile_background_color&#34;: &#34;000000&#34;,
-          &#34;profile_background_image_url&#34;: &#34;http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png&#34;,
-          &#34;profile_background_image_url_https&#34;: &#34;https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png&#34;,
-          &#34;profile_background_tile&#34;: false,
-          &#34;profile_image_url&#34;: &#34;http:\/\/pbs.twimg.com\/profile_images\/845930850210361344\/fgHcvMFy_normal.jpg&#34;,
-          &#34;profile_image_url_https&#34;: &#34;https:\/\/pbs.twimg.com\/profile_images\/845930850210361344\/fgHcvMFy_normal.jpg&#34;,
-          &#34;profile_banner_url&#34;: &#34;https:\/\/pbs.twimg.com\/profile_banners\/2330241865\/1491408790&#34;,
-          &#34;profile_link_color&#34;: &#34;DD2E44&#34;,
-          &#34;profile_sidebar_border_color&#34;: &#34;000000&#34;,
-          &#34;profile_sidebar_fill_color&#34;: &#34;000000&#34;,
-          &#34;profile_text_color&#34;: &#34;000000&#34;,
-          &#34;profile_use_background_image&#34;: false,
-          &#34;has_extended_profile&#34;: true,
-          &#34;default_profile&#34;: false,
-          &#34;default_profile_image&#34;: false,
-          &#34;following&#34;: false,
-          &#34;follow_request_sent&#34;: false,
-          &#34;notifications&#34;: false,
-          &#34;translator_type&#34;: &#34;none&#34;
-        },
-        &#34;geo&#34;: null,
-        &#34;coordinates&#34;: null,
-        &#34;place&#34;: null,
-        &#34;contributors&#34;: null,
-        &#34;is_quote_status&#34;: false,
-        &#34;retweet_count&#34;: 61,
-        &#34;favorite_count&#34;: 70,
-        &#34;favorited&#34;: false,
-        &#34;retweeted&#34;: false,
-        &#34;lang&#34;: &#34;en&#34;
-      },
-      &#34;is_quote_status&#34;: false,
-      &#34;retweet_count&#34;: 61,
-      &#34;favorite_count&#34;: 0,
-      &#34;favorited&#34;: false,
-      &#34;retweeted&#34;: false,
-      &#34;lang&#34;: &#34;en&#34;
-    }
-  ],
-  &#34;search_metadata&#34;: {
-    &#34;completed_in&#34;: 0.034,
-    &#34;max_id&#34;: 8.5202181829035e+17,
-    &#34;max_id_str&#34;: &#34;852021818290352129&#34;,
-    &#34;query&#34;: &#34;from%253ANasa%2520OR%2520%2523nasa&#34;,
-    &#34;refresh_url&#34;: &#34;?since_id=852021818290352129&amp;q=from%253ANasa%2520OR%2520%2523nasa&amp;include_entities=1&#34;,
-    &#34;count&#34;: 15,
-    &#34;since_id&#34;: 0,
-    &#34;since_id_str&#34;: &#34;0&#34;
-  }
-}</code></pre>
-    </div>
-  
-</div>
-</div>
 
+                div#content div#description {
+                    position: absolute;
+                    right: -170px;
+                    width: 160px;
+                    text-align: right;
+                }
 
+            div#description {
+                font: Normal 17px Helvetica,sans-serif;
+                line-height: 20px;
+                color: #777;
+            }
+
+                div#description a {
+                    color: #777;
+                }
+            
+            div.post {
+                position: relative;
+                margin-bottom: 40px;
+                padding-right: 20px;
+            }
+
+                div.post div.date {
+                    position: absolute;
+                    left: -260px;
+                    text-align: right;
+                    width: 230px;                
+                    white-space: nowrap;
+                    font: Normal 34px Helvetica, sans-serif;
+                    letter-spacing: -2px;
+                    color: #ccc;
+                    text-transform: uppercase;
+                    line-height: 35px;
+                }
+                
+                    div.post div.date div.date_brick {
+                        float: right;
+                        height: 30px;
+                        width: 45px;
+                        background-color: #6498cc;
+                        color: #bbd5f1;
+                        font: Bold 12px Verdana, Sans-Serif;
+                        text-align: center;
+                        line-height: 12px;
+                        margin-left: 10px;
+                        padding-top: 5px;
+                        letter-spacing: 0px;
+                        overflow: hidden;
+                    }
+
+                div.post img.permalink {
+                    width: 14px;
+                    height: 13px;
+                    border-width: 0px;
+                    background-color: #000;
+                    display: none;
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                    z-index: 10;
+                }
+                
+                    div.post:hover img.permalink {
+                        display: inline;
+                    }
+
+                div.post h2 {
+                    font-size: 18px;
+                    font-weight: Bold;
+                    color: #6498cc;
+                    letter-spacing: -1px;
+                    margin: 0px 0px 5px 0px;
+                }
+
+                    div.post h2 a {
+                        color: #6498cc;
+                        text-decoration: none;
+                    }
+            
+                div.post div.caption {
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #444;
+                    margin-top: 10px;
+                    padding: 0px 20px 0px 20px;
+                }
+
+                    div.post div.caption a {
+                        color: #444;
+                    }
     
-    
-    
-    <div class="c01-rich-text-editor">
-<p style="text-align: right;"><a href="/en/docs/tweets/search/overview/standard.html"><span class="with-caret">Documentation</span></a></p>
+            /* Regular Post */
+            
+                div.post div.regular {
+                    font-size: 12px;
+                    color: #444;
+                    line-height: 17px;
+                }
 
+                    div.post div.regular blockquote {
+                        font-style: italic;
+                        border-left: solid 2px #444;
+                        padding-left: 10px;
+                    }
+                        
+            /* Quote Post */
+            
+                div.post div.quote div.quote_text {
+                    font-family: Helvetica, sans-serif;
+                    font-weight: bold;
+                    color: #888;
+                    border-left: solid 5px #6498cc;
+                    padding-left: 10px;
+                }
+                
+                    div.post div.quote div.quote_text span.short {
+                        font-size: 36px;
+                        line-height: 40px;
+                        letter-spacing: -1px;
+                    }
+                    
+                    div.post div.quote div.quote_text span.medium {
+                        font-size: 25px;
+                        line-height: 27px;
+                        letter-spacing: -1px;
+                    }
+                    
+                    div.post div.quote div.quote_text span.long {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
 
-
-</div>
-
-
-
-      </div>
-    
-      <div id="ads-api" class="s03__tab-content">
+                    div.post div.quote div.quote_text a {
+                        color: #888;
+                    }
         
+                div.post div.quote div.source {
+                    font-size: 16px;
+                    font-weight: Bold;
+                    color: #555;
+                    margin-top: 5px;
+                }
 
-    
-    
-    
-    <div class="c01-rich-text-editor">
-<p>Create a new Twitter Ads campaign.<br />
-</p>
+                    div.post div.quote div.source a {
+                        color: #555;
+                    }
+            
+            /* Link Post */
+            
+                div.post div.link a.link {
+                    font: Bold 20px Helvetica, sans-serif;
+                    letter-spacing: -1px;
+                    color: #c00;
+                }
 
+                    div.post div.link span.description {
+                        font-size: 13px;
+                        font-weight: normal;
+                        letter-spacing: -1px;
+                        color: #444;
+                    }
+            
+            /* Conversation Post */
+                        
+                div.post div.conversation ul {
+                    list-style-type: none;
+                    margin: 0px;
+                    padding: 0px 0px 0px 1px;
+                    border-left: solid 5px #bbb;
+                }
+            
+                    div.post div.conversation ul li {
+                        font-size: 12px;
+                        padding: 4px 10px 4px 8px;
+                        color: #444;
+                        margin-bottom: 1px;
+                    }
+            
+                        div.post div.conversation ul li span.label {
+                            font-weight: bold;
+                        }
+                        
+                            div.post div.conversation ul li span.user_1 {
+                                color: #c00;
+                            }
+                            
+                            div.post div.conversation ul li span.user_2 {
+                                color: #00c;
+                            }
+                            
+                            div.post div.conversation ul li span.user_3 {
+                                color: #0a0;
+                            }
+                        
+                        div.post div.conversation ul li.odd {
+                            background-color: #f4f4f4;
+                        }
 
+                        div.post div.conversation ul li.even {
+                            background-color: #e8e8e8;
+                        }
+            
+            /* Video Post */
+            
+                div.post div.video {
+                    width: 400px;
+                    margin: auto;
+                }
 
-</div>
-
-
-    
-    
-    
-    <div class="d03-numbered-code-snippet">
-
-
-
-<div class="d03-numbered-code-snippet__container ">
-  <nav class="d03-numbered-code-snippet__nav">
-    
-      <span class="d03-numbered-code-snippet__nav__item d03-numbered-code-snippet__nav__item--active" data-lang="d03-numbered-code-snippet__tab--json">json</span>
-    
-  </nav>
-  
-    <div id="d03-numbered-code-snippet__tab--json" class="d03-numbered-code-snippet__tab d03-numbered-code-snippet__tab--active">
-      <pre class="line-numbers"><code class="language-json"># Create a new Campaign:
-
-twurl -H ads-api.twitter.com -X POST &#34;/2/accounts/hkk5/campaigns?funding_instrument_id=hw6ie&amp;total_budget_amount_local_micro=5500000&amp;daily_budget_amount_local_micro=500000&amp;start_time=2013-01-01T00:00:01Z&amp;entity_status=PAUSED&amp;name=Launch&#34;
-
-&#34;data&#34;: {
-    &#34;name&#34;: &#34;Launch&#34;,
-    &#34;start_time&#34;: &#34;2013-01-01T00:00:01Z&#34;,
-    &#34;reasons_not_servable&#34;: [
-      &#34;PAUSED_BY_ADVERTISER&#34;,
-      &#34;INCOMPLETE&#34;
-    ],
-    &#34;servable&#34;: false,
-    &#34;daily_budget_amount_local_micro&#34;: 500000,
-    &#34;end_time&#34;: null,
-    &#34;funding_instrument_id&#34;: &#34;hw6ie&#34;,
-    &#34;duration_in_days&#34;: null,
-    &#34;standard_delivery&#34;: true,
-    &#34;total_budget_amount_local_micro&#34;: 5500000,
-    &#34;id&#34;: &#34;9bo81&#34;,
-    &#34;entity_status&#34;: &#34;PAUSED&#34;,
-    &#34;account_id&#34;: &#34;hkk5&#34;,
-    &#34;frequency_cap&#34;: null,
-    &#34;currency&#34;: &#34;USD&#34;,
-    &#34;created_at&#34;: &#34;2017-08-21T23:01:20Z&#34;,
-    &#34;updated_at&#34;: &#34;2017-08-21T23:01:20Z&#34;,
-    &#34;deleted&#34;: false
-  }</code></pre>
-    </div>
-  
-</div>
-</div>
-
-
-    
-    
-    
-    <div class="c01-rich-text-editor">
-<p style="text-align: right;"><a href="https://developer.twitter.com/en/docs/ads/general/overview"><span class="with-caret">Documentation</span></a></p>
-
-
-
-</div>
-
-
-
-      </div>
-    
-      <div id="engagement-api" class="s03__tab-content">
-        
-
-    
-    
-    
-    <div class="c01-rich-text-editor">
-<p>Get Tweet engagement metrics. </p>
-
-<p> </p>
-
-<p>Engagement API requests take an array of Tweet IDs, an array of engagement types, and a simple description of how you want the output arranged. </p>
-
-<p> </p>
-
-
-
-</div>
-
-
-    
-    
-    
-    <div class="d03-numbered-code-snippet">
-
-
-
-<div class="d03-numbered-code-snippet__container ">
-  <nav class="d03-numbered-code-snippet__nav">
-    
-      <span class="d03-numbered-code-snippet__nav__item d03-numbered-code-snippet__nav__item--active" data-lang="d03-numbered-code-snippet__tab--bash">bash</span>
-    
-  </nav>
-  
-    <div id="d03-numbered-code-snippet__tab--bash" class="d03-numbered-code-snippet__tab d03-numbered-code-snippet__tab--active">
-      <pre class="line-numbers"><code class="language-bash"># There are three Engagement API endpoints: /totals, /28hr, and /historical. 
-# Here we will be hitting the /totals endpoint, which returns total engagement metrics for Tweets posted within 90 days. 
-# The /totals endpoint provides 5 engagement types, while the other two endpoint provide 16. 
-# API endpoint: https://data-api.twitter.com/insights/engagement/totals
-
-# Request total Engagements for a list of Tweets (up to 250 per request) posted within 90-days.
-
-twurl -H data-api.twitter.com -X POST &#34;/insights/engagement/totals&#34; -A &#34;Content-Type: application/json&#34;
- -d &#39;{
-  &#34;tweet_ids&#34;: [
-    &#34;907022936564838401&#34;,
-    &#34;902731270274166784&#34;,
-    &#34;902301386880286721&#34;
-  ],
-  &#34;engagement_types&#34;: [
-    &#34;impressions&#34;,
-    &#34;engagements&#34;,
-    &#34;favorites&#34;
-  ],
-  &#34;groupings&#34;: {
-    &#34;Tweet metrics&#34;: {
-      &#34;group_by&#34;: [
-        &#34;tweet.id&#34;,
-        &#34;engagement.type&#34;
-      ]
-    }
-  }
-}&#39;</code></pre>
-    </div>
-  
-</div>
-</div>
-
-
-    
-    
-    
-    <div class="c01-rich-text-editor">
-<p>Here is the response from that request:</p>
-
-
-
-</div>
-
-
-    
-    
-    
-    <div class="d03-numbered-code-snippet">
-
-
-
-<div class="d03-numbered-code-snippet__container ">
-  <nav class="d03-numbered-code-snippet__nav">
-    
-      <span class="d03-numbered-code-snippet__nav__item d03-numbered-code-snippet__nav__item--active" data-lang="d03-numbered-code-snippet__tab--markup">markup</span>
-    
-  </nav>
-  
-    <div id="d03-numbered-code-snippet__tab--markup" class="d03-numbered-code-snippet__tab d03-numbered-code-snippet__tab--active">
-      <pre class="line-numbers"><code class="language-markup">{
-  &#34;Tweet metrics&#34;: {
-    &#34;902301386880286721&#34;: {
-      &#34;engagements&#34;: &#34;433&#34;,
-      &#34;favorites&#34;: &#34;21&#34;,
-      &#34;impressions&#34;: &#34;72218&#34;
-    },
-    &#34;902731270274166784&#34;: {
-      &#34;engagements&#34;: &#34;61&#34;,
-      &#34;favorites&#34;: &#34;27&#34;,
-      &#34;impressions&#34;: &#34;7827&#34;
-    },
-    &#34;907022936564838401&#34;: {
-      &#34;engagements&#34;: &#34;187&#34;,
-      &#34;favorites&#34;: &#34;37&#34;,
-      &#34;impressions&#34;: &#34;1916&#34;
-    }
-  }
-}</code></pre>
-    </div>
-  
-</div>
-</div>
-
-
-    
-    
-    
-    <div class="c01-rich-text-editor">
-<p style="text-align: right;"><a href="https://developer.twitter.com/en/docs/metrics/get-tweet-engagement/overview"><span class="with-caret">Documentation</span></a></p>
-
-
-
-</div>
-
-
-
-      </div>
-    
-      <div id="direct-message-api" class="s03__tab-content">
-        
-
-    
-    
-    
-    <div class="c01-rich-text-editor">
-<p>Send a Direct Message.<br />
-</p>
-
-
-
-</div>
-
-
-    
-    
-    
-    <div class="d03-numbered-code-snippet">
-
-
-
-<div class="d03-numbered-code-snippet__container ">
-  <nav class="d03-numbered-code-snippet__nav">
-    
-      <span class="d03-numbered-code-snippet__nav__item d03-numbered-code-snippet__nav__item--active" data-lang="d03-numbered-code-snippet__tab--json">json</span>
-    
-  </nav>
-  
-    <div id="d03-numbered-code-snippet__tab--json" class="d03-numbered-code-snippet__tab d03-numbered-code-snippet__tab--active">
-      <pre class="line-numbers"><code class="language-json">twurl -H api.twitter.com -A &#34;Content-Type: application/json&#34; -X POST &#34;/1.1/direct_messages/events/new.json&#34;
--d &#39;{
-  &#34;event&#34;: {
-    &#34;type&#34;: &#34;message_create&#34;,
-    &#34;message_create&#34;: {
-      &#34;target&#34;: {
-        &#34;recipient_id&#34;: &#34;944480690&#34;
-      },
-      &#34;message_data&#34;: {
-        &#34;text&#34;: &#34;Hello World!&#34;
+            /* Footer */
+            
+                div#footer {
+                    margin: 40px 0px 30px 0px;
+                    text-align: center;
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: #444;
+                }
+            
+                    div#footer a {
+                        text-decoration: none;
+                        color: #444;
+                    }
+            
+                        div#footer a:hover {
+                            text-decoration: underline;
+                        }
+                    
+                    div#footer div#credit {
+                        font: Normal 13px Georgia, serif;
+                        font-size: 13px;
+                        margin-top: 15px;
+                    }</style><!-- IE10 viewport hack for Surface/desktop Windows 8 bug --><script src="//static.status.io/public/statuspage/js/ie10-viewport-bug-workaround.min.js"></script><!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --><!-- WARNING: Respond.js doesn't work if you view the page via file:// --><!--if lt IE 9script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+--></head><body><!-- Scripts--><script src="//static.status.io/public/statuspage/js/jquery.min.js"></script><script src="//static.status.io/public/statuspage/js/bootstrap.min.js"></script><script src="//static.status.io/public/statuspage/js/Autolinker.min.js"></script><div class="container"><!-- Header image--><div id="statusio_header" class="header"><div id="statusio_header_image" style="margin-bottom: 25px; text-align:center;" class="row"><div class="col-md-12"><a href="http://www.twitter.com"><img id="statuspage_header_image" src="//image.status.io/ElcNuM5TbxTa.png" alt="Header Image"></a></div></div><div class="row"><div class="col-md-12 col-sm-12"></div></div></div><div id="statusio_status_bar" style="background:#0bbce3; border-bottom:0;" class="panel panel-default top_bar make_round"><div style="vertical-align: middle;" class="panel-body"><div class="row"><div class="col-md-8 col-sm-6 col-xs-12"><strong id="statusbar_text">All Systems Operational</strong></div><div class="col-md-4 col-sm-6 hidden-xs"><p id="updated_ago" class="pull-right white">Updated 7 months ago</p></div></div></div></div><div id="statusio_last_updated_bar_xs" style="background:#0bbce3; border-bottom:0;" class="panel panel-default top_bar make_round visible-xs-block"><div style="vertical-align: middle;" class="panel-body"><div class="row"><div class="col-xs-12"><p id="updated_ago" class="white">Updated 7 months ago</p></div></div></div></div><div id="statusio_components" class="page_section"><!-- single component--><div id="component_564314ae3309c22c3b00030a" style="border: 1px solid #27AE60;" class="component component_single status_td"><div class="row"><div class="col-md-8 col-sm-8 col-xs-8"><p class="component_name">Twitter<span data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter Main Website"> <i class="fa fa-info-circle"></i></span></p></div><div class="col-md-4 col-sm-4 col-xs-4"><p id="status_text-564314ae3309c22c3b00030a" style="color: #0bbce3;" class="pull-right component-status">Operational</p></div></div></div></div><!-- Metrics--><!-- Map--><!-- Footer--><div id="section_page_links" class="page_section"><div class="row"><div class="col-sm-9"><div id="bottom_menu"><strong><a href="/pages/564314ae3309c22c3b0002fa" class="pull-left margin-right-20">Status</a></strong><a href="/pages/history/564314ae3309c22c3b0002fa" class="pull-left margin-right-20">History</a></div></div><div class="col-sm-3"><div id="statusio_branding"><a href="#" class="pull-right">Powered by Status.io</a></div></div></div></div><!-- Subscriber modal--><div id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel" aria-hidden="true" class="modal fade"><div class="modal-dialog"><div class="modal-content make_round modal-text"><div class="modal-body"><div class="row"><div class="col-md-10"><ul role="tablist" class="nav nav-pills"><li id="tab_menu_email"><a href="#tab_email" role="tab" data-toggle="tab">Email</a></li><li id="tab_menu_webhook"><a href="#tab_webhook" role="tab" data-toggle="tab">Webhook</a></li><li id="tab_menu_rss"><a href="#tab_rss" role="tab" data-toggle="tab">RSS</a></li></ul></div><div class="col-md-2"><button type="button" data-dismiss="modal" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button></div></div><div class="row margin-top-40"><div class="col-md-12"><div class="tab-content"> <div id="tab_email" class="tab-pane"><div class="row"><div class="col-sm-12"><h4 id="subscribe_email_text_content" class="text-center">Subscribe to receive status updates by email</h4></div></div><br><div class="row margin-top-20"><div class="col-md-3"></div><div class="col-md-6"><input id="subscribe_email_address" type="text" placeholder="Email" name="subscribe_email_address" autofocus="autofocus" class="form-control make_round"><input type="hidden" placeholder="Email" name="email" class="form-control"></div></div><div class="row subscribe-modal-footer"><div class="row"><div class="col-md-6"><div id="result_subscribe_email" class="pull-left"></div></div><div class="col-md-6"><button type="button" data-dismiss="modal" class="btn btn-default make_round">Close</button><button id="subscribe_button_email" type="button" class="btn btn-default make_round">Subscribe</button><button id="manage_button_email" type="button" style="display:none;" class="btn btn-default make_round">Manage Subscription</button></div></div><div class="row"><div style="text-align:center;" class="col-md-12"><br><small id="manage_subscription_email">Manage Existing Subscription</small><small id="dont_manage_subscription_email" style="display:none;">Create New Subscription</small></div></div></div></div><div id="tab_webhook" class="tab-pane"><div class="row"><div class="col-sm-12"><h4 id="subscribe_webhook_text_content" class="text text-center">Subscribe to receive status updates by webhook</h4></div></div><br><div class="row margin-top-20"><div class="col-md-2"></div><div class="col-md-8"><input type="text" name="subscribe_webhook_address" id="subscribe_webhook_address" placeholder="http://example.com/hook" class="form-control make_round"><p class="help-block">Each status update will POST a JSON payload to this URL</p></div></div><br><div class="row margin-top-20"><div class="col-md-2"></div><div class="col-md-8"><input type="text" name="subscribe_webhook_address_email" id="subscribe_webhook_address_email" placeholder="Email" class="form-control make_round"><p class="help-block">Email address for managing webhook</p></div></div><div class="row subscribe-modal-footer"><div class="row"><div class="col-md-6"><div id="result_subscribe_webhook" class="pull-left"></div></div><div class="col-md-6"><button type="button" data-dismiss="modal" class="btn btn-default make_round">Close</button><button id="subscribe_button_webhook" type="button" class="btn btn-default make_round">Subscribe</button><button id="manage_button_webhook" type="button" style="display:none;" class="btn btn-default make_round">Manage Subscription</button></div></div><div class="row"><div style="text-align:center;" class="col-md-12"><br><small id="manage_subscription_webhook">Manage Existing Subscription</small><small id="dont_manage_subscription_webhook" style="display:none;">Create New Subscription</small></div></div></div></div><div id="tab_rss" class="tab-pane"><div class="row"><div class="col-sm-12"><h4 class="text-center">Subscribe to receive status updates via RSS</h4></div></div><br><div class="row margin-top-20"><div class="col-md-2"></div><div class="col-md-8 text-center"><a href="http://status.twitterstat.us/pages/564314ae3309c22c3b0002fa/rss" target="_blank" style="color:#000; font-size: 20px;">RSS Feed</a></div></div><div class="row subscribe-modal-footer"><div class="col-md-6"></div><div class="col-md-6"><button type="button" data-dismiss="modal" class="btn btn-default make_round">Close</button></div></div></div></div></div></div></div></div></div></div></div><!-- Subscriber scripts--><script>$(document).ready(function(){
+  $('#tab_email').addClass('active');
+  $('#tab_menu_email').addClass('active');
+});</script><script>$("#subscribe_button_email").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_email_address").val();
+  var email = $("#email").val();
+  $.ajax({
+    url: '/subscriber/add',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "email",
+      address: address,
+      email: email
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'Thanks for subscribing. Check your email for instructions.';
       }
+      $("#result_subscribe_email").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_email").show();
+      setTimeout(function(){
+        $("#result_subscribe_email").fadeOut("slow", function () {
+        $("#result_subscribe_email").hide();
+            });
+      }, 5000);
     }
-  }
-}&#39;</code></pre>
-    </div>
-  
-</div>
-</div>
+  });
+})
+</script><script>$("#subscribe_button_sms").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_sms_country_code").val() + $("#subscribe_sms_number").val();
+  $.ajax({
+    url: '/subscriber/add',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "sms",
+      address: address
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'Check your phone for the confirmation text message';
+      }          
+      $("#result_subscribe_sms").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_sms").show();
+      setTimeout(function(){
+        $("#result_subscribe_sms").fadeOut("slow", function () {
+        $("#result_subscribe_sms").hide();
+            });
+      }, 8000);
+    }
+  });
+})
+</script><script>$("#subscribe_button_webhook").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_webhook_address").val();
+  var address_email = $("#subscribe_webhook_address_email").val();
+  $.ajax({
+    url: '/subscriber/add',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "webhook",
+      address: address,
+      address_email: address_email
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'Thanks for subscribing. Check your email for instructions.';
+      }          
+      $("#result_subscribe_webhook").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_webhook").show();
+      setTimeout(function(){
+        $("#result_subscribe_webhook").fadeOut("slow", function () {
+        $("#result_subscribe_webhook").hide();
+            });
+      }, 5000);
+    }
+  });
+})
+</script><script>$('#subscribeModal').on('shown.bs.modal', function() {
+  $(this).find('input:first').focus();
+});  
 
 
-    
-    
-    
-    <div class="c01-rich-text-editor">
-<p style="text-align: right;"><a href="https://developer.twitter.com/en/docs/direct-messages/sending-and-receiving/overview"><span class="with-caret">Documentation</span></a></p>
 
-
-
-</div>
-
-
-
-      </div>
-    
-      <div id="account-activity-api" class="s03__tab-content">
-        
-
-    
-    
-    
-    <div class="c01-rich-text-editor">
-<p>Receive a Direct Message via a webhook.</p>
-
-
-
-</div>
-
-
-    
-    
-    
-    <div class="d03-numbered-code-snippet">
-
-
-
-<div class="d03-numbered-code-snippet__container ">
-  <nav class="d03-numbered-code-snippet__nav">
-    
-      <span class="d03-numbered-code-snippet__nav__item d03-numbered-code-snippet__nav__item--active" data-lang="d03-numbered-code-snippet__tab--json">json</span>
-    
-  </nav>
-  
-    <div id="d03-numbered-code-snippet__tab--json" class="d03-numbered-code-snippet__tab d03-numbered-code-snippet__tab--active">
-      <pre class="line-numbers"><code class="language-json">{
-  &#34;type&#34;: &#34;message_create&#34;,
-  &#34;id&#34;: &#34;1234858592&#34;,
-  &#34;created_timestamp&#34;: &#34;1392078023603&#34;,
-  &#34;initiated_via&#34;: {
-    &#34;tweet_id&#34;: &#34;123456&#34;,
-    &#34;welcome_message_id&#34;: &#34;456789&#34;
-  },
-  &#34;message_create&#34;: {
-    &#34;target&#34;: {
-      &#34;recipient_id&#34;: &#34;1234858592&#34;
-    },
-    &#34;sender_id&#34;: &#34;3805104374&#34;,
-    &#34;source_app_id&#34;: &#34;268278&#34;,
-    &#34;message_data&#34;: {
-      &#34;text&#34;: &#34;Blue Bird&#34;,
-      &#34;entities&#34;: {
-        &#34;hashtags&#34;: [],
-        &#34;symbols&#34;: [],
-        &#34;urls&#34;: [],
-        &#34;user_mentions&#34;: [],
-      },
-      &#34;quick_reply_response&#34;: {
-        &#34;type&#34;: &#34;options&#34;,
-        &#34;metadata&#34;: &#34;external_id_2&#34;
-      },
-      &#34;attachment&#34;: {
-        &#34;type&#34;: &#34;media&#34;,
-        &#34;media&#34;: {
-         ...
-        }
+</script><script>$("#manage_subscription_email").click(function (event) {
+  event.preventDefault();
+  $("#manage_subscription_email").hide();
+  $("#subscribe_button_email").hide();
+  $("#manage_button_email").show();
+  $("#subscribe_email_text_content").html("Enter the email address you subscribed with");
+  $("#dont_manage_subscription_email").show();
+})
+</script><script>$("#dont_manage_subscription_email").click(function (event) {
+  event.preventDefault();
+  $("#dont_manage_subscription_email").hide();
+  $("#subscribe_button_email").show();
+  $("#manage_button_email").hide();
+  $("#subscribe_email_text_content").html("Subscribe to receive status updates by email");
+  $("#manage_subscription_email").show();
+})
+</script><script>$("#manage_button_email").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_email_address").val();
+  var email = $("#email").val();
+  $.ajax({
+    url: '/subscriber/email/request_manage_link',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "email",
+      address: address,
+      email: email
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'A link to manage your subscription has been emailed to you';
       }
+      $("#result_subscribe_email").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_email").show();
+      setTimeout(function(){
+        $("#result_subscribe_email").fadeOut("slow", function () {
+        $("#result_subscribe_email").hide();
+            });
+      }, 5000);
     }
-  }
-}</code></pre>
-    </div>
-  
-</div>
-</div>
-
-
-    
-    
-    
-    <div class="c01-rich-text-editor">
-<p style="text-align: right;"><a href="https://developer.twitter.com/en/docs/accounts-and-users/subscribe-account-activity/overview"><span class="with-caret">Documentation</span></a></p>
-
-
-
-</div>
-
-
-
-      </div>
-    
-      <div id="embed-a-tweet" class="s03__tab-content">
-        
-
-    
-    
-    
-    <div class="c01-rich-text-editor">
-<p>Embed a Tweet on your website.</p>
-
-
-
-</div>
-
-
-    
-    
-    
-    <div class="d03-numbered-code-snippet">
-
-
-
-<div class="d03-numbered-code-snippet__container ">
-  <nav class="d03-numbered-code-snippet__nav">
-    
-      <span class="d03-numbered-code-snippet__nav__item d03-numbered-code-snippet__nav__item--active" data-lang="d03-numbered-code-snippet__tab--javascript">javascript</span>
-    
-  </nav>
-  
-    <div id="d03-numbered-code-snippet__tab--javascript" class="d03-numbered-code-snippet__tab d03-numbered-code-snippet__tab--active">
-      <pre class="line-numbers"><code class="language-javascript">/* Fetch any embeddable Twitter object from the OEmbed API */
-
-let oembedResponse = await fetch(new Request(&#39;https://publish.twitter.com/oembed?url=https://twitter.com/jack/status/20&#39;));
-let oembedTweet = oembedResponse.json();</code></pre>
-    </div>
-  
-</div>
-</div>
-
-
-    
-    
-    
-    <div class="c01-rich-text-editor">
-<p>Make a request to the oEmbed API.</p>
-
-
-
-</div>
-
-
-    
-    
-    
-    <div class="d03-numbered-code-snippet">
-
-
-
-<div class="d03-numbered-code-snippet__container ">
-  <nav class="d03-numbered-code-snippet__nav">
-    
-      <span class="d03-numbered-code-snippet__nav__item d03-numbered-code-snippet__nav__item--active" data-lang="d03-numbered-code-snippet__tab--json">json</span>
-    
-  </nav>
-  
-    <div id="d03-numbered-code-snippet__tab--json" class="d03-numbered-code-snippet__tab d03-numbered-code-snippet__tab--active">
-      <pre class="line-numbers"><code class="language-json">{
-  &#34;url&#34;: &#34;https://twitter.com/jack/status/20&#34;,
-  &#34;author_name&#34;: &#34;jack&#34;,
-  &#34;author_url&#34;: &#34;https://twitter.com/jack&#34;,
-  &#34;html&#34;: &#34;&lt;blockquote class=\&#34;twitter-tweet\&#34;&gt;&lt;p lang=\&#34;en\&#34; dir=\&#34;ltr\&#34;&gt;just setting up my twttr&lt;/p&gt;&amp;mdash; jack (@jack) &lt;a href=\&#34;https://twitter.com/jack/status/20\&#34;&gt;March 21, 2006&lt;/a&gt;&lt;/blockquote&gt;\n&lt;script async src=\&#34;//platform.twitter.com/widgets.js\&#34; charset=\&#34;utf-8\&#34;&gt;&lt;/script&gt;&#34;,
-  &#34;width&#34;: 550,
-  &#34;height&#34;: null,
-  &#34;type&#34;: &#34;rich&#34;,
-  &#34;cache_age&#34;: &#34;3153600000&#34;,
-  &#34;provider_name&#34;: &#34;Twitter&#34;,
-  &#34;provider_url&#34;: &#34;https://twitter.com&#34;,
-  &#34;version&#34;: &#34;1.0&#34;
-}</code></pre>
-    </div>
-  
-</div>
-</div>
-
-
-    
-    
-    
-    <div class="c01-rich-text-editor">
-<p>This returns a JSON oEmbed response.</p>
-
-
-
-</div>
-
-
-    
-    
-    
-    <div class="d03-numbered-code-snippet">
-
-
-
-<div class="d03-numbered-code-snippet__container ">
-  <nav class="d03-numbered-code-snippet__nav">
-    
-      <span class="d03-numbered-code-snippet__nav__item d03-numbered-code-snippet__nav__item--active" data-lang="d03-numbered-code-snippet__tab--markup">markup</span>
-    
-  </nav>
-  
-    <div id="d03-numbered-code-snippet__tab--markup" class="d03-numbered-code-snippet__tab d03-numbered-code-snippet__tab--active">
-      <pre class="line-numbers"><code class="language-markup">&lt;article&gt;
-  &lt;figure&gt;
-    {{{oembedTweet.html}}}
-    &lt;figcaption&gt;Tweet by Jack Dorsey&lt;/figcaption&gt;
-  &lt;/figure&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
-&lt;/article&gt;</code></pre>
-    </div>
-  
-</div>
-</div>
-
-
-    
-    
-    
-    <div class="c01-rich-text-editor">
-<p>Output the HTML into your page.</p>
-
-
-
-</div>
-
-
-    
-    
-    
-    <div class="c01-rich-text-editor">
-<p style="text-align: right;"><a href="https://dev.twitter.com/web/overview"><span class="with-caret">Documentation</span></a></p>
-
-
-
-</div>
-
-
-
-      </div>
-    
-  
-</div>
-
-</div>
-
-
-</div>
-  </div>
-</div>
-
-
-
-</div>
-
-
-    
-    
-    
-    <div class="c14-info-billboard">
-
-
-
-<div class="c14-info-billboard__bgColorWrapper theme-bg-color--dark">
-  <span class="c14-info-billboard__shadow theme-color--extra-dark">More</span>
-  <div class="c14-info-billboard__contentWrapper container">
-    <div class="c14-info-billboard__headline color--neutral-white"><p>Looking for more?</p>
-
-
-<p>Here are a few places to explore.</p>
-
-
-
-</div>
-    <div class="btn-container">
-      
-          <a class="link color--neutral-white" href="https://trello.com/b/myf7rKwV/twitter-api-platform-roadmap" title="Product roadmap">
-            Product roadmap
-            <span class="link--chevron fill-color--neutral-white"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="72" viewBox="0 0 28 72"><path d="M21.965 35L7.732 20.768a2.498 2.498 0 0 1 0-3.535 2.498 2.498 0 0 1 3.535 0l16 16a2.498 2.498 0 0 1 0 3.535l-16 16c-.487.488-1.127.732-1.767.732s-1.28-.244-1.768-.732a2.498 2.498 0 0 1 0-3.535L21.965 35z"/></svg>
-</span>
-          </a>
-      
-          <a class="link color--neutral-white" href="https://developer.twitter.com/en/community" title="Developer communities">
-            Developer communities
-            <span class="link--chevron fill-color--neutral-white"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="72" viewBox="0 0 28 72"><path d="M21.965 35L7.732 20.768a2.498 2.498 0 0 1 0-3.535 2.498 2.498 0 0 1 3.535 0l16 16a2.498 2.498 0 0 1 0 3.535l-16 16c-.487.488-1.127.732-1.767.732s-1.28-.244-1.768-.732a2.498 2.498 0 0 1 0-3.535L21.965 35z"/></svg>
-</span>
-          </a>
-      
-          <a class="link color--neutral-white" href="http://twittercommunity.com" title="Forums">
-            Forums
-            <span class="link--chevron fill-color--neutral-white"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="72" viewBox="0 0 28 72"><path d="M21.965 35L7.732 20.768a2.498 2.498 0 0 1 0-3.535 2.498 2.498 0 0 1 3.535 0l16 16a2.498 2.498 0 0 1 0 3.535l-16 16c-.487.488-1.127.732-1.767.732s-1.28-.244-1.768-.732a2.498 2.498 0 0 1 0-3.535L21.965 35z"/></svg>
-</span>
-          </a>
-      
-          <a class="link color--neutral-white" href="https://blog.twitter.com/developer/en_us.html" title="Developer blog">
-            Developer blog
-            <span class="link--chevron fill-color--neutral-white"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="72" viewBox="0 0 28 72"><path d="M21.965 35L7.732 20.768a2.498 2.498 0 0 1 0-3.535 2.498 2.498 0 0 1 3.535 0l16 16a2.498 2.498 0 0 1 0 3.535l-16 16c-.487.488-1.127.732-1.767.732s-1.28-.244-1.768-.732a2.498 2.498 0 0 1 0-3.535L21.965 35z"/></svg>
-</span>
-          </a>
-      
-    </div>
-  </div>
-</div>
-
-
-
-</div>
-
-
-    
-    
-    
-    <div class="c11-masthead c13-cta-billboard">
-
-
-
-<div class="text bg-color--neutral-white c11-masthead__bgColorWrapper ">
-  <div class="c11-masthead__contentWrapper container">
-    <p class="c11-masthead__eyebrow theme-color--dark">Ready to build your solution?</p>
-    
-    <h1 class="c11-masthead__headline text color--neutral-white">Review the documentation to get started. </h1>
-    <button class="c11-masthead__button">
-      <a href="https://developer.twitter.com/en/docs" target="_blank" title="Go to docs">Go to docs</a>
-    </button>
-  </div>
-</div>
-
-
-
-
-</div>
-
-
-
-
-        <footer class="footer theme-bg-color--dark">
-  <div class="footer--banner theme-bg-color--extra-light">
-    <div class="footer__row container">
-      <div class="footer-col">
-        <a class="footer-col__footnote type--bold-14 theme-color--extra-dark theme-color--extra-dark--hover" href="https://developer.twitter.com/en/developer-terms" target="_blank" title="Developer policy and terms">
-          Developer policy and terms</a>
-      </div>
-      <div class="footer-col">
-        <a class="footer-col__footnote type--bold-14 theme-color--extra-dark theme-color--extra-dark--hover" href="http://twitter.com/twitterdev" target="_blank" title="Follow @twitterdev">
-          Follow @twitterdev</a>
-      </div>
-      <div class="footer-col"></div>
-      <div class="footer-col"></div>
-      <div class="footer-col">
-        <a class="c04-link-button c04-link-button--button theme-bg-color--extra-extra-light theme-bg-color--extra-extra-light--hover" href="https://developer.twitter.com/en/twitterdev-news-subscription" target="_self">
-          Subscribe to developer news
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer__row container footer__row--main">
-    <div class="footer-col">
-      <a href="https://about.twitter.com" title="About" target="_blank" class="footer-col__parent type--bold-14 theme-color--extra-light theme-color--extra-light--hover">
-          About
-
-          <span class="icon-container js-accordion theme-fill-color--extra-light">
-            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
-
-          </span>
-      </a>
-      <ul class="footer-col__list">
-        <li>
-          <a href="https://about.twitter.com/en_us/company.html" title="Company" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Company</a></li>
-      
-        <li>
-          <a href="https://about.twitter.com/en_us/values.html" title="Values" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Values</a></li>
-      
-        <li>
-          <a href="https://about.twitter.com/en_us/safety.html" title="Safety" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Safety</a></li>
-      
-        <li>
-          <a href="https://blog.twitter.com/official/en_us.html" title="Blog" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Blog</a></li>
-      
-        <li>
-          <a href="https://about.twitter.com/en_us/company/brand-resources.html" title="Brand Resources" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Brand Resources</a></li>
-      
-        <li>
-          <a href="https://careers.twitter.com/en.html" title="Careers" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Careers</a></li>
-      
-        <li>
-          <a href="https://investor.twitterinc.com/" title="Investors" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Investors</a></li>
-      </ul>
-    </div>
-  
-    <div class="footer-col">
-      <a href="https://business.twitter.com/" title="Business" target="_blank" class="footer-col__parent type--bold-14 theme-color--extra-light theme-color--extra-light--hover">
-          Business
-
-          <span class="icon-container js-accordion theme-fill-color--extra-light">
-            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
-
-          </span>
-      </a>
-      <ul class="footer-col__list">
-        <li>
-          <a href="https://business.twitter.com/en/advertising.html" title="About Twitter Ads" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">About Twitter Ads</a></li>
-      
-        <li>
-          <a href="https://business.twitter.com/en/targeting.html" title="Targeting" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Targeting</a></li>
-      
-        <li>
-          <a href="https://business.twitter.com/en/analytics.html" title="Analytics" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Analytics</a></li>
-      
-        <li>
-          <a href="https://business.twitter.com/en/help.html" title="Ads support" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Ads support</a></li>
-      
-        <li>
-          <a href="https://blog.twitter.com/small-business" title="Business blog" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Business blog</a></li>
-      
-        <li>
-          <a href="https://ads.twitter.com/login?ref=en-btc-gobal-footer" title="Advertise" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Advertise</a></li>
-      </ul>
-    </div>
-  
-    <div class="footer-col">
-      <a href="https://dev.twitter.com/" title="Developers" target="_blank" class="footer-col__parent type--bold-14 theme-color--extra-light theme-color--extra-light--hover">
-          Developers
-
-          <span class="icon-container js-accordion theme-fill-color--extra-light">
-            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
-
-          </span>
-      </a>
-      <ul class="footer-col__list">
-        <li>
-          <a href="https://dev.twitter.com/overview/documentation" title="Documentation" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Documentation</a></li>
-      
-        <li>
-          <a href="https://twittercommunity.com/" title="Forums" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Forums</a></li>
-      
-        <li>
-          <a href="https://dev.twitter.com/community" title="Communities" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Communities</a></li>
-      
-        <li>
-          <a href="https://blog.twitter.com/developer" title="Developer blog" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Developer blog</a></li>
-      </ul>
-    </div>
-  
-    <div class="footer-col">
-      <a href="https://support.twitter.com/" title="Help Center" target="_blank" class="footer-col__parent type--bold-14 theme-color--extra-light theme-color--extra-light--hover">
-          Help Center
-
-          <span class="icon-container js-accordion theme-fill-color--extra-light">
-            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
-
-          </span>
-      </a>
-      <ul class="footer-col__list">
-        <li>
-          <a href="https://support.twitter.com/articles/215585" title="Using Twitter" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Using Twitter</a></li>
-      
-        <li>
-          <a href="https://twitter.com/login" title="My account" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">My account</a></li>
-      
-        <li>
-          <a href="https://support.twitter.com/categories/283" title="Fixing a problem" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Fixing a problem</a></li>
-      
-        <li>
-          <a href="https://support.twitter.com/categories/284" title="Policies and reporting" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Policies and reporting</a></li>
-      
-        <li>
-          <a href="https://about.twitter.com/safety" title="Safety Center" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Safety Center</a></li>
-      </ul>
-    </div>
-  
-    <div class="footer-col">
-      <a href="https://marketing.twitter.com/" title="Marketing" target="_blank" class="footer-col__parent type--bold-14 theme-color--extra-light theme-color--extra-light--hover">
-          Marketing
-
-          <span class="icon-container js-accordion theme-fill-color--extra-light">
-            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M17 12.758L5.121.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l14 14a2.998 2.998 0 0 0 4.242 0l14-14C33.707 4.535 34 3.768 34 3s-.293-1.535-.879-2.121a2.998 2.998 0 0 0-4.242 0L17 12.758z"/></svg>
-
-          </span>
-      </a>
-      <ul class="footer-col__list">
-        <li>
-          <a href="https://marketing.twitter.com/na/en/insights.html" title="Insights" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Insights</a></li>
-      
-        <li>
-          <a href="https://marketing.twitter.com/na/en/success-stories.html" title="Success Stories" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Success Stories</a></li>
-      
-        <li>
-          <a href="https://marketing.twitter.com/na/en/solutions.html" title="Solutions" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Solutions</a></li>
-      
-        <li>
-          <a href="https://marketing.twitter.com/na/en/collections.html" title="Collections" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Collections</a></li>
-      
-        <li>
-          <a href="https://blog.twitter.com/advertising" title="Marketing Blog" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Marketing Blog</a></li>
-      
-        <li>
-          <a href="https://twitterflightschool.com" title="Flight School" target="_blank" class="footer-col__link type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Flight School</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer__row container">
-    <div class="footer-col">
-      <p class="footer-col__footnote type--roman-14 theme-color--extra-light">&copy; 2017 Twitter, Inc.</p>
-    </div>
-    
-      <div class="footer-col">
-        <a href="https://support.twitter.com/articles/20170520" title="Cookies" target="_blank" class="footer-col__footnote type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Cookies</a>
-      </div>
-    
-      <div class="footer-col">
-        <a href="https://twitter.com/privacy" title="Privacy" target="_blank" class="footer-col__footnote type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Privacy</a>
-      </div>
-    
-      <div class="footer-col">
-        <a href="https://twitter.com/tos" title="Terms and Conditions" target="_blank" class="footer-col__footnote type--roman-14 theme-color--extra-light theme-color--extra-light--hover">Terms and Conditions</a>
-      </div>
-    
-  </div>
-</footer>
-
-
-
-<!--<div class="modal_container">-->
-<div class="c20-modal__modal module-modal" data-modal="true">
-  <div class="c20-modal__scrollable" data-modal-scroll-container="true">
-    <div class="c20-modal__details" data-modal-content-container="true">
-      <!-- template is injected here -->
-    </div>
-    <ul class="c20-modal__navigation">
-      <li class="c20-modal__navigation-prev" data-modal-nav="prev-link" aria-label="Read previous biography">
-        <span class="c20-modal__navigation-label">Read Previous</span>
-          <span class="c20-modal__navigation-text" data-modal-nav="prev-text"></span>
-      </li>
-      <li class="c20-modal__navigation-next" data-modal-nav="next-link" aria-label="Read next biography">
-        <span class="c20-modal__navigation-label">Read Next</span>
-          <span class="c20-modal__navigation-text" data-modal-nav="next-text"></span>
-      </li>
-    </ul>
-  </div>
-</div>
-
-<div class="module-modal__close-container">
-  
-  <div class="c20-modal__modal-close module-modal__close" data-trigger="close-modal">
-    
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><path d="M24.242 20L39.121 5.121a2.998 2.998 0 0 0 0-4.242 2.998 2.998 0 0 0-4.242 0l-14.88 14.879L5.122.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242L15.758 20 .879 34.879A2.998 2.998 0 0 0 3.001 40a2.99 2.99 0 0 0 2.121-.879L20 24.242l14.879 14.879a2.987 2.987 0 0 0 2.12.879 2.998 2.998 0 0 0 2.121-5.121L24.242 20z"/></svg>
-
-    
-  </div>
-</div>
-<!--</div>-->
-      </div>
-      
-
-
-    
-<script type="text/javascript" src="/etc/designs/common-twitter/dtm-footer.min.js"></script>
-
-
-
-
-
-
-<script type="text/javascript" src="/etc/designs/developer-twitter/public/js/app.js"></script>
-<script type="text/javascript" src="/etc/designs/developer-twitter/public/js/universal.js"></script>
-<script type="text/javascript" src="/etc/designs/developer-twitter/public/js/structure.js"></script>
-<script type="text/javascript" src="/etc/designs/developer-twitter/public/js/content.js"></script>
-<script type="text/javascript" src="/etc/designs/developer-twitter/public/js/docs.js"></script>
-
-<script async src="https://platform.twitter.com/widgets.js"></script>
-
-
-  </body>
-  </html>
-
+  });
+})
+
+
+
+</script><script>$("#manage_subscription_webhook").click(function (event) {
+  event.preventDefault();
+  $("#manage_subscription_webhook").hide();
+  $("#subscribe_button_webhook").hide();
+  $("#manage_button_webhook").show();
+  $("#subscribe_webhook_text_content").html("Enter the webhook URL and email address you subscribed with");
+  $("#dont_manage_subscription_webhook").show();
+})
+</script><script>$("#dont_manage_subscription_webhook").click(function (event) {
+  event.preventDefault();
+  $("#dont_manage_subscription_webhook").hide();
+  $("#subscribe_button_webhook").show();
+  $("#manage_button_webhook").hide();
+  $("#subscribe_webhook_text_content").html("Subscribe to receive status updates by webhook");
+  $("#manage_subscription_webhook").show();
+})
+</script><script>$("#manage_button_webhook").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_webhook_address").val();
+  var address_email = $("#subscribe_webhook_address_email").val();
+  $.ajax({
+    url: '/subscriber/webhook/request_manage_link',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "webhook",
+      address: address,
+      address_email: address_email
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'A link to manage your subscription has been emailed to you';
+      }
+      $("#result_subscribe_webhook").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_webhook").show();
+      setTimeout(function(){
+        $("#result_subscribe_webhook").fadeOut("slow", function () {
+        $("#result_subscribe_webhook").hide();
+            });
+      }, 5000);
+    }
+  });
+})
+
+
+
+</script><script>$("#manage_subscription_sms").click(function (event) {
+  event.preventDefault();
+  $("#manage_subscription_sms").hide();
+  $("#subscribe_button_sms").hide();
+  $("#manage_button_sms").show();
+  $("#subscribe_sms_text_content").html("Enter the number you subscribed with");
+  $("#dont_manage_subscription_sms").show();
+})
+</script><script>$("#dont_manage_subscription_sms").click(function (event) {
+  event.preventDefault();
+  $("#dont_manage_subscription_sms").hide();
+  $("#subscribe_button_sms").show();
+  $("#manage_button_sms").hide();
+  $("#subscribe_sms_text_content").html("Subscribe to receive status updates by text message");
+  $("#manage_subscription_sms").show();
+})
+</script><script>$("#manage_button_sms").click(function (event) {
+  event.preventDefault();
+  var address = $("#subscribe_sms_country_code").val() + $("#subscribe_sms_number").val();
+  var sms = $("#sms").val();
+  $.ajax({
+    url: '/subscriber/sms/request_manage_link',
+    type: "POST",
+    data: ({
+      statuspage_id: "564314ae3309c22c3b0002fa",
+      method: "sms",
+      address: address
+    }),
+    success: function(data){
+      var message_text = data.status.message;
+      if (message_text == 'OK') {
+        message_text = 'A link to manage your subscription has been texted to you';
+      }
+      $("#result_subscribe_sms").html("<span class=\"help-block\">"+message_text+"</span>");
+      $("#result_subscribe_sms").show();
+      setTimeout(function(){
+        $("#result_subscribe_sms").fadeOut("slow", function () {
+        $("#result_subscribe_sms").hide();
+            });
+      }, 5000);
+    }
+  });
+})
+
+
+
+</script><script>$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
+});
+</script><!-- Clicky Analytics--><script>var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(100794436);
+(function() {
+var s = document.createElement('script');
+s.type = 'text/javascript';
+s.async = true;
+s.src = '//static.getclicky.com/js';
+( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();</script><noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100794436ns.gif"></p></noscript></body></html>
