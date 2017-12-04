@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90490335-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90490335-1');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W8G8Q97');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"84be3a6dbe","applicationID":"72077806","transactionName":"NFUDZ0VUXRdZW0VYDA0fLGV0GmEBW11YRQIgXw9HRVpfCF1KHngNB1UZ","queueTime":0,"applicationTime":1115,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQADUFdRARAHVlFVAAkHUA=="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,n,e)])}catch(s){try{i("ierr",[s,c.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t){i("err",[t,c.now()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,n,e){u&&(d+=1)}),s.on("fn-err",function(t,n,e){u&&(this.thrown=!0,o(e))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="google-site-verification" content="r46OzlDCvPI9KJ9zkr_JyjMJO7_AQ1toBqzrCxc66vE" />
+    <meta name="google-signin-client_id" content="43552696483-0928tq0vhrkfnpd9l0tmjts4aavvul7t.apps.googleusercontent.com" />
+    <link rel="shortcut icon" type="image/jpg" href="/Content/images/logo.jpg" />
+    <link runat="server" rel="icon" href="/favicon.ico" type="image/ico" />
+    
+    <title>Receita de Receita de 04/12: Pudim de rapadura do TOP 20 | Doces e sobremesas | Ana Maria Braga</title>
+    <meta name="description" content="Confira as receitas selecionadas pela Ana Maria Braga para surpreender em qualquer ocasi&#227;o" />
+
+    <meta property="fb:app_id" content="1096096320499315" />
+    <meta property="og:type" content="website" />
+
+
+    <meta property="og:title" content="Receita de 04/12: Pudim de rapadura do TOP 20">
+    <meta property="og:description">
+    <meta property="og:image" content="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/biblioteca/Thumb/pudim-de-rapadura.jpg">
+
+    
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script async src="~/Scripts/vendor/jquery/jquery.min.js"><\/script>');</script>
+    <script type="text/javascript" src="/Scripts/js/components/jquery.touchSwipe.min.js"></script>
+    <link rel="stylesheet" href="/Content/css/normalize.css">
+    <link rel="stylesheet" href="/Content/css/chosen/bootstrap-chosen.css">
+    <link rel="stylesheet" href="/Content/ladda/css">
+    <link rel="stylesheet" href="/Content/css/tooltipster/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" href="/Content/css/spinner.min.css">
+    <link rel="stylesheet" href="/Content/css/icheck.css" />
+    <link rel="stylesheet" href="/Content/css/styles.css?t=201712011630">
+    <link rel="stylesheet" href="/Content/Site.css?t=201712011630" />
+    <link rel="stylesheet" href="//s.glbimg.com/gl/ba/css/barra-globocom.min.css" type="text/css" />
+    <link rel="stylesheet" href="/Content/concurso/css/receitas-vencedoras.css" />
+    <link rel="stylesheet" href="/Content/concurso/css/slick.min.css">
+
+
+
+    <!-- player skin of your choice -->
+    <link rel="stylesheet" href="//releases.flowplayer.org/7.0.2/skin/skin.css">
+    <!-- Flowplayer -->
+    <script src="//releases.flowplayer.org/7.0.2/flowplayer.min.js"></script>
+    <!-- load the VAST assets after the Flowplayer assets -->
+    <!-- the IMA SDK -->
+    <script src="//s0.2mdn.net/instream/html5/ima3.js"></script>
+    <!-- your VAST plugin -->
+    <script src="//releases.flowplayer.org/vast/anamariabraga.globo.com/vast.min.js"></script>
+
+    <script type="text/javascript">
+        var glb = this.glb || {};
+        glb.barra = {
+            exibeAssineJa: false,
+            useVintage: true,
+            exibeCentral: false
+        };
+        (function () {
+            var s = document.createElement("script");
+            s.type = "text/javascript"; s.async = true; s.charset = "utf-8";
+            s.src = "//s.glbimg.com/gl/ba/js/barra-globocom.min.js";
+            var ss = document.getElementsByTagName("script")[0]; ss.parentNode.insertBefore(s, ss);
+        })();
+    </script>
+
+    <!-- API Google Login -->
+    <script src="//apis.google.com/js/platform.js" async defer></script>
+
+    <!-- DFP -->
+    <script async='async' src='//www.googletagservices.com/tag/js/gpt.js'></script>
+    <script src="/Scripts/dfp.js"></script>
+    
+
+    <script src='//www.google.com/recaptcha/api.js?hl=pt-BR' async defer></script>
+    <style>
+        .async-hide {
+            opacity: 0 !important
+        }
+    </style>
+
+    <script src="/Scripts/flowplayer.js"></script>
+    <!-- Hotjar Tracking Code for //anamariabraga.globo.com -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:553867,hjsv:5};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=')
+    </script>
+
+    <script data-cfasync="false" src="//api.cazamba.com/ccd1ac24cd32ad5a95218232693f3d5a.js" type="text/javascript"></script>
+</head>
+
+<!-- BEGIN CRITEO BANNER CODE -->
+<script type="text/javascript">
+        //<![CDATA[
+        !function () { var e = 1, o = { "sticky": { "adServer": "none", "desktopZId": "684403", "macro": null, "mobileZId": "684404", "origin": "http://anamariabraga.globo.com" } }; parent.window.cto_glue2 = parent.window.cto_glue2 || [], parent.window.cto_glue2.push({ options: o, debug: e }); var t = parent.document.createElement("script"); t.type = "text/javascript", t.async = !0, t.src = ("https:" == parent.document.location.protocol ? "https://" : "http://") + "static.criteo.net/misc/glue2/glue2_sticky.js", (parent.document.getElementsByTagName("head")[0] || parent.document.getElementsByTagName("body")[0]).appendChild(t); }();
+        //]]>
+</script>
+<!-- END CRITEO BANNER CODE -->
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8G8Q97" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <a id="aScrollTop" href="#barra-globocom" style="display:none;"></a>
+
+    <input type="hidden" id="hdnUrlBaseSite" value="/" />
+    <input type="hidden" id="hdnUrlBaseSiteCompleta" value="http://anamariabraga.globo.com" />
+    <input type="hidden" id="hdnIsTest" value="false" />
+    <input type="hidden" id="hdnHoje" value="12/4/2017" />
+
+
+
+    <!-- /122331895/anamariabraga/Formatos_Especiais -->
+    <div id='div-gpt-ad-1502731044891-0' style='height:1px; width:1px;'>
+        <script>
+            googletag.cmd.push(function () { googletag.display('div-gpt-ad-1502731044891-0'); });
+        </script>
+    </div>
+
+    <input type="hidden" id="hdnConcursoJson" value="{ &quot;id&quot;: 5, &quot;nome&quot;: &quot;Top 20 Receitas&quot;, &quot;slug&quot;: &quot;top-20-receitas&quot;, &quot;vigente&quot;: true }" />
+    
+<nav id="headerMobile" class="navbar mb-4 navbar-default navbar-fixed-top hidden-sm hidden-md hidden-lg nav-anamaria m-0 p-0">
+        <a href="/enviar-receita" onclick="gaEnviarReceita('HeaderMobile')" title="Enviar Receita" class="btn-enviar-receita-header-mobile">
+            <img src="/Content/images/icn-upload.svg" title="Enviar Receita" alt="Enviar Receita" class="upload-icon pr-2">
+            Enviar Receita
+        </a>
+    <div class="container">
+        <div class="navbar-header">
+            <!-- ANA SIGNATURE -->
+            <a class="navbar-brand signature m-0 p-0" title="Ana Maria Braga">
+                <img src="/Content/images/signature.png" alt="Assinatura Ana Maria Braga" title="Assinatura Ana Maria Braga">
+            </a>
+        </div>
+        <!-- SEARCH MODAL -->
+        <div id="searchmobile" class="navbar-collapse collapse p-0">
+            <form class="search" action="/" method="post" id="formSearchMobile" autocomplete="off">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <p class="text-uppercase">Busca</p>
+                        
+                    </li>
+                    <li>
+                        <input class="term" type="text" name="" placeholder="Busque aqui">
+                    </li>
+                    <li>
+                        
+                        <button id="btnSubmitSearchMobile" class="submit red-link-rounded super-rounded ladda-button" type="submit" data-style="zoom-in" value="Buscar">Buscar</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <!-- MENU MODAL -->
+        <div id="navbar" class="navbar-collapse collapse p-0">
+            <ul class="nav navbar-nav">
+                <li id="liAssinatura" class="center">
+                    <a href="http://anamariabraga.globo.com"><img class="pad-t-20 mrg-r-30" src="/Content/images/signature-black2.png" alt="Assinatura Ana Maria Braga" title="Assinatura Ana Maria Braga" /></a>
+                    
+                </li>
+                <li class="liMenuDeslogado">
+                    <a href="#ana-maria-menu-mobile" class="sub-item text-uppercase get-submenu" title="Ana Maria">Ana Maria</a>
+                </li>
+                <li class="liMenuDeslogado border-top">
+                    <a href="#receita-menu-mobile" class="sub-item text-uppercase get-submenu" title="Receitas">Receitas</a>
+                </li>
+                    <li class="liMenuDeslogado border-top">
+                        <a href="#acorda-menina-menu-mobile" class="sub-item text-uppercase get-submenu" title="Acorda, Menina!">Acorda, Menina!</a>
+                    </li>
+                        <li class="liMenuDeslogado second-style border-top">
+                            <a href="/clube-da-ana" data-href="#clube-menu" class="sub-item" title="Clube da Ana">CLUBE DA ANA</a>
+                        </li>
+                        <li class="liMenuDeslogado second-style border-top">
+                            <a href="/busca?term=&amp;v=1" class="sub-item" title="Vídeos">VÍDEOS</a>
+                        </li>
+                            <li class="liMenuDeslogado second-style border-top">
+                                <a href="/concurso" data-href="#video-menu" class="sub-item" title="Concurso">CONCURSO</a>
+                            </li>
+                    <li class="liMenuDeslogado border-top">
+                        <a href="#dicas-menu-mobile" class="sub-item text-uppercase get-submenu" title="Dicas">Dicas</a>
+                    </li>
+                    <li class="liMenuDeslogado border-top">
+                        <a href="#louro-jose-menu-mobile" class="sub-item text-uppercase get-submenu" title="Louro Jos&#233;">Louro Jos&#233;</a>
+                    </li>
+                    <li class="liMenuDeslogado border-top">
+                        <a href="#mensagens-menu-mobile" class="sub-item text-uppercase get-submenu" title="Mensagens">Mensagens</a>
+                    </li>
+                <li class="liMenuDeslogado second-style border-top mb-48">
+                    <a href="/ajuda" class="sub-item" title="Ajuda">AJUDA</a>
+                </li>
+            </ul>
+                <ul class="nav navbar-nav sub-menu" id="ana-maria-menu-mobile">
+                    <li class="acorda-first-mobile">
+                        <a href="#ana-maria-menu-mobile" class="ana-icon arrow-left-icon get-submenu" title="Voltar">
+                            Voltar Menu Principal
+                        </a>
+                        
+                        <span class="subtitle text-uppercase"><a href="http://anamariabraga.globo.com">Ana Maria</a></span>
+                    </li>
+                                <li class="border-top">
+                                    <a href="/ana-maria" class="sub-item text-uppercase" title="Biografia da Ana">Biografia</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/ana-maria/ana-na-midia" class="sub-item text-uppercase" title="Ana na M&#237;dia">Ana na M&#237;dia</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/ana-maria/look-da-ana" class="sub-item text-uppercase" title="Look da Ana">Look da Ana</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="/busca?term=&amp;tp=G&amp;c=1" class="sub-item text-uppercase" title="Galeria de fotos">Galeria de fotos</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="/mensagens" class="sub-item text-uppercase" title="Mensagens">Mensagens</a>
+                                </li>
+                </ul>
+                <ul class="nav navbar-nav sub-menu" id="dicas-menu-mobile">
+                    <li class="acorda-first-mobile">
+                        <a href="#dicas-menu-mobile" class="ana-icon arrow-left-icon get-submenu" title="Voltar">
+                            Voltar Menu Principal
+                        </a>
+                        
+                        <span class="subtitle text-uppercase"><a href="http://anamariabraga.globo.com/dicas">Dicas</a></span>
+                    </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/dicas/cozinha-culinaria" class="sub-item text-uppercase" title="Cozinha&amp;Culin&#225;ria">Cozinha&amp;Culin&#225;ria</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/dicas/lavanderia" class="sub-item text-uppercase" title="Lavanderia">Lavanderia</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/dicas/seu-momento" class="sub-item text-uppercase" title="Seu momento">Seu momento</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/dicas/truques-de-casa" class="sub-item text-uppercase" title="Truques de casa">Truques de casa</a>
+                                </li>
+                </ul>
+                <ul class="nav navbar-nav sub-menu" id="louro-jose-menu-mobile">
+                    <li class="acorda-first-mobile">
+                        <a href="#louro-jose-menu-mobile" class="ana-icon arrow-left-icon get-submenu" title="Voltar">
+                            Voltar Menu Principal
+                        </a>
+                        
+                        <span class="subtitle text-uppercase"><a href="http://anamariabraga.globo.com/louro-jose">Louro Jos&#233;</a></span>
+                    </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/louro-jose/cantadas" class="sub-item text-uppercase" title="Cantadas">Cantadas</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/louro-jose/charadas" class="sub-item text-uppercase" title="Charadas">Charadas</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/louro-jose/curtas" class="sub-item text-uppercase" title="Curtas">Curtas</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/louro-jose/infantis" class="sub-item text-uppercase" title="Infantis">Infantis</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/louro-jose/inteligentes" class="sub-item text-uppercase" title="Inteligentes">Inteligentes</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/louro-jose/joaozinho" class="sub-item text-uppercase" title="Jo&#227;ozinho">Jo&#227;ozinho</a>
+                                </li>
+                </ul>
+                <ul class="nav navbar-nav sub-menu" id="mensagens-menu-mobile">
+                    <li class="acorda-first-mobile">
+                        <a href="#mensagens-menu-mobile" class="ana-icon arrow-left-icon get-submenu" title="Voltar">
+                            Voltar Menu Principal
+                        </a>
+                        
+                        <span class="subtitle text-uppercase"><a href="http://anamariabraga.globo.com/mensagens">Mensagens</a></span>
+                    </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/mensagens/conselhos" class="sub-item text-uppercase" title="Conselhos">Conselhos</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/mensagens/curtas" class="sub-item text-uppercase" title="Curtas">Curtas</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/mensagens/motivacao" class="sub-item text-uppercase" title="Motiva&#231;&#227;o">Motiva&#231;&#227;o</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/mensagens/otimismo" class="sub-item text-uppercase" title="Otimismo">Otimismo</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/mensagens/reflexao" class="sub-item text-uppercase" title="Reflex&#227;o">Reflex&#227;o</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/mensagens/tiradas" class="sub-item text-uppercase" title="Tiradas">Tiradas</a>
+                                </li>
+                </ul>
+                <ul class="nav navbar-nav sub-menu" id="acorda-menina-menu-mobile">
+                    <li class="acorda-first-mobile">
+                        <a href="#acorda-menina-menu-mobile" class="ana-icon arrow-left-icon get-submenu" title="Voltar">
+                            Voltar Menu Principal
+                        </a>
+                        
+                        <span class="subtitle text-uppercase"><a href="http://anamariabraga.globo.com/acorda-menina">Acorda, Menina!</a></span>
+                    </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/acorda-menina/casa-e-familia" class="sub-item text-uppercase" title="Casa e Fam&#237;lia">Casa e Fam&#237;lia</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/acorda-menina/comida-e-bebida" class="sub-item text-uppercase" title="Comida e Bebida">Comida e Bebida</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/acorda-menina/gente" class="sub-item text-uppercase" title="Gente">Gente</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/acorda-menina/louro-jose" class="sub-item text-uppercase" title="Louro Jos&#233;">Louro Jos&#233;</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/acorda-menina/moda-e-beleza" class="sub-item text-uppercase" title="Moda e Beleza">Moda e Beleza</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/acorda-menina/noticias" class="sub-item text-uppercase" title="Not&#237;cias">Not&#237;cias</a>
+                                </li>
+                                <li class="border-top">
+                                    <a href="http://anamariabraga.globo.com/acorda-menina/viver-bem" class="sub-item text-uppercase" title="Viver Bem">Viver Bem</a>
+                                </li>
+                </ul>
+                <ul class="nav navbar-nav sub-menu" id="receita-menu-mobile">
+                    <li class="acorda-first-mobile">
+                        <a href="#receita-menu-mobile" class="ana-icon arrow-left-icon get-submenu" title="Voltar">
+                            Voltar Menu Principal
+                        </a>
+                        
+                        <span class="subtitle text-uppercase"><a href="http://anamariabraga.globo.com/receitas">Receitas</a></span>
+                    </li>
+                            <li class="border-top">
+                                <a href="http://anamariabraga.globo.com/receitas/entradas-e-acompanhamentos" class="sub-item text-uppercase" title="Acompanhamentos">Acompanhamentos</a>
+                            </li>
+                            <li class="border-top">
+                                <a href="http://anamariabraga.globo.com/receitas/alimentacao-infantil" class="sub-item text-uppercase" title="Alimenta&#231;&#227;o infantil ">Alimenta&#231;&#227;o infantil </a>
+                            </li>
+                            <li class="border-top">
+                                <a href="http://anamariabraga.globo.com/receitas/aves" class="sub-item text-uppercase" title="Aves">Aves</a>
+                            </li>
+                            <li class="border-top">
+                                <a href="http://anamariabraga.globo.com/receitas/bebidas" class="sub-item text-uppercase" title="Bebidas">Bebidas</a>
+                            </li>
+                            <li class="border-top">
+                                <a href="http://anamariabraga.globo.com/receitas/bolos-e-tortas" class="sub-item text-uppercase" title="Bolos e tortas">Bolos e tortas</a>
+                            </li>
+                            <li class="border-top">
+                                <a href="http://anamariabraga.globo.com/receitas/carnes" class="sub-item text-uppercase" title="Carnes">Carnes</a>
+                            </li>
+                            <li class="border-top">
+                                <a href="http://anamariabraga.globo.com/receitas/doces-e-sobremesas" class="sub-item text-uppercase" title="Doces e sobremesas">Doces e sobremesas</a>
+                            </li>
+                            <li class="border-top">
+                                <a href="http://anamariabraga.globo.com/receitas/massas" class="sub-item text-uppercase" title="Massas e risotos">Massas e risotos</a>
+                            </li>
+                            <li class="border-top">
+                                <a href="http://anamariabraga.globo.com/receitas/outras" class="sub-item text-uppercase" title="Outras">Outras</a>
+                            </li>
+                            <li class="border-top">
+                                <a href="http://anamariabraga.globo.com/receitas/paes-e-cia" class="sub-item text-uppercase" title="P&#227;es &amp; cia.">P&#227;es &amp; cia.</a>
+                            </li>
+                            <li class="border-top">
+                                <a href="http://anamariabraga.globo.com/receitas/peixes-e-frutos-do-mar" class="sub-item text-uppercase" title="Peixes e frutos do mar">Peixes e frutos do mar</a>
+                            </li>
+                            <li class="border-top">
+                                <a href="http://anamariabraga.globo.com/receitas/pizzas" class="sub-item text-uppercase" title="Pizzas">Pizzas</a>
+                            </li>
+                            <li class="border-top">
+                                <a href="http://anamariabraga.globo.com/receitas/saladas" class="sub-item text-uppercase" title="Saladas">Saladas</a>
+                            </li>
+                            <li class="border-top">
+                                <a href="http://anamariabraga.globo.com/receitas/salgados-e-petiscos" class="sub-item text-uppercase" title="Salgados e petiscos">Salgados e petiscos</a>
+                            </li>
+                            <li class="border-top">
+                                <a href="http://anamariabraga.globo.com/receitas/sopas-e-cremes" class="sub-item text-uppercase" title="Sopas e cremes">Sopas e cremes</a>
+                            </li>
+                            <li class="border-top">
+                                <a href="http://anamariabraga.globo.com/receitas/tematicos" class="sub-item text-uppercase" title="Tem&#225;ticos">Tem&#225;ticos</a>
+                            </li>
+                </ul>
+        </div><!--/.nav-collapse -->
+        <!-- LOGIN MODAL -->
+        <div id="modalLoginMobile" class="navbar-collapse collapse p-0">
+            <div id="modalDeslogado" class="p-5 mb-48 pad-l-10 pad-r-10"></div>
+
+            <div id="modalLogado" class="bg-eee" style="display:none;">
+                <ul class="nav navbar-nav">
+                    <li class="li-avatar">
+                        <div class="col-xs-12 mrg-t-20 pad-0">
+                            <div class="col-xs-3">
+                                <img src="//d198g3kueh6k6a.cloudfront.net/prod/imagens/usuario/1.jpg" alt="Avatar" title="Avatar" class="img-avatar-mobile" id="imgAvatarMobile" />
+                            </div>
+                            <div class="col-xs-9 ellipsis rosa">
+                                Olá, <b><span class="spanNome"></span>!</b>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="col-xs-12 pad-0">
+                            <a onclick="gaEnviarReceita('ModalLogadoMobile')" class="header-enviar-receita text-center l-h-25" href="/enviar-receita" style="padding-left:0px!important">
+                                <img src="/Content/images/icn-upload.svg" alt="Ícone upload" title="Envie sua receita" class="icn-upload">
+                                <span class="mrg-l-5">ENVIE SUA RECEITA</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="border-bottom">
+                        <img src="/Content/images/icon-notification-copy.svg" alt="Ícone notificação" title="Minhas receitas" class="imgNotificacao fl-r pad-22-0 hidden">
+                        <a href="/minhas-receitas" title="MINHAS RECEITAS">MINHAS RECEITAS</a>
+                    </li>
+                    <li class="border-bottom">
+                        <a href="/meu-perfil" title="MEU PERFIL">MEU PERFIL</a>
+                    </li>
+                    <li class="border-bottom">
+                        <a href="/ajuda" title="AJUDA">AJUDA</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="aSair">SAIR</a>
+                    </li>
+
+                    <li id="liConcursoMobile">
+                        <li class="m-0">
+                            <hr class="divisor-concurso" />
+                        </li>
+                        <li>
+                            <div class="col-xs-12 ellipsis rosa text-center">
+                                <b><a id="aNomeConcurso" class="rosa" href="/" title="CONCURSO"></a></b>
+                            </div>
+                        </li>
+                        <li class="border-bottom">
+                            <a id="aMeuPlacar" href="/" title="MEU PLACAR">MEU PLACAR</a>
+                        </li>
+                        <li class="border-bottom">
+                            <a id="aReceitasParticipando" href="/" title="RECEITAS PARTICIPANDO">RECEITAS PARTICIPANDO</a>
+                        </li>
+                        <li>
+                            <a id="aRegulamento" href="/" title="REGULAMENTO">REGULAMENTO</a>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <div id="divConteudo">
+        
+
+<header class="no-print mb-5 hidden-xs" id="headerDesktop">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <a data-href="http://anamariabraga.globo.com" href="javascript:void(0)" class="link-home-new hidden-xs redirect"></a>
+
+                <div class="col-sm-4 col-md-4 col-lg-4 hidden-xs">
+                            <div class="signature redirect">
+                                <span class="sr-only">Ana Maria Braga</span>
+                                <a href="javascript:void(0)" title="Ana Maria Braga" class="redirect">
+                                    <img src="/Content/images/signature.png" alt="Assinatura Ana Maria Braga" title="Assinatura Ana Maria Braga" class="redirect">
+                                </a>
+                            </div>
+                        <div class="header-email">
+                            <form class="news" action="/" method="post" id="formNewsletter" autocomplete="off">
+                                <input type="text" name="fname" placeholder="Receba novidades da Ana no seu e-mail">
+                                <input type="image" src="/Content/images/right-arrow.png" alt="Procurar..." class="header-email-arrow">
+                            </form>
+                            <span class="erro"></span>
+                            <span class="sucesso"></span>
+                        </div>
+                </div>               
+
+                <div class="col-md-4 col-lg-4 col-sm-4 link-home redirect">
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="form-load-login ibox-content">
+    <div class="spiner-load load">
+        <div class="sk-spinner sk-spinner-chasing-dots">
+            <div class="sk-dot1"></div>
+            <div class="sk-dot2"></div>
+        </div>
+    </div>
+</div>
+
+<div class="form-login" style="display:none">
+    <div class="col-sm-12 white mrg-t-15 ola-visitante">
+        Olá, <b>visitante</b>, cadastre-se e envie receitas
+    </div>
+    <div class="col-sm-6 mrg-t-10 pad-0-7_5-0-15">
+        <a href="javascript:void(0)" aria-role="hoverable" id="aAbrirLogin">
+            <div class="login btn-border-radius btn-white">
+                <div class="pad-t-4">
+                    <img src="/Content/images/icn-login.svg" class="icn-login-hover" alt="Ícone seta login" title="Ícone seta login" />
+                    <span class="f-h-500">Login</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-6 mrg-t-10 pad-0-15-0-7_5">
+        <a id="aEnviarReceita" href="/enviar-receita" onclick="gaEnviarReceita('HeaderDeslogadoDesktop')">
+            <div class="btn-border-radius btn-white">
+                <div class="pad-t-4">
+                    <img src="/Content/images/icon-enviar-receita.svg" class="hidden-sm" alt="Ícone enviar receita" title="Ícone enviar receita">
+                    <span class="f-h-500">Enviar receita</span>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="form-logado" style="display:none">
+    <div class="col-sm-9 pad-0-0-0-20">
+        <div class="col-sm-12 white mrg-t-15 ellipsis w-100">
+            Olá, <b><span class="spanNome"></span>!</b>
+        </div>
+        <div class="col-sm-6 mrg-t-10 pad-0">
+            <a href="/minhas-receitas">
+                <div class="btn-border-radius btn-white">
+                    <div class="pad-t-5">
+                        <span class="f-h-500 block f-s-13">Minhas receitas</span>
+                        <img src="/Content/images/icon-notification-copy.svg" class="imgNotificacao fl-r mrg-t--8 hidden" alt="Ícone notificação" title="Ícone notificação">
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 mrg-t-10 pad-0-0-0-5">
+            <a href="/enviar-receita" onclick="gaEnviarReceita('HeaderLogadoDesktop')">
+                <div class="btn-border-radius btn-white">
+                    <div class="pad-t-4">
+                        <img src="/Content/images/icon-enviar-receita.svg" class="mrg-b-0 hidden-sm" alt="Ícone enviar receita" title="Ícone enviar receita">
+                        <span class="f-h-500 f-s-13">Enviar receita</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-3 mrg-t-20">
+        <img src="//d198g3kueh6k6a.cloudfront.net/prod/imagens/usuario/1.jpg" class="img-avatar" id="imgAvatar" alt="Avatar" title="Avatar" />
+    </div>
+</div>
+
+<div style="display:none">
+    <div class="col-sm-12 form-login-logar" id="divLogin">
+        <div class="col-sm-12 text-center">
+            <span id="modalLoginMensagem"><b>Faça login</b> ou <b><a href="/cadastro" class="black">cadastre-se</a></b> <span>para ter acesso a todas as funcionalidades do site.</span></span>
+        </div>
+        <div class="col-sm-12 Line-Copy mrg-t-20"></div>
+        <div class="col-sm-12 pad-t-20">
+            <button type="button" class="input btn btn-facebook ladda-button" data-style="zoom-in" id="btnFacebookLogin">
+                <img src="/Content/images/ic-facebook.svg" class="ic-facebook" alt="Ícone Facebook" title="Ícone Facebook">
+                <span class="f-h-500">LOGIN COM FACEBOOK</span>
+            </button>
+        </div>
+        <div class="col-sm-12 pad-t-15 pad-b-10">
+            <button type="button" class="input btn btn-google ladda-button" data-style="zoom-in" id="btnGoogleLogin">
+                <img src="/Content/images/icn-google.svg" class="icn-google" alt="Ícone Google" title="Ícone Google" />
+                <span class="f-h-500">LOGIN COM GOOGLE</span>
+            </button>
+        </div>
+        <div class="col-sm-12 pad-t-10">
+            <div class="dynamic-title">
+                <span class="f-s-14" style="color:#857d85;font-weight:bold">ou</span>
+            </div>
+        </div>
+        <div class="col-sm-12 pad-t-10">
+            <label>E-mail</label>
+            <input type="text" class="form-control" id="txtEmailLogin" />
+            <label class="form" data-error=""></label>
+        </div>
+        <div class="col-sm-12 pad-t-15">
+            <label>Senha</label>
+            <input type="password" name="password" class="form-control" id="txtSenhaLogin" />
+            <label class="form" data-error=""></label>
+        </div>
+        <div class="col-sm-12 pad-t-15">
+            <label class="label-cbx"><input type="checkbox" id="cbxManterLogado" checked /><span class="mrg-l-5">Manter conectado</span></label>
+            <a href="javascript:void(0)" id="aEsqueciSenha" class="esqueci-senha">Esqueci a senha</a>
+        </div>
+        <div class="col-sm-12 pad-t-10 text-center mrg-b-10">
+            <button type="button" class="input btn btn-rosa ladda-button" data-style="zoom-in" id="btnLogin">LOGIN</button>
+            <div class="h-13_5">
+                <span class="erro"></span>
+                <span class="sucesso"></span>
+            </div>
+        </div>
+        <div class="col-sm-12 Line-Copy mrg-b-20"></div>
+        <div class="col-sm-12 f-s-12 pad-l-10 pad-r-10">
+            Não possui uma conta? <b><a href="/cadastro" class="black">Clique aqui e cadastre-se</a></b>
+        </div>
+    </div>
+
+    <div class="col-sm-12 menu-avatar" id="divToolAvatar">
+        <div class="col-sm-12 linha-abaixo">
+            <a href="/meu-perfil" title="Meu perfil">MEU PERFIL</a>
+        </div>
+        <div class="col-sm-12">
+            <a href="javascript:void(0)" title="Sair" class="aSair">SAIR</a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document" style="width:400px">
+        <div class="modal-content">
+            <div class="modal-header text-center pad-b-u">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img ria-hidden="true" src="/Content/images/close.svg" alt="Ícone fechar" title="Ícone fechar" />
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="conteudo-modal"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                    <div class="col-sm-12 p-0 pr-2">
+                        <div class="header-search" style="display:none">
+                            <form class="search" action="/" method="post" id="formSearchMenu" autocomplete="off">
+                                <input class="procure" type="text" name="fname" placeholder="Buscar no site">
+                                <input type="image" src="/Content/images/search-icon.png" alt="Procurar..." class="search-icon header-search-icon">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-12 col-lg-12 menu mb-5">
+    <ul class="list-inline">
+        <li class="signature-fixed">
+            <img src="/Content/images/signature.png" title="Assinatura Ana Maria Braga" alt="Assinatura Ana Maria Braga" />
+        </li>
+        
+        <li>
+            <a href="/" data-href="#ana-maria-menu" class="has-sub-item sub-item text-uppercase item-fixed" title="Ana Maria">Ana Maria</a>
+        </li>
+        <li>
+            <a href="/receitas" data-href="#receita-menu" class="has-sub-item sub-item text-uppercase item-fixed" title="Receitas">Receitas</a>
+        </li>
+        <li>
+            <a href="/acorda-menina" data-href="#acorda-menina-menu" class="has-sub-item text-uppercase sub-menu item-fixed" title="Acorda, Menina!">Acorda, Menina!</a>
+        </li>
+        <li>
+            <a href="/busca?term=&amp;v=1" data-href="#video-menu" class="has-sub-item text-uppercase sub-menu item-fixed" title="Vídeos">Vídeos</a>
+        </li>
+        <li>
+            <a href="/mensagens" data-href="#mensagens-menu" class="has-sub-item text-uppercase sub-menu item-fixed" title="Mensagens">Mensagens</a>
+        </li>
+        <li>
+            <a href="/dicas" data-href="#dicas-menu" class="has-sub-item text-uppercase sub-menu item-fixed" title="Dicas">Dicas</a>
+        </li>
+        <li>
+            <a href="/louro-jose" data-href="#louro-jose-menu" class="has-sub-item text-uppercase sub-menu item-fixed" title="Louro José">Louro José</a>
+        </li>
+            <li>
+                <a href="/concurso" data-href="#concurso-menu" class="has-sub-item text-uppercase sub-menu item-fixed" title="Concurso">Concurso</a>
+            </li>
+
+        <li>
+            <a href="/clube-da-ana" data-href="#clube-menu" class="has-sub-item text-uppercase sub-menu item-fixed" title="Clube da Ana">Clube da Ana</a>
+        </li>
+    </ul>
+            <div id="ana-maria-menu" class="desk-sub-menu">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <ul>
+                                            <li class="border-top">
+                                                <a href="/ana-maria" class="sub-item text-uppercase" title="Biografia da Ana">Biografia</a>
+                                            </li>
+                                            <li class="border-top">
+                                                <a href="http://anamariabraga.globo.com/ana-maria/ana-na-midia" class="sub-item text-uppercase" title="Ana na M&#237;dia">Ana na M&#237;dia</a>
+                                            </li>
+                                            <li class="border-top">
+                                                <a href="http://anamariabraga.globo.com/ana-maria/look-da-ana" class="sub-item text-uppercase" title="Look da Ana">Look da Ana</a>
+                                            </li>
+                                            <li class="border-top">
+                                                <a href="/busca?term=&amp;tp=G&amp;c=1" class="sub-item text-uppercase" title="Galeria de fotos">Galeria de fotos</a>
+                                            </li>
+                                            <li class="border-top">
+                                                <a href="/mensagens" class="sub-item text-uppercase" title="Mensagens">Mensagens</a>
+                                            </li>
+                            </ul>
+                        </div>
+
+                            <div class="col-xs-3">
+                                    <a href="http://anamariabraga.globo.com/ana-maria/look-da-ana/ana-maria-usa-saia-longa-estampada" title="Ana Maria usa saia longa estampada" target="" class="feature tag-pink small caption-white" data-id="22475" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/publicacao/22475/ana-maria-usa-saia-longa-estampada-30205.jpg)">
+        <div class="hover-zoom" data-scale="1.1" data-image="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/publicacao/22475/ana-maria-usa-saia-longa-estampada-30205.jpg" data-image-alt="Ana Maria usa saia longa estampada"></div>
+        <div class="title-card"><h2 class="">Ana Maria usa saia longa estampada</h2></div>
+        <span class="tag text-uppercase">Ana Maria</span>
+    </a>
+
+                            </div>
+                            <div class="col-xs-3">
+                                    <a href="http://anamariabraga.globo.com/ana-maria/ana-na-midia/violencia-conta-a-mulher-e-hora-de-meter-a-colher" title="Coluna da Ana: Viol&#234;ncia contra a mulher - &#201; hora de meter a colher" target="" class="feature tag-pink small caption-white" data-id="22396" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/publicacao/22396/coluna-da-ana-violencia-contra-a-mulher-e-hora-de-meter-a-colher-30065.jpg)">
+        <div class="hover-zoom" data-scale="1.1" data-image="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/publicacao/22396/coluna-da-ana-violencia-contra-a-mulher-e-hora-de-meter-a-colher-30065.jpg" data-image-alt="Coluna da Ana: Viol&#234;ncia contra a mulher - &#201; hora de meter a colher"></div>
+        <div class="title-card"><h2 class="">Coluna da Ana: Viol&#234;ncia contra a mulher - &#201; hora de meter a colher</h2></div>
+        <span class="tag text-uppercase">Ana Maria</span>
+    </a>
+
+                            </div>
+                            <div class="col-xs-3">
+                                    <a href="http://anamariabraga.globo.com/ana-maria/ana-na-midia/ana-maria-braga-explica-olho-machucado" title="Ana Maria Braga explica olho machucado" target="" class="feature tag-pink small caption-white" data-id="22387" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/publicacao/22387/ana-maria-braga-explica-olho-machucado-30054.jpg)">
+        <div class="hover-zoom" data-scale="1.1" data-image="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/publicacao/22387/ana-maria-braga-explica-olho-machucado-30054.jpg" data-image-alt="Ana Maria Braga explica olho machucado"></div>
+        <div class="title-card"><h2 class="">Ana Maria Braga explica olho machucado</h2></div>
+        <span class="tag text-uppercase">Ana Maria</span>
+    </a>
+
+                            </div>
+
+                    </div>
+                </div>
+            <div id="acorda-menina-menu" class="desk-sub-menu">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <ul>
+                                            <li class="border-top">
+                                                <a href="http://anamariabraga.globo.com/acorda-menina/casa-e-familia" class="sub-item text-uppercase" title="Casa e Fam&#237;lia">Casa e Fam&#237;lia</a>
+                                            </li>
+                                            <li class="border-top">
+                                                <a href="http://anamariabraga.globo.com/acorda-menina/comida-e-bebida" class="sub-item text-uppercase" title="Comida e Bebida">Comida e Bebida</a>
+                                            </li>
+                                            <li class="border-top">
+                                                <a href="http://anamariabraga.globo.com/acorda-menina/gente" class="sub-item text-uppercase" title="Gente">Gente</a>
+                                            </li>
+                                            <li class="border-top">
+                                                <a href="http://anamariabraga.globo.com/acorda-menina/moda-e-beleza" class="sub-item text-uppercase" title="Moda e Beleza">Moda e Beleza</a>
+                                            </li>
+                                            <li class="border-top">
+                                                <a href="http://anamariabraga.globo.com/acorda-menina/noticias" class="sub-item text-uppercase" title="Not&#237;cias">Not&#237;cias</a>
+                                            </li>
+                                            <li class="border-top">
+                                                <a href="http://anamariabraga.globo.com/acorda-menina/viver-bem" class="sub-item text-uppercase" title="Viver Bem">Viver Bem</a>
+                                            </li>
+                            </ul>
+                        </div>
+
+                            <div class="col-xs-3">
+                                    <a href="http://anamariabraga.globo.com/acorda-menina/gente/a-confeitaria-de-gulodices-de-carole-crema" title="A confeitaria de gulodices de Carole Crema" target="" class="feature tag-pink small caption-white" data-id="22612" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/publicacao/22612/carole-crema-30394.jpg)">
+        <div class="hover-zoom" data-scale="1.1" data-image="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/publicacao/22612/carole-crema-30394.jpg" data-image-alt="A confeitaria de gulodices de Carole Crema"></div>
+        <div class="title-card"><h2 class="">A confeitaria de gulodices de Carole Crema</h2></div>
+        <span class="tag text-uppercase">Acorda, Menina!</span>
+    </a>
+
+                            </div>
+                            <div class="col-xs-3">
+                                    <a href="http://anamariabraga.globo.com/acorda-menina/noticias/concurso-top-20-estas-sao-as-60-receitas-mais-votadas-de-novembro" title="Concurso Top 20: Estas s&#227;o as 60 receitas mais votadas de Novembro" target="" class="feature tag-pink small caption-white" data-id="22607" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/publicacao/22607/concurso-top-20-estas-sao-as-60-receitas-mais-votadas-de-novembro-30388.jpg)">
+        <div class="hover-zoom" data-scale="1.1" data-image="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/publicacao/22607/concurso-top-20-estas-sao-as-60-receitas-mais-votadas-de-novembro-30388.jpg" data-image-alt="Concurso Top 20: Estas s&#227;o as 60 receitas mais votadas de Novembro"></div>
+        <div class="title-card"><h2 class="">Concurso Top 20: Estas s&#227;o as 60 receitas mais votadas de Novembro</h2></div>
+        <span class="tag text-uppercase">Acorda, Menina!</span>
+    </a>
+
+                            </div>
+                            <div class="col-xs-3">
+                                    <a href="http://anamariabraga.globo.com/acorda-menina/comida-e-bebida/peru-de-natal-receita" title="Peru de Natal: 9 receitas sem erro" target="" class="feature tag-pink small caption-white" data-id="22606" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/publicacao/22606/peru-de-natal-9-receitas-sem-erro-30386.jpg)">
+        <div class="hover-zoom" data-scale="1.1" data-image="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/publicacao/22606/peru-de-natal-9-receitas-sem-erro-30386.jpg" data-image-alt="Peru de Natal: 9 receitas sem erro"></div>
+        <div class="title-card"><h2 class="">Peru de Natal: 9 receitas sem erro</h2></div>
+        <span class="tag text-uppercase">Acorda, Menina!</span>
+    </a>
+
+                            </div>
+
+                    </div>
+                </div>
+            <div id="receita-menu" class="desk-sub-menu">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <ul>
+                                        <li class="border-top">
+                                            <a href="http://anamariabraga.globo.com/receitas/entradas-e-acompanhamentos" class="sub-item text-uppercase" target="_self" title="Acompanhamentos">Acompanhamentos</a>
+                                        </li>
+                                        <li class="border-top">
+                                            <a href="http://anamariabraga.globo.com/receitas/alimentacao-infantil" class="sub-item text-uppercase" target="_self" title="Alimenta&#231;&#227;o infantil ">Alimenta&#231;&#227;o infantil </a>
+                                        </li>
+                                        <li class="border-top">
+                                            <a href="http://anamariabraga.globo.com/receitas/aves" class="sub-item text-uppercase" target="_self" title="Aves">Aves</a>
+                                        </li>
+                                        <li class="border-top">
+                                            <a href="http://anamariabraga.globo.com/receitas/bebidas" class="sub-item text-uppercase" target="_self" title="Bebidas">Bebidas</a>
+                                        </li>
+                                        <li class="border-top">
+                                            <a href="http://anamariabraga.globo.com/receitas/bolos-e-tortas" class="sub-item text-uppercase" target="_self" title="Bolos e tortas">Bolos e tortas</a>
+                                        </li>
+                                        <li class="border-top">
+                                            <a href="http://anamariabraga.globo.com/receitas/carnes" class="sub-item text-uppercase" target="_self" title="Carnes">Carnes</a>
+                                        </li>
+                                        <li class="border-top">
+                                            <a href="http://anamariabraga.globo.com/receitas/doces-e-sobremesas" class="sub-item text-uppercase" target="_self" title="Doces e sobremesas">Doces e sobremesas</a>
+                                        </li>
+                                        <li class="border-top">
+                                            <a href="http://anamariabraga.globo.com/receitas/massas" class="sub-item text-uppercase" target="_self" title="Massas e risotos">Massas e risotos</a>
+                                        </li>
+                                        <li class="border-top">
+                                            <a href="http://anamariabraga.globo.com/receitas/outras" class="sub-item text-uppercase" target="_self" title="Outras">Outras</a>
+                                        </li>
+                                        <li class="border-top">
+                                            <a href="http://anamariabraga.globo.com/receitas/paes-e-cia" class="sub-item text-uppercase" target="_self" title="P&#227;es &amp; cia.">P&#227;es &amp; cia.</a>
+                                        </li>
+                                        <li class="border-top">
+                                            <a href="http://anamariabraga.globo.com/receitas/peixes-e-frutos-do-mar" class="sub-item text-uppercase" target="_self" title="Peixes e frutos do mar">Peixes e frutos do mar</a>
+                                        </li>
+                                        <li class="border-top">
+                                            <a href="http://anamariabraga.globo.com/receitas/pizzas" class="sub-item text-uppercase" target="_self" title="Pizzas">Pizzas</a>
+                                        </li>
+                                        <li class="border-top">
+                                            <a href="http://anamariabraga.globo.com/receitas/saladas" class="sub-item text-uppercase" target="_self" title="Saladas">Saladas</a>
+                                        </li>
+                                        <li class="border-top">
+                                            <a href="http://anamariabraga.globo.com/receitas/salgados-e-petiscos" class="sub-item text-uppercase" target="_self" title="Salgados e petiscos">Salgados e petiscos</a>
+                                        </li>
+                                        <li class="border-top">
+                                            <a href="http://anamariabraga.globo.com/receitas/sopas-e-cremes" class="sub-item text-uppercase" target="_self" title="Sopas e cremes">Sopas e cremes</a>
+                                        </li>
+                                        <li class="border-top">
+                                            <a href="http://anamariabraga.globo.com/receitas/tematicos" class="sub-item text-uppercase" target="_self" title="Tem&#225;ticos">Tem&#225;ticos</a>
+                                        </li>
+                            </ul>
+                        </div>
+
+
+                                <div class="col-xs-3">
+                                        <a href="http://anamariabraga.globo.com/receitas/trufado-de-alpino-" title="Trufado alpino" target="" class="feature tag-pink small caption-white" data-id="22620" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22620/trufadodealpino-30402.jpg)">
+        <div class="hover-zoom" data-scale="1.1" data-image="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22620/trufadodealpino-30402.jpg" data-image-alt="trufado-de-alpino-"></div>
+        <div class="title-card"><h2 class="">Trufado alpino</h2></div>
+        <span class="tag text-uppercase">Doces e sobremesas</span>
+    </a>
+
+    <a href="http://anamariabraga.globo.com/receitas/bolachinha-de-nhoque-da-familia-oliveiraa" title="Bolachinha de nhoque da Fam&#237;lia Oliveira" target="" class="feature tag-pink small caption-white" data-id="22619" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22619/fabianecavalcantideoliveira-30398.jpg)">
+        <div class="hover-zoom" data-scale="1.1" data-image="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22619/fabianecavalcantideoliveira-30398.jpg" data-image-alt="bolachinha-de-nhoque-da-familia-oliveiraa"></div>
+        <div class="title-card"><h2 class="">Bolachinha de nhoque da Fam&#237;lia Oliveira</h2></div>
+        <span class="tag text-uppercase">Tem&#225;ticos</span>
+    </a>
+                                </div>
+                                <div class="col-xs-3">
+                                        <a href="http://anamariabraga.globo.com/receitas/delicia-de-damasco-" title="Del&#237;cia de damasco" target="" class="feature tag-pink small caption-white" data-id="22615" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22615/deliciadedamasco-30397.jpg)">
+        <div class="hover-zoom" data-scale="1.1" data-image="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22615/deliciadedamasco-30397.jpg" data-image-alt="delicia-de-damasco-"></div>
+        <div class="title-card"><h2 class="">Del&#237;cia de damasco</h2></div>
+        <span class="tag text-uppercase">Doces e sobremesas</span>
+    </a>
+
+    <a href="http://anamariabraga.globo.com/receitas/bolo-de-milho-cremoso-jessica" title="Bolo de milho cremoso da J&#233;ssica" target="" class="feature tag-pink small caption-white" data-id="22609" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22609/bolodemilhocremoso0000-30392.jpg)">
+        <div class="hover-zoom" data-scale="1.1" data-image="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22609/bolodemilhocremoso0000-30392.jpg" data-image-alt="bolo-de-milho-cremoso-jessica"></div>
+        <div class="title-card"><h2 class="">Bolo de milho cremoso da J&#233;ssica</h2></div>
+        <span class="tag text-uppercase">Bolos e tortas</span>
+    </a>
+                                </div>
+                                <div class="col-xs-3">
+                                        <a href="http://anamariabraga.globo.com/receitas/bolo-gelado-de-coco-da-chef-carole-crema" title="Bolo gelado de coco da chef Carole Crema" target="" class="feature tag-pink small caption-white" data-id="22611" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22611/bolo-gelado-de-coco-da-chef-carole-crema-30393.jpg)">
+        <div class="hover-zoom" data-scale="1.1" data-image="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22611/bolo-gelado-de-coco-da-chef-carole-crema-30393.jpg" data-image-alt="Bolo gelado de coco da chef Carole Crema"></div>
+        <div class="title-card"><h2 class="">Bolo gelado de coco da chef Carole Crema</h2></div>
+        <span class="tag text-uppercase">Bolos e tortas</span>
+    </a>
+
+    <a href="http://anamariabraga.globo.com/receitas/chocotone-trufado-de-creme-de-limao-e-nutella-" title="Chocotone trufado de creme de lim&#227;o e Nutella" target="" class="feature tag-pink small caption-white" data-id="22608" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22608/chocotonetrufadodecremedelimaoenutella-30389.jpg)">
+        <div class="hover-zoom" data-scale="1.1" data-image="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22608/chocotonetrufadodecremedelimaoenutella-30389.jpg" data-image-alt="chocotone-trufado-de-creme-de-limao-e-nutella-"></div>
+        <div class="title-card"><h2 class="">Chocotone trufado de creme de lim&#227;o e Nutella</h2></div>
+        <span class="tag text-uppercase">Bolos e tortas</span>
+    </a>
+                                </div>
+                    </div>
+                </div>
+ </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+        
+<link href="/Content/css/print.css" rel="stylesheet"/>
+
+
+
+
+<script>
+    gtag('event', 'Receita', {
+        'event_category': 'Receita',
+        'event_action': 'View',
+        'event_label': 'Doces e sobremesas'
+    });
+</script>
+
+        <div class="container no-print">
+            <div class="row mb-5">
+                <div id="banner-receitas-full" class="col-xs-12 advertisement-full">
+                    <script>
+                googletag.cmd.push(function () { googletag.display('banner-receitas-full'); });
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+<input type="hidden" id="hdnReceita" value="{ &quot;url&quot;: &quot;http://anamariabraga.globo.com/receitas/pudim-de-rapadura&quot;, &quot;titulo&quot;: &quot;Receita de 04/12: Pudim de rapadura do TOP 20&quot;, &quot;imagem&quot;: &quot;http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/19979/pudimderapadura-25877.jpg&quot; }" />
+
+
+<div class="container receitas">
+    <div class="row">
+        <ol class="breadcrumb no-print hidden-xs" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li class="breadcrumb-item hidden" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="http://anamariabraga.globo.com"><span itemprop="name">Home</span></a><meta itemprop="position" content="1" /></li>
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="http://anamariabraga.globo.com/receitas"><span itemprop="name">Receitas</span></a><meta itemprop="position" content="2" /></li>
+            <li class="breadcrumb-item active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="http://anamariabraga.globo.com/receitas/doces-e-sobremesas/pudins-flas-e-manjares"><span itemprop="name">Pudins, fl&#227;s e manjares</span></a><meta itemprop="position" content="3" /></li>
+            <li class="breadcrumb-item second" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="http://anamariabraga.globo.com/receitas/pudim-de-rapadura"><span itemprop="name">Receita de 04/12: Pudim de rapadura do TOP 20</span></a><meta itemprop="position" content="4" /></li>
+        </ol>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 print">
+            <div class="dynamic-content ">
+                <div class="print-only my-5">
+                    <img src="/Content/images/signature-black2.png" alt="Assinatura Ana Maria Braga" title="Assinatura Ana Maria Braga">
+                </div>
+                <div class="recipe-metadata">
+                    <h1 class="mt-4 mb-4">Receita de 04/12: Pudim de rapadura do TOP 20</h1>
+                    <h3 class="mt-2 mb-4 hidden"></h3>
+
+                        <div id="div19979" class="flowplayer img-carousel" style="background-image:url('http://d198g3kueh6k6a.cloudfront.net/prod/imagens/biblioteca/Thumb/pudim-de-rapadura.jpg');background-size: 100% 100%;"></div>
+                        <!-- install the player with ima VAST configuration -->
+                        <script>
+                            flowplayerRender('#div19979', 'https://cdn.flowplayer.org/361612/573454.mp4', true, false, false, 'pudim-de-rapadura', 'Receita de 04/12: Pudim de rapadura do TOP 20', '0000');
+                        </script>
+
+                        <div class="row no-margin">
+        <div class="col-sm-12 element-border info-receita concurso">
+            <div class="col-sm-7 pad-0 border-r">
+                <div class="row no-margin">
+                    <div class="col-lg-3 col-sm-3 col-xs-3 align-center-box">
+                            <a href="/autor/vanderleia-ferreira"><img src="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/autor/autor_56973.jpg" alt="Autor" title="Autor" class="col-centered img-avatar receita"></a>
+                    </div>
+                    <div class="col-lg-9 col-sm-9 col-xs-9 pad-0 align-center-box">
+                        <div class="mrg-t-30">
+                            <div class="col-lg-12 col-sm-12 col-xs-8">
+                                    <span class="f-s-12 f-w-500">04/12/2017 08h21</span><br />
+                                                                    <a href="/autor/vanderleia-ferreira"><p class="l-h-15 mrg-t-5"><span class="f-w-500">Por Vanderleia Ferreira</span></p></a>
+                            </div>
+                            <div class="col-lg-0 col-sm-0 col-xs-4 hidden-sm hidden-lg">
+                                <a title="Imagem detalhe da receita" href="/concurso/top-20-receitas" onclick="gaRegistrar('abrirLandingConcurso', 'DetalheReceita_Imagem')">
+                                    <img src="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/biblioteca/Concurso/icn_vencedor.png" class="avatar-concurso hidden-lg hidden-sm" alt="Imagem detalhe da receita" title="Imagem detalhe da receita" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-xs-12 pad-0-15-0-0 align-center-box detalhes-receita">
+                        <div class="col-sm-4 pad-0 col-centered">
+                            <div class="pad-t-4 center">
+                                <img src="/Content/images/ic-porcao.svg" class="ic-porcao icon-left-margin" alt="Porções" title="Porções">
+
+                                <span class="f-h-500">10 por&#231;&#245;es</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 center pad-0 col-centered">
+                            <div class="pad-t-4">
+                                <img src="/Content/images/ic-tempo.svg" class="ic-tempo icon-left-margin" alt="Tempo de preparo" title="Tempo de preparo">
+                                <span class="f-h-500">00h30</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 center pad-0 col-centered">
+                            <div class="pad-t-4">
+                                <img src="/Content/images/ic-dificuldade.svg" class="ic-dificuldade icon-left-margin" alt="Dificuldade" title="Dificuldade">
+                                <span class="f-h-500">F&#225;cil</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 pad-0 hidden-xs">
+                <div class="pad-20-0 center">
+                    <div class="col-sm-5 pad-0">
+                        <a href="/concurso/top-20-receitas" onclick="gaRegistrar('abrirLandingConcurso', 'DetalheReceita_Imagem')">
+                            <img alt="Detalhe da receita" title="Detalhe da receita" src="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/biblioteca/Concurso/icn_vencedor.png" class="avatar-concurso">
+                        </a>
+                    </div>
+                    <div class="col-sm-7">
+                        <span class="f-s-14">Receita vencedora do concurso</span><br />
+                        <a title="Top 20 Receitas" href="/concurso/top-20-receitas" onclick="gaRegistrar('abrirLandingConcurso', 'DetalheReceita_Texto')">
+                            <span class="f-h-500 a-slug">Top 20 Receitas</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                    <div class="social mrg-t-25 no-print">
+                        <div class="col-lg-3 col-sm-3 col-xs-4 pad-0 center">
+                            <a href="javascript:void(0)" class="aLike heart heart-left " data-publicacao="19979" data-participando_concurso="1" data-url="pudim-de-rapadura">
+                                <div class="btn-like">
+                                    <img class="coracao" alt="Dar like" title="Dar like" src="/Content/images/icn-curtir-off.svg" />
+                                    <span class="count-like curtidas">
+                                            <img class="reload-like" title="Recarregar like" alt="Recarregar like" src="/Content/images/reload.svg" />
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-9 col-sm-9 col-xs-8 pad-0 icons-share">
+                            <a href="javascript:void(0)" onclick="javascript:shareBtnWhats('http://anamariabraga.globo.com/receitas/pudim-de-rapadura')" class="share-whats ladda-button heart-right a-share ladda-button" title="Compartilhe no WhatsApp" aria-role="hoverable" data-style="zoom-in">
+                                <img src="/Content/images/icn-round-whats.svg" class="header-icon whats" alt="Compartilhar no WhatsApp" title="Compartilhar no WhatsApp">
+                            </a>
+                            <a href="javascript:void(0)" onclick="javascript:shareBtnPinterest('http://anamariabraga.globo.com/receitas/pudim-de-rapadura', 'http://d198g3kueh6k6a.cloudfront.net/prod/imagens/biblioteca/Thumb/pudim-de-rapadura.jpg')" title="Visite-nos no Pinterest" aria-role="hoverable" class="heart-right a-share ladda-button" data-style="zoom-in">
+                                <img src="/Content/images/icn-pinterest.svg" class="header-icon insta" alt="Compartilhar no Pinterest" title="Compartilhar no Pinterest">
+                            </a>
+                            <a href="javascript:void(0)" onclick="javascript:shareBtnTwitter('http://anamariabraga.globo.com/receitas/pudim-de-rapadura')" class="twitter heart-right a-share ladda-button" title="Visite-nos no Twitter" aria-role="hoverable" data-style="zoom-in">
+                                <img src="/Content/images/icn-twitter.svg" class="header-icon twiter" alt="Compartilhar no Twitter" title="Compartilhar no Twitter">
+                            </a>
+                            <a href="javascript:void(0)" onclick="javascript:shareFacebook('http://anamariabraga.globo.com/receitas/pudim-de-rapadura')" title="Visite-nos no facebook" aria-role="hoverable" class="heart-right a-share ladda-button" data-style="zoom-in">
+                                <img src="/Content/images/icn-facebook.svg" class="header-icon face" alt="Compartilhar no Facebook" title="Compartilhar no Facebook">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="conteudo pad-t-30">
+                        
+                    </div>
+                </div>
+                <div class="col-sm-6 no-print">
+                    <h2 class="ingredients">Ingredientes</h2>
+                        <div class="recipe-ingredients">
+                            <h4 class="mb-5 mt-5">Mel de rapadura</h4>
+                            <ul>
+                                    <li><p>500 ml de água<br></p></li>
+                                    <li><p>       400 a 500 g de rapadura<br></p></li>
+                                    <li><p>       Cravos-da-índia, canela e sementes de erva-doce moídos juntos e tostados levemente<br></p></li>
+                            </ul>
+                        </div>
+                        <div class="recipe-ingredients">
+                            <h4 class="mb-5 mt-5">Pudim</h4>
+                            <ul>
+                                    <li><p>2 latas de leite condensado</p></li>
+                                    <li><p>      12 gemas</p></li>
+                                    <li><p>      150 ml do mel de rapadura (receita acima)</p></li>
+                                    <li><p>      150 ml de leite integral</p></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="col-sm-6 no-print">
+                    <h2 class="mode-prepare">Modo de preparo</h2>
+                        <div class="recipe-directions">
+                            <h4 class="mb-5 mt-5">Mel de rapadura</h4>
+                            <ul>
+                                    <li class="1" data-after-content="1"><p>Atenção: Esta receita requer cerca de 1 hora de forno e 4 horas de geladeira.
+
+</p></li>
+                                    <li class="2" data-after-content="2"><p>     Leve os ingredientes ao fogo médio e deixe ferver até reduzir e ficar com consistência de mel. Deixe esfriar e coe em uma peneira forrada com um pano. </p></li>
+                                    <li class="3" data-after-content="3"><p>    Separe a quantidade destinada ao pudim e forre todo o interior de uma fôrma de cone central com o restante.<br></p></li>
+                            </ul>
+                        </div>
+                        <div class="recipe-directions">
+                            <h4 class="mb-5 mt-5">Pudim</h4>
+                            <ul>
+                                    <li class="1" data-after-content="1"><p>Bata o leite condensado com as gemas manualmente, acrescente o mel e o leite e misture bem. Deixe em repouso por 30 minutos. </p></li>
+                                    <li class="2" data-after-content="2"><p>      Despeje na fôrma preparada, cubra com papel-alumínio e leve ao forno médio preaquecido (200 ºC), em banho-maria (use água quente), por cerca de 1 hora ou até firmar (faça o teste do palito). Leve para gelar por 4 horas antes de desenformar.<br></p></li>
+                            </ul>
+                        </div>
+                </div>
+
+                <table class="recipe-table print-only">
+                    <tr>
+                        <td>
+                            <h2 class="ingredients" style="font-size: 20px;">Ingredientes</h2>
+                                <div class="recipe-ingredients">
+                                    <h4 class="mb-5 mt-5">Mel de rapadura</h4>
+                                    <ul>
+                                            <li><p>500 ml de água<br></p></li>
+                                            <li><p>       400 a 500 g de rapadura<br></p></li>
+                                            <li><p>       Cravos-da-índia, canela e sementes de erva-doce moídos juntos e tostados levemente<br></p></li>
+                                    </ul>
+                                </div>
+                                <div class="recipe-ingredients">
+                                    <h4 class="mb-5 mt-5">Pudim</h4>
+                                    <ul>
+                                            <li><p>2 latas de leite condensado</p></li>
+                                            <li><p>      12 gemas</p></li>
+                                            <li><p>      150 ml do mel de rapadura (receita acima)</p></li>
+                                            <li><p>      150 ml de leite integral</p></li>
+                                    </ul>
+                                </div>
+                        </td>
+                        <td>
+                            <div class="col-sm-6">
+                                <h2 class="mode-prepare">Modo de preparo</h2>
+                                    <div class="recipe-directions">
+                                        <h4 class="mb-5 mt-5">Mel de rapadura</h4>
+                                        <ul>
+                                                <li class="1"><p>Atenção: Esta receita requer cerca de 1 hora de forno e 4 horas de geladeira.
+
+</p></li>
+                                                <li class="2"><p>     Leve os ingredientes ao fogo médio e deixe ferver até reduzir e ficar com consistência de mel. Deixe esfriar e coe em uma peneira forrada com um pano. </p></li>
+                                                <li class="3"><p>    Separe a quantidade destinada ao pudim e forre todo o interior de uma fôrma de cone central com o restante.<br></p></li>
+                                        </ul>
+                                    </div>
+                                    <div class="recipe-directions">
+                                        <h4 class="mb-5 mt-5">Pudim</h4>
+                                        <ul>
+                                                <li class="1"><p>Bata o leite condensado com as gemas manualmente, acrescente o mel e o leite e misture bem. Deixe em repouso por 30 minutos. </p></li>
+                                                <li class="2"><p>      Despeje na fôrma preparada, cubra com papel-alumínio e leve ao forno médio preaquecido (200 ºC), em banho-maria (use água quente), por cerca de 1 hora ou até firmar (faça o teste do palito). Leve para gelar por 4 horas antes de desenformar.<br></p></li>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                    <div class="row col-sm-12 mt-4 no-print pad-0">
+                        <div class="row chamada-like mrg-0 center">
+                            <div class="col-lg-3 col-sm-4 col-xs-4 pad-0 btn-coracao">
+                                <a href="javascript:void(0)" class="aLike heart " data-publicacao="19979" data-participando_concurso="1" data-url="pudim-de-rapadura">
+                                    <div class="btn-like">
+                                        <img alt="Dar like" title="Dar like" class="coracao" src="/Content/images/icn-curtir-off.svg" />
+                                        <span class="count-like curtidas">
+                                                <img alt="Recarregar like" title="Recarregar like" class="reload-like" src="/Content/images/reload.svg" />
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-9 col-sm-8 col-xs-8 pad-0-sm texto">
+                                <span class="f-s-16">
+                                    Curta minha receita, ela está concorrendo ao concurso <a href="/concurso/top-20-receitas" onclick="gaRegistrar('abrirLandingConcurso', 'DetalheReceita_Rodape')"><b class="a-slug">Top 20 Receitas</b></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="row hidden-lg hidden-sm">
+                    <div class="mrg-t-20 f-s-16 pad-0-20">
+                        <a href="/receitas" class="black">Receitas</a> > <a class="black" href="/receitas/doces-e-sobremesas/pudins-flas-e-manjares">Pudins, fl&#227;s e manjares</a> > <a class="black" href="/receitas/pudim-de-rapadura">Receita de 04/12: Pudim de rapadura do TOP 20</a>
+                    </div>
+                    <div class="border-bottom mrg-t-10"></div>
+                </div>
+
+                <div class="row col-sm-12 mt-4 no-print pad-0">
+                    <div id="recipe-actions" class="tabs-group">
+                        <div class="form-tabs">
+                            <div class="form-tab hidden-xs hidden-sm">
+                                <a href="javascript:void(0)" onclick="gaImprimirReceita('/receitas/pudim-de-rapadura');printPage();"><i class="fa fa-print" aria-hidden="true"></i> Imprimir receita</a>
+                            </div>
+                            <div class="form-tab no-print">
+                                <a href="#panel-email"><i class="fa fa-envelope" aria-hidden="true"></i> Enviar receita por email</a>
+                            </div>
+                        </div>
+                        <div class="tab-content no-print" id="panel-email">
+                            <div class="close-tab"></div>
+                            <h2> Enviar receita por e-mail</h2>
+                            <form>
+                                <div>
+                                    <input type="text" class="form-control mb-5" id="txtNome" placeholder="Nome" />
+                                    <label class="form" data-error=""></label>
+                                </div>
+                                <div>
+                                    <input type="email" class="form-control mb-5" id="txtEmail" placeholder="E-mail" />
+                                    <label class="form" data-error=""></label>
+                                </div>
+                                <div>
+                                    <input type="email" class="form-control mb-5" id="txtEmailDestino" placeholder="E-mail de Destino" />
+                                    <label class="form" data-error=""></label>
+                                </div>
+                                <div>
+                                    <textarea type="text" class="form-control mb-5" id="txaMensagem" placeholder="Olha a receita que achei pra você!!!"></textarea>
+                                    <label class="form" data-error=""></label>
+                                </div>
+                                <button type="button" class="input btn enviar red ladda-button" data-style="zoom-in" id="btnEnviar">ENVIAR</button><br />
+                                <span class="erro"></span>
+                                <span class="sucesso"></span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 no-print">
+            <div id='banner-receitas-arroba' class="advertisement medium advertisement-arroba mb-5 hidden-xs">
+    <script>
+        googletag.cmd.push(function () { googletag.display('banner-receitas-arroba'); });
+    </script>
+</div>
+            <div class="dynamic-title small mt-5 mb-4 hidden-xs hidden-sm">
+                <h2>Veja também</h2>
+            </div>
+                <a href="/concurso/top-20-receitas" title="Banner concurso" class="concurso-banner side-box mb-4" onclick="gaConcurso('BannerReceita')">
+                    <img src="/Content/images/concurso-banner.png" alt="Banner concurso" title="Banner concurso" />
+                </a>
+
+                <a href="/receitas/pudim-de-pao-e-ameixa" title="Pudim de p&#227;o e ameixa" class="side-box mb-4 hidden-xs hidden-sm">
+                    <div class="left" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22564/pudimdepaodeameixa-30314.jpg)">
+                    </div>
+                    <div class="right">
+                        <p class="">Pudim de p&#227;o e ameixa</p>
+                    </div>
+                </a>
+                <a href="/receitas/pudim-pistache" title="Pudim de pistache do Luiz" class="side-box mb-4 hidden-xs hidden-sm">
+                    <div class="left" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22504/pudim-de-pistache-do-luiz-30240.jpg)">
+                    </div>
+                    <div class="right">
+                        <p class="">Pudim de pistache do Luiz</p>
+                    </div>
+                </a>
+                <a href="/receitas/pudim-gelado-de-maracuja" title="Pudim gelado de maracuj&#225;" class="side-box mb-4 hidden-xs hidden-sm">
+                    <div class="left" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22472/pudimgeladodemaracuja-30199.jpg)">
+                    </div>
+                    <div class="right">
+                        <p class="">Pudim gelado de maracuj&#225;</p>
+                    </div>
+                </a>
+                <a href="/receitas/pudim-super-cremoso-" title="Pudim super cremoso" class="side-box mb-4 hidden-xs hidden-sm">
+                    <div class="left" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22428/pudimsupercremoso-30179.jpg)">
+                    </div>
+                    <div class="right">
+                        <p class="">Pudim super cremoso</p>
+                    </div>
+                </a>
+                <a href="/receitas/tarta-3-chocolates-torta-copo" title="Torta no copo: Tarta 3 chocolates do Cayque" class="side-box mb-4 hidden-xs hidden-sm">
+                    <div class="left" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22393/torta-no-copo-tarta-3-chocolates-do-cayque-30060.jpg)">
+                    </div>
+                    <div class="right">
+                        <p class="">Torta no copo: Tarta 3 chocolates do Cayque</p>
+                    </div>
+                </a>
+                <a href="/receitas/manjar-de-santa-clara-da-andrea-do-jogo-de-panelas" title="Manjar de Santa Clara da Andrea do Jogo de Panelas" class="side-box mb-4 hidden-xs hidden-sm">
+                    <div class="left" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22365/manjar-de-santa-clara-da-andrea-do-jogo-de-panelas-30017.jpg)">
+                    </div>
+                    <div class="right">
+                        <p class="">Manjar de Santa Clara da Andrea do Jogo de Panelas</p>
+                    </div>
+                </a>
+            <div id='banner-receitas-lateral' class="advertisement medium advertisement-arroba mb-5 col-sm-4 h-unset hidden-xs">
+    <script>
+        googletag.cmd.push(function () { googletag.display('banner-receitas-lateral'); });
+    </script>
+</div>
+        </div>
+    </div>
+    <div class="row no-print">
+                    <div class="container no-print">
+                <div class="row mb-5">
+                    <div id="banner-teads" class="col-xs-12 advertisement-full">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display('banner-teads'); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-8 no-print">
+            <div class="dynamic-content">
+                <div class="col-sm-12 no-print">
+                    <div class="mt-5">
+                    </div>
+                    <div class="facebook-coments-header-box">
+                        <h2>Comentários</h2>
+                        <p>Os comentários são de responsabilidade exclusiva de seus autores e não representam a opinião deste site. Se achar algo que viole os <a href="./termos.html">termos de uso</a>, denuncie. Leia as  <a href="./ajuda.html">perguntas mais frequentes</a> para saber o que é impróprio ou ilegal.</p>
+                        <div class="fb-comments" data-href="http://anamariabraga.globo.com/receitas/pudim-de-rapadura" data-numposts="5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 no-print"></div>
+    </div>
+    <div class="row no-print">
+        <div class="col-xs-12">
+            <div class="dynamic-title secondary mb-5">
+                <h2>Mais - Doces e sobremesas</h2>
+            </div>
+        </div>
+    </div>
+    <div class="no-print">
+            <div class="container">
+        <div class="content Receitas">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+                        <a href="http://anamariabraga.globo.com/receitas/pudim-de-pao-e-ameixa" title="Pudim de p&#227;o e ameixa" target="" class="feature small mb-5" data-id="22564" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22564/pudimdepaodeameixa-30314.jpg)">
+        <div class="hover-zoom" data-scale="1.1" data-image="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22564/pudimdepaodeameixa-30314.jpg" data-image-alt="pudim-de-pao-e-ameixa"></div>
+        <div class="title-card"><h2 class="">Pudim de p&#227;o e ameixa</h2></div>
+        <span class="tag text-uppercase">Doces e sobremesas</span>
+    </a>
+
+    <a href="http://anamariabraga.globo.com/receitas/pudim-super-cremoso-" title="Pudim super cremoso" target="" class="feature small mb-5 caption-white" data-id="22428" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22428/pudimsupercremoso-30179.jpg)">
+        <div class="hover-zoom" data-scale="1.1" data-image="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22428/pudimsupercremoso-30179.jpg" data-image-alt="pudim-super-cremoso-"></div>
+        <div class="title-card"><h2 class="">Pudim super cremoso</h2></div>
+        <span class="tag text-uppercase">Doces e sobremesas</span>
+    </a>
+                            <div class="row hidden-sm hidden-md hidden-lg">
+                                <div id='banner-blocopadrao-arroba' class="advertisement medium advertisement-arroba mb-5 ">
+    <script>
+        googletag.cmd.push(function () { googletag.display('banner-blocopadrao-arroba'); });
+    </script>
+</div>
+                            </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+    <a href="http://anamariabraga.globo.com/receitas/pudim-pistache" title="Pudim de pistache do Luiz" target="" class="feature small mb-5 caption-white" data-id="22504" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22504/pudim-de-pistache-do-luiz-30240.jpg)">
+        <div class="hover-zoom" data-scale="1.1" data-image="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22504/pudim-de-pistache-do-luiz-30240.jpg" data-image-alt="Pudim de pistache do Luiz"></div>
+        <div class="title-card"><h2 class="">Pudim de pistache do Luiz</h2></div>
+        <span class="tag text-uppercase">Doces e sobremesas</span>
+    </a>
+
+    <a href="http://anamariabraga.globo.com/receitas/tarta-3-chocolates-torta-copo" title="Torta no copo: Tarta 3 chocolates do Cayque" target="" class="feature small mb-5" data-id="22393" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22393/torta-no-copo-tarta-3-chocolates-do-cayque-30060.jpg)">
+        <div class="hover-zoom" data-scale="1.1" data-image="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22393/torta-no-copo-tarta-3-chocolates-do-cayque-30060.jpg" data-image-alt="Torta no copo: Tarta 3 chocolates do Cayque"></div>
+        <div class="title-card"><h2 class="">Torta no copo: Tarta 3 chocolates do Cayque</h2></div>
+        <span class="tag text-uppercase">Doces e sobremesas</span>
+    </a>
+
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+    <a href="http://anamariabraga.globo.com/receitas/pudim-gelado-de-maracuja" title="Pudim gelado de maracuj&#225;" target="" class="feature small mb-5" data-id="22472" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22472/pudimgeladodemaracuja-30199.jpg)">
+        <div class="hover-zoom" data-scale="1.1" data-image="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22472/pudimgeladodemaracuja-30199.jpg" data-image-alt="pudim-gelado-de-maracuja"></div>
+        <div class="title-card"><h2 class="">Pudim gelado de maracuj&#225;</h2></div>
+        <span class="tag text-uppercase">Doces e sobremesas</span>
+    </a>
+
+    <a href="http://anamariabraga.globo.com/receitas/manjar-de-santa-clara-da-andrea-do-jogo-de-panelas" title="Manjar de Santa Clara da Andrea do Jogo de Panelas" target="" class="feature small mb-5 caption-white" data-id="22365" style="background-image: url(http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22365/manjar-de-santa-clara-da-andrea-do-jogo-de-panelas-30017.jpg)">
+        <div class="hover-zoom" data-scale="1.1" data-image="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/receita/22365/manjar-de-santa-clara-da-andrea-do-jogo-de-panelas-30017.jpg" data-image-alt="Manjar de Santa Clara da Andrea do Jogo de Panelas"></div>
+        <div class="title-card"><h2 class="">Manjar de Santa Clara da Andrea do Jogo de Panelas</h2></div>
+        <span class="tag text-uppercase">Doces e sobremesas</span>
+    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="row mt-5 no-print">
+                <div class="container no-print">
+            <div class="row mb-5">
+                <div id="banner-receitas-footer-full" class="col-xs-12 advertisement-full">
+                    <script>
+                googletag.cmd.push(function () { googletag.display('banner-receitas-footer-full'); });
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container no-print">
+    <div>
+        <div>
+    <div class="OUTBRAIN" data-src="" data-widget-id="AR_1" data-ob-template="AnaMariaBraga"></div>
+    <script type="text/javascript" async="async" src="//widgets.outbrain.com/outbrain.js"></script>
+</div>
+
+<script>
+        var newURL = $('#hdnUrlBaseSiteCompleta').val() + window.location.pathname;
+        $(document).ready(function () {
+            $(".OUTBRAIN").attr("data-src", newURL);
+        });
+</script>
+    </div>
+</div>
+
+<script src="/ViewsScripts/Receita/PublicacaoReceita.js?t=201712011630"></script>
+
+<div class="container-fluid winning-recipes">
+  <div class="container">
+    <h2 class="container-title">Vencedores do Concurso Top 20 Receitas</h2>
+
+    <div class="tabs">
+      <ul class="tabs-links">
+      </ul>
+
+      <div class="tabs-contents">
+      </div>
+    </div>
+  </div><!-- /.container -->
+</div><!-- /.container-fluid -->                <script src="/ViewsScripts/Concurso/slick.min.js?t=201712011630"></script>
+                <script src="/ViewsScripts/Concurso/ReceitasVencedoras.js?t=201712011630"></script>
+        
+<footer class="fluid-container no-print">
+    <div class="container">
+
+        <!-- FOOTER MENU -->
+        <div class="row mt-5">
+            <div class="footer-col">
+                <ul class="footer-links">
+                    <li class="footer-links-title has-submenu">
+                        <a href="/ana-maria" target="_self" title="Ana Maria">Ana Maria</a>
+                        <ul>
+                            <li><a href="/ana-maria" target="_self" title="Biografia da Ana">Biografia</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/ana-maria/ana-na-midia" target="_self" title="Ana na M&#237;dia">Ana na M&#237;dia</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/ana-maria/look-da-ana" target="_self" title="Look da Ana">Look da Ana</a></li>
+
+                            <li><a href="/busca?term=&amp;tp=G&amp;c=1" target="_self" title="Galeria de Fotos">Galeria de Fotos</a></li>
+                            <li><a href="/mensagens" target="_self" title="Mensagens">Mensagens</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <ul class="footer-links">
+                    <li class="footer-links-title has-submenu">
+                        <a href="/receitas" target="_self" title="Receitas">Receitas</a>
+                        <ul>
+                            <li><a href="http://anamariabraga.globo.com/receitas/entradas-e-acompanhamentos" class="break-receita" target="_self" title="Acompanhamentos">Acompanhamentos</a></li>
+                            <li><a href="http://anamariabraga.globo.com/receitas/alimentacao-infantil" class="break-receita" target="_self" title="Alimenta&#231;&#227;o infantil ">Alimenta&#231;&#227;o infantil </a></li>
+                            <li><a href="http://anamariabraga.globo.com/receitas/aves" class="break-receita" target="_self" title="Aves">Aves</a></li>
+                            <li><a href="http://anamariabraga.globo.com/receitas/bebidas" class="break-receita" target="_self" title="Bebidas">Bebidas</a></li>
+                            <li><a href="http://anamariabraga.globo.com/receitas/bolos-e-tortas" class="break-receita" target="_self" title="Bolos e tortas">Bolos e tortas</a></li>
+                            <li><a href="http://anamariabraga.globo.com/receitas/carnes" class="break-receita" target="_self" title="Carnes">Carnes</a></li>
+                            <li><a href="http://anamariabraga.globo.com/receitas/doces-e-sobremesas" class="break-receita" target="_self" title="Doces e sobremesas">Doces e sobremesas</a></li>
+                            <li><a href="http://anamariabraga.globo.com/receitas/massas" class="break-receita" target="_self" title="Massas e risotos">Massas e risotos</a></li>
+                            <li><a href="http://anamariabraga.globo.com/receitas/outras" class="break-receita" target="_self" title="Outras">Outras</a></li>
+                            <li><a href="http://anamariabraga.globo.com/receitas/paes-e-cia" class="break-receita" target="_self" title="P&#227;es &amp; cia.">P&#227;es &amp; cia.</a></li>
+                            <li><a href="http://anamariabraga.globo.com/receitas/peixes-e-frutos-do-mar" class="break-receita" target="_self" title="Peixes e frutos do mar">Peixes e frutos do mar</a></li>
+                            <li><a href="http://anamariabraga.globo.com/receitas/pizzas" class="break-receita" target="_self" title="Pizzas">Pizzas</a></li>
+                            <li><a href="http://anamariabraga.globo.com/receitas/saladas" class="break-receita" target="_self" title="Saladas">Saladas</a></li>
+                            <li><a href="http://anamariabraga.globo.com/receitas/salgados-e-petiscos" class="break-receita" target="_self" title="Salgados e petiscos">Salgados e petiscos</a></li>
+                            <li><a href="http://anamariabraga.globo.com/receitas/sopas-e-cremes" class="break-receita" target="_self" title="Sopas e cremes">Sopas e cremes</a></li>
+                            <li><a href="http://anamariabraga.globo.com/receitas/tematicos" class="break-receita" target="_self" title="Tem&#225;ticos">Tem&#225;ticos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+                    <div class="footer-col">
+                        <ul class="footer-links">
+                            <li class="footer-links-title has-submenu">
+                                <a href="http://anamariabraga.globo.com/acorda-menina" target="_self" title="Acorda, Menina!">Acorda, Menina!</a>
+                                <ul>
+                                    <li><a href="http://anamariabraga.globo.com/acorda-menina/casa-e-familia" target="_self" title="Casa e Fam&#237;lia">Casa e Fam&#237;lia</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/acorda-menina/comida-e-bebida" target="_self" title="Comida e Bebida">Comida e Bebida</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/acorda-menina/gente" target="_self" title="Gente">Gente</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/acorda-menina/louro-jose" target="_self" title="Louro Jos&#233;">Louro Jos&#233;</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/acorda-menina/moda-e-beleza" target="_self" title="Moda e Beleza">Moda e Beleza</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/acorda-menina/noticias" target="_self" title="Not&#237;cias">Not&#237;cias</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/acorda-menina/viver-bem" target="_self" title="Viver Bem">Viver Bem</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                        <div class="footer-col hidden-sm hidden-md hidden-lg">
+                            <ul class="footer-links">
+                                <li class="footer-links-title"><a class="videos" href="/busca?term=&amp;v=1" target="_self" title="Vídeos">Vídeos</a></li>
+                            </ul>
+                        </div>
+                    <div class="footer-col">
+                        <ul class="footer-links">
+                            <li class="footer-links-title has-submenu">
+                                <a href="http://anamariabraga.globo.com/dicas" target="_self" title="Dicas">Dicas</a>
+                                <ul>
+                                    <li><a href="http://anamariabraga.globo.com/dicas/cozinha-culinaria" target="_self" title="Cozinha&amp;Culin&#225;ria">Cozinha&amp;Culin&#225;ria</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/dicas/lavanderia" target="_self" title="Lavanderia">Lavanderia</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/dicas/seu-momento" target="_self" title="Seu momento">Seu momento</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/dicas/truques-de-casa" target="_self" title="Truques de casa">Truques de casa</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <ul class="footer-links">
+                            <li class="footer-links-title has-submenu">
+                                <a href="http://anamariabraga.globo.com/louro-jose" target="_self" title="Louro Jos&#233;">Louro Jos&#233;</a>
+                                <ul>
+                                    <li><a href="http://anamariabraga.globo.com/louro-jose/cantadas" target="_self" title="Cantadas">Cantadas</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/louro-jose/charadas" target="_self" title="Charadas">Charadas</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/louro-jose/curtas" target="_self" title="Curtas">Curtas</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/louro-jose/infantis" target="_self" title="Infantis">Infantis</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/louro-jose/inteligentes" target="_self" title="Inteligentes">Inteligentes</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/louro-jose/joaozinho" target="_self" title="Jo&#227;ozinho">Jo&#227;ozinho</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <ul class="footer-links">
+                            <li class="footer-links-title has-submenu">
+                                <a href="http://anamariabraga.globo.com/mensagens" target="_self" title="Mensagens">Mensagens</a>
+                                <ul>
+                                    <li><a href="http://anamariabraga.globo.com/mensagens/conselhos" target="_self" title="Conselhos">Conselhos</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/mensagens/curtas" target="_self" title="Curtas">Curtas</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/mensagens/motivacao" target="_self" title="Motiva&#231;&#227;o">Motiva&#231;&#227;o</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/mensagens/otimismo" target="_self" title="Otimismo">Otimismo</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/mensagens/reflexao" target="_self" title="Reflex&#227;o">Reflex&#227;o</a></li>
+                                    <li><a href="http://anamariabraga.globo.com/mensagens/tiradas" target="_self" title="Tiradas">Tiradas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+            <div class="footer-col">
+                <ul class="footer-links">
+                    <li class="footer-links-title hidden-xs"><a href="/concurso" target="_self" title="Concurso">Concurso</a></li>
+                    <li class="footer-links-title title-submenu hidden-sm hidden-md hidden-lg"><a href="/concurso" target="_self" title="Concurso">Concurso</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <ul class="footer-links">
+                    <li class="footer-links-title has-submenu">
+                        <a href="javascript:void(0)" target="_self" title="Parceiros e Produtos">Parceiros e Produtos</a>
+                        <ul>
+                            <li><a href="http://www.trebeschi.com.br/tipo-produto/ana-maria-braga/" target="_blank" rel="nofollow" title="Tomates">Tomates</a></li>
+                            <li><a href="http://labelrouge.com.br/ovo-caipira-ana-maria-braga/" target="_blank" rel="nofollow" title="Ovos">Ovos</a></li>
+                            <li><a href="http://www.precolandia.com.br/anamaria" target="_blank" rel="nofollow" title="Produtos de cozinha">Produtos de cozinha</a></li>
+                            <li><a href="http://busca.casadasograenxovais.com.br/ana-maria-braga" target="_blank" rel="nofollow" title="Enxovais">Enxovais</a></li>
+                            <li><a href="http://www.hipercleanbrasil.com.br/ecommerce/lista_produtos/9/1" target="_blank" rel="nofollow" title="Hiperclean">Hiperclean</a></li>
+                            <li><a href="http://gshow.globo.com/programas/mais-voce/" target="_blank" rel="nofollow" title="Mais Você">Mais Você</a></li>
+                            <li><a href="http://maeatwork.com.br/" target="_blank" rel="nofollow" title="Mãe at Work">Mãe at Work</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row hidden-xs">
+            <div class="col-md-12 col-lg-12 footer-line">
+                <h4>Quer enviar uma mensagem para a Ana Maria?</h4>
+            </div>
+        </div>
+
+        <div class="row hidden-xs">
+            <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 text-center">
+                <a href="/ajuda" class="btn btn-white btn-xl btn-super-rounded" aria-role="hoverable">
+                    Tire suas principais dúvidas e saiba como entrar em contato com a Ana Maria.
+                    <img class="ani-hover-poke-left" src="/Content/images/btn-right.png" alt="Acessar Ajuda" title="Acessar Ajuda">
+                </a>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-sm-12 col-md-8 col-lg-8">
+                <p class="copyright">
+                    <img src="/Content/images/ana_gold.png" alt="Assinatura Ana Maria Braga" title="Assinatura Ana Maria Braga">
+                    <span class="hidden-xs">Ana Maria Braga @ Todos os direitos reservados</span>
+                </p>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-4">
+
+                <div class="social-box-horizontal" aria-role="hoverable-group">
+                    <a href="//www.facebook.com/AnaMariaBraga" target="_blank" onclick="gaSocialButton('facebook')" title="Visite-nos no Facebook" aria-role="hoverable">
+                        <img src="/Content/images/face_icon.png" class="header-icon face" alt="Compartilhar no Facebook" title="Compartilhar no Facebook">
+                    </a>
+                    <a href="//twitter.com/ANAMARIABRAGA" target="_blank" onclick="gaSocialButton('twitter')" title="Visite-nos no Twitter" aria-role="hoverable">
+                        <img src="/Content/images/twiter_icon.png" class="header-icon twiter" alt="Compartilhar no Twitter" title="Compartilhar no Twitter">
+                    </a>
+                    <a href="//www.instagram.com/AnaMaria16" target="_blank" onclick="gaSocialButton('instagram')" title="Visite-nos no Instagram" aria-role="hoverable">
+                        <img src="/Content/images/insta_icon.png" class="header-icon insta" alt="Compartilhar no Instagram" title="Compartilhar no Instagram">
+                    </a>
+                    <a href="//br.pinterest.com/anamariabraga" target="_blank" onclick="gaSocialButton('pinterest')" title="Visite-nos no Pinterest" aria-role="hoverable">
+                        <img src="/Content/images/pin_icon.png" class="header-icon pin" alt="Compartilhar no Pinterest" title="Compartilhar no Pinterest">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                <p class="copyright copyright-mobile">
+                    Ana Maria Braga @ Todos os direitos reservados
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    
+<nav class="bottom-navigation hidden-lg hidden-sm">
+    <div class="bottom-navigation-container">
+        <ul class="bottom-navigation-lista">
+            <li class="bottom-navigation-item" id="bottom-navigation-item-home"><img class="bottom-navigation-icon" src="/Content/images/icn-inicio.svg" alt="Início" title="Início" /></li>
+            <li class="bottom-navigation-item" id="bottom-navigation-item-hamburguer"><img class="bottom-navigation-icon" src="/Content/images/icn-categoria.svg" alt="Categorias" title="Categorias" /></li>
+            <li class="bottom-navigation-item" id="bottom-navigation-item-upload"><img class="bottom-navigation-icon" src="/Content/images/icn-upload2.png" alt="Enviar receita" title="Enviar receita" /></li>
+            <li class="bottom-navigation-item" id="bottom-navigation-item-search" style="display:none"><img class="bottom-navigation-icon" src="/Content/images/icn-busca.svg" alt="Busca" title="Busca" /></li>
+            <li class="bottom-navigation-item" id="bottom-navigation-item-perfil"><img class="bottom-navigation-icon" src="/Content/images/icn-perfil2.svg" alt="Perfil" title="Perfil" /></li>
+        </ul>
+    </div>
+</nav>
+
+<script src="/ViewsScripts/Shared/_BottomNavigation.js?t=201712011630"></script>
+
+
+   
+    <iframe id="iframeIdentificador" style="display:none"></iframe>
+    <div id="divOperadoras" style="display:none">
+        <div class="apple modal-operadora">
+            <span class="item-operadora titulo">Para finalizar e baixar o APP escolha sua operadora</span>
+            
+            <a href="//itunes.apple.com/br/app/vida-pratica-com-ana-maria/id1132621757" target="_blank" class="item-operadora l-claro">CLARO</a>
+            <a href="//itunes.apple.com/br/app/oi-ana-maria-braga/id1127468728" target="_blank" class="item-operadora l-oi">OI</a>
+        </div>
+        <div class="google modal-operadora">
+            <span class="item-operadora titulo">Para finalizar e baixar o APP escolha sua operadora</span>
+            <a href="//play.google.com/store/apps/details?id=br.com.gold360.vivo.anamariabraga&referrer=utm_source%3Dsite_oficial" target="_blank" class="item-operadora l-vivo">VIVO</a>
+            <a href="//play.google.com/store/apps/details?id=br.com.gold360.tim.anamariabraga&referrer=utm_source%3Dsite_oficial" target="_blank" class="item-operadora l-tim">TIM</a>
+            <a href="//play.google.com/store/apps/details?id=br.com.gold360.claro.anamariabraga&referrer=utm_source%3Dsite_oficial" target="_blank" class="item-operadora l-claro">CLARO</a>
+            <a href="//play.google.com/store/apps/details?id=br.com.gold360.oi.anamariabraga&referrer=utm_source%3Dsite_oficial" target="_blank" class="item-operadora l-oi">OI</a>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-contest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a id="modal-contest-link" target="_blank">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"></button>
+                        <img src="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/popup/mobile.png" alt="" class="img-mobile">
+                        <img src="http://d198g3kueh6k6a.cloudfront.net/prod/imagens/popup/desk.png" alt="" class="img-desk">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="g-signin2" data-onsuccess="onSignIn" style="display:none"></div>
+
+    <script src="/Scripts/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="/Scripts/vendor/bootstrap/bootstrap/carousel.min.js"></script>
+    <script src="/Scripts/js/components/hoverable.js"></script>
+    <script src="/Scripts/js/components/hoverable-group.js"></script>
+    <script src="/Scripts/js/components/share-block.js"></script>
+    <script src="/Scripts/js/components/post-carousel.js"></script>
+    <script src="/Scripts/js/components/feature-slider.min.js"></script>
+    <script src="/Scripts/js/components/sidebar-controller.js"></script>
+    <script src="/Scripts/js/components/mais-lidas-carousel.min.js"></script>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="/Scripts/js/main.min.js"></script>
+    <script type="text/javascript" src="/Scripts/tooltipster.bundle.min.js"></script>
+    <script src="/bundles/ladda"></script>
+    <script src="/Scripts/chosen/chosen.jquery.js"></script>
+    <script src="/Scripts/js-cookie/js.cookie-2.1.3.min.js"></script>
+    <script src="/Scripts/vendor/jquery/jquery.mask.min.js"></script>
+    <script src="/ViewsScripts/Shared/_Layout.js?t=201712011630"></script>
+    <script src="/ViewsScripts/Shared/_Login.js?t=201712011630"></script>
+    <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    <script src="/Scripts/analytics.min.js?t=201712011630"></script>
+
+    <script src="/Scripts/icheck.min.js"></script>
+
+    <script src="/ViewsScripts/Concurso/ModalConcurso.js?t=201712011630"></script>
+
+
+    
+    <script type="application/ld+json">
+        {
+
+
+        "@context": "http://schema.org",
+        "@type": "Recipe",
+        "name": "Receita de 04/12: Pudim de rapadura do TOP 20",
+        "author": { "@type" : "Person", "name" : "Vanderleia Ferreira" },
+        "datePublished": "2017-10-13",
+        "description": "",
+        "totalTime": "PT00H30M",
+        "image": "http://d198g3kueh6k6a.cloudfront.net/prod/imagens/biblioteca/Thumb/pudim-de-rapadura.jpg",
+        "recipeCategory" : "Pudins, fl&#227;s e manjares",
+        "recipeYield": "10",
+        "recipeInstructions": ["Aten&#231;&#227;o: Esta receita requer cerca de 1 hora de forno e 4 horas de geladeira. Leve os ingredientes ao fogo m&#233;dio e deixe ferver at&#233; reduzir e ficar com consist&#234;ncia de mel. Deixe esfriar e coe em uma peneira forrada com um pano. Separe a quantidade destinada ao pudim e forre todo o interior de uma f&#244;rma de cone central com o restante.&amp;lt;br&amp;gt; Bata o leite condensado com as gemas manualmente, acrescente o mel e o leite e misture bem. Deixe em repouso por 30 minutos. Despeje na f&#244;rma preparada, cubra com papel-alum&#237;nio e leve ao forno m&#233;dio preaquecido (200 &#186;C), em banho-maria (use &#225;gua quente), por cerca de 1 hora ou at&#233; firmar (fa&#231;a o teste do palito). Leve para gelar por 4 horas antes de desenformar.&amp;lt;br&amp;gt;"],
+        "recipeIngredient": ["500 ml de &#225;gua&amp;lt;br&amp;gt;"
+                            ,
+"400 a 500 g de rapadura&amp;lt;br&amp;gt;"
+                            ,
+"Cravos-da-&#237;ndia, canela e sementes de erva-doce mo&#237;dos juntos e tostados levemente&amp;lt;br&amp;gt;"
+                            ,
+"2 latas de leite condensado"
+                            ,
+"12 gemas"
+                            ,
+"150 ml do mel de rapadura (receita acima)"
+                            ,
+"150 ml de leite integral"
+]}
+    </script>
+
+        <script type="application/ld+json">
+            {
+            "@context": "http://schema.org",
+            "@type": "VideoObject",
+            "description": "flowplayer",
+            "name": "Receita de 04/12: Pudim de rapadura do TOP 20",
+            "thumbnail": "http://d198g3kueh6k6a.cloudfront.net/prod/imagens/biblioteca/Thumb/pudim-de-rapdura-quadrado.jpg",
+            "contentUrl": "https://cdn.flowplayer.org/361612/573454.mp4",
+            "uploadDate": "2017-10-13",
+            "thumbnailUrl": "http://d198g3kueh6k6a.cloudfront.net/prod/imagens/biblioteca/Thumb/pudim-de-rapdura-quadrado.jpg"
+            }
+        </script>
+
+
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=1096096320499315";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+    <script>
+        //Twitter popup
+        $('.popup').click(function (event) {
+            var width = 575,
+                height = 400,
+                left = ($(window).width() - width) / 2,
+                top = ($(window).height() - height) / 2,
+                url = this.href,
+                opts = 'status=1' +
+                    ',width=' + width +
+                    ',height=' + height +
+                    ',top=' + top +
+                    ',left=' + left;
+
+            window.open(url, 'twitter', opts);
+
+            return false;
+        });
+    </script>
+
+    <!-- Google Remarketing AW -->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 830083721;
+        var google_custom_params = window.google_tag_params;
+        var google_remarketing_only = true;
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+        <div style="display:inline;">
+            <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/830083721/?guid=ON&amp;script=0" />
+        </div>
+    </noscript>
+
+    
+</body>
+</html>
